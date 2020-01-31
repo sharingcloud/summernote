@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 44:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'tr-TR': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Üstü çizili',
         subscript: 'Alt Simge',
         superscript: 'Üst Simge',
-        size: 'Yazı tipi boyutu'
+        size: 'Yazı tipi boyutu',
       },
       image: {
         image: 'Resim',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maksimum dosya boyutu aşıldı.',
         url: 'Resim bağlantısı',
         remove: 'Resimi Kaldır',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Video bağlantısı',
         insert: 'Video ekle',
         url: 'Video bağlantısı?',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion veya Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion veya Youku)',
       },
       link: {
         link: 'Bağlantı',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Bağlantıyı düzenle',
         textToDisplay: 'Görüntülemek için',
         url: 'Bağlantı adresi?',
-        openInNewWindow: 'Yeni pencerede aç'
+        openInNewWindow: 'Yeni pencerede aç',
       },
       table: {
         table: 'Tablo',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Sağa sütun ekle',
         delRow: 'Satırı sil',
         delCol: 'Sütunu sil',
-        delTable: 'Tabloyu sil'
+        delTable: 'Tabloyu sil',
       },
       hr: {
-        insert: 'Yatay çizgi ekle'
+        insert: 'Yatay çizgi ekle',
       },
       style: {
         style: 'Biçim',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Başlık 3',
         h4: 'Başlık 4',
         h5: 'Başlık 5',
-        h6: 'Başlık 6'
+        h6: 'Başlık 6',
       },
       lists: {
         unordered: 'Madde işaretli liste',
-        ordered: 'Numaralı liste'
+        ordered: 'Numaralı liste',
       },
       options: {
         help: 'Yardım',
         fullscreen: 'Tam ekran',
-        codeview: 'HTML Kodu'
+        codeview: 'HTML Kodu',
       },
       paragraph: {
         paragraph: 'Paragraf',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Sola hizala',
         center: 'Ortaya hizala',
         right: 'Sağa hizala',
-        justify: 'Yasla'
+        justify: 'Yasla',
       },
       color: {
         recent: 'Son renk',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Seffaflık',
         setTransparent: 'Şeffaflığı ayarla',
         reset: 'Sıfırla',
-        resetToDefault: 'Varsayılanlara sıfırla'
+        resetToDefault: 'Varsayılanlara sıfırla',
       },
       shortcut: {
         shortcuts: 'Kısayollar',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Eylem',
         paragraphFormatting: 'Paragraf biçimlendirme',
         documentStyle: 'Biçim',
-        extraKeys: 'İlave anahtarlar'
+        extraKeys: 'İlave anahtarlar',
       },
       help: {
         'insertParagraph': 'Paragraf ekler',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Aktif bloğun biçimini başlık 5 (h5) olarak değiştirir',
         'formatH6': 'Aktif bloğun biçimini başlık 6 (h6) olarak değiştirir',
         'insertHorizontalRule': 'Yatay çizgi ekler',
-        'linkDialog.show': 'Bağlantı ayar kutusunu gösterir'
+        'linkDialog.show': 'Bağlantı ayar kutusunu gösterir',
       },
       history: {
         undo: 'Geri al',
-        redo: 'Yinele'
+        redo: 'Yinele',
       },
       specialChar: {
         specialChar: 'ÖZEL KARAKTERLER',
-        select: 'Özel Karakterleri seçin'
-      }
-    }
+        select: 'Özel Karakterleri seçin',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

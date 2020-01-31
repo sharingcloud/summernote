@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 16:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'fa-IR': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Strike',
         subscript: 'Subscript',
         superscript: 'Superscript',
-        size: 'اندازه ی فونت'
+        size: 'اندازه ی فونت',
       },
       image: {
         image: 'تصویر',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'آدرس تصویر',
         remove: 'حذف تصویر',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'ویدیو',
         videoLink: 'لینک ویدیو',
         insert: 'افزودن ویدیو',
         url: 'آدرس ویدیو ؟',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion یا Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion یا Youku)',
       },
       link: {
         link: 'لینک',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'ویرایش',
         textToDisplay: 'متن جهت نمایش',
         url: 'این لینک به چه آدرسی باید برود ؟',
-        openInNewWindow: 'در یک پنجره ی جدید باز شود'
+        openInNewWindow: 'در یک پنجره ی جدید باز شود',
       },
       table: {
         table: 'جدول',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'افزودن ستون راست',
         delRow: 'حذف ردیف',
         delCol: 'حذف ستون',
-        delTable: 'حذف جدول'
+        delTable: 'حذف جدول',
       },
       hr: {
-        insert: 'افزودن خط افقی'
+        insert: 'افزودن خط افقی',
       },
       style: {
         style: 'استیل',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'سرتیتر 3',
         h4: 'سرتیتر 4',
         h5: 'سرتیتر 5',
-        h6: 'سرتیتر 6'
+        h6: 'سرتیتر 6',
       },
       lists: {
         unordered: 'لیست غیر ترتیبی',
-        ordered: 'لیست ترتیبی'
+        ordered: 'لیست ترتیبی',
       },
       options: {
         help: 'راهنما',
         fullscreen: 'نمایش تمام صفحه',
-        codeview: 'مشاهده ی کد'
+        codeview: 'مشاهده ی کد',
       },
       paragraph: {
         paragraph: 'پاراگراف',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'چپ چین',
         center: 'میان چین',
         right: 'راست چین',
-        justify: 'بلوک چین'
+        justify: 'بلوک چین',
       },
       color: {
         recent: 'رنگ اخیرا استفاده شده',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'بی رنگ',
         setTransparent: 'تنظیم حالت بی رنگ',
         reset: 'بازنشاندن',
-        resetToDefault: 'حالت پیش فرض'
+        resetToDefault: 'حالت پیش فرض',
       },
       shortcut: {
         shortcuts: 'دکمه های میان بر',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'عملیات',
         paragraphFormatting: 'فرمت پاراگراف',
         documentStyle: 'استیل سند',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'افزودن پاراگراف',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'واچیدن',
-        redo: 'بازچیدن'
+        redo: 'بازچیدن',
       },
       specialChar: {
         specialChar: 'کاراکتر خاص',
-        select: 'انتخاب کاراکتر خاص'
-      }
-    }
+        select: 'انتخاب کاراکتر خاص',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 26:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'ko-KR': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         superscript: '위 첨자',
         subscript: '아래 첨자',
         strikethrough: '취소선',
-        size: '글자 크기'
+        size: '글자 크기',
       },
       image: {
         image: '그림',
@@ -147,14 +147,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: '최대 파일 크기를 초과했습니다.',
         url: '사진 URL',
         remove: '사진 삭제',
-        original: '원본'
+        original: '원본',
       },
       video: {
         video: '동영상',
         videoLink: '동영상 링크',
         insert: '동영상 삽입',
         url: '동영상 URL',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion, Youku 사용 가능)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion, Youku 사용 가능)',
       },
       link: {
         link: '링크',
@@ -163,7 +163,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: '수정',
         textToDisplay: '링크에 표시할 내용',
         url: '이동할 URL',
-        openInNewWindow: '새창으로 열기'
+        openInNewWindow: '새창으로 열기',
       },
       table: {
         table: '표',
@@ -173,10 +173,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: '오른쪽에 열 삽입',
         delRow: '행 지우기',
         delCol: '열 지우기',
-        delTable: '표 삭제'
+        delTable: '표 삭제',
       },
       hr: {
-        insert: '구분선 삽입'
+        insert: '구분선 삽입',
       },
       style: {
         style: '스타일',
@@ -188,16 +188,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: '제목 3',
         h4: '제목 4',
         h5: '제목 5',
-        h6: '제목 6'
+        h6: '제목 6',
       },
       lists: {
         unordered: '글머리 기호',
-        ordered: '번호 매기기'
+        ordered: '번호 매기기',
       },
       options: {
         help: '도움말',
         fullscreen: '전체 화면',
-        codeview: '코드 보기'
+        codeview: '코드 보기',
       },
       paragraph: {
         paragraph: '문단 정렬',
@@ -206,7 +206,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: '왼쪽 정렬',
         center: '가운데 정렬',
         right: '오른쪽 정렬',
-        justify: '양쪽 정렬'
+        justify: '양쪽 정렬',
       },
       color: {
         recent: '마지막으로 사용한 색',
@@ -217,7 +217,7 @@ return /******/ (function(modules) { // webpackBootstrap
         setTransparent: '투명으로 설정',
         reset: '취소',
         resetToDefault: '기본값으로 설정',
-        cpSelect: '고르다'
+        cpSelect: '고르다',
       },
       shortcut: {
         shortcuts: '키보드 단축키',
@@ -226,7 +226,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: '기능',
         paragraphFormatting: '문단 스타일 적용',
         documentStyle: '문서 스타일 적용',
-        extraKeys: '추가 키'
+        extraKeys: '추가 키',
       },
       help: {
         'insertParagraph': '문단 삽입',
@@ -255,19 +255,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': '현재 블록의 포맷을 제목5(H5)로 변경',
         'formatH6': '현재 블록의 포맷을 제목6(H6)로 변경',
         'insertHorizontalRule': '구분선 삽입',
-        'linkDialog.show': '링크 대화상자 열기'
+        'linkDialog.show': '링크 대화상자 열기',
       },
       history: {
         undo: '실행 취소',
-        redo: '재실행'
+        redo: '재실행',
       },
       specialChar: {
         specialChar: '특수문자',
-        select: '특수문자를 선택하세요'
-      }
-    }
+        select: '특수문자를 선택하세요',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

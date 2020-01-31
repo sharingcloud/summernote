@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 7:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'ar-AR': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'فى وسطه خط',
         subscript: 'مخطوطة',
         superscript: 'حرف فوقي',
-        size: 'الحجم'
+        size: 'الحجم',
       },
       image: {
         image: 'صورة',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'تم تجاوز الحد الأقصى لحجم الملف',
         url: 'رابط الصورة',
         remove: 'حذف الصورة',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'فيديو',
         videoLink: 'رابط الفيديو',
         insert: 'إدراج الفيديو',
         url: 'رابط الفيديو',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ou Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ou Youku)',
       },
       link: {
         link: 'رابط',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'تعديل',
         textToDisplay: 'النص',
         url: 'مسار الرابط',
-        openInNewWindow: 'فتح في نافذة جديدة'
+        openInNewWindow: 'فتح في نافذة جديدة',
       },
       table: {
         table: 'جدول',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'إضافة عمود بعده',
         delRow: 'حذف سطر',
         delCol: 'حذف عمود',
-        delTable: 'حذف الجدول'
+        delTable: 'حذف الجدول',
       },
       hr: {
-        insert: 'إدراج خط أفقي'
+        insert: 'إدراج خط أفقي',
       },
       style: {
         style: 'تنسيق',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'عنوان رئيسي 3',
         h4: 'عنوان رئيسي 4',
         h5: 'عنوان رئيسي 5',
-        h6: 'عنوان رئيسي 6'
+        h6: 'عنوان رئيسي 6',
       },
       lists: {
         unordered: 'قائمة مُنقطة',
-        ordered: 'قائمة مُرقمة'
+        ordered: 'قائمة مُرقمة',
       },
       options: {
         help: 'مساعدة',
         fullscreen: 'حجم الشاشة بالكامل',
-        codeview: 'شفيرة المصدر'
+        codeview: 'شفيرة المصدر',
       },
       paragraph: {
         paragraph: 'فقرة',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'محاذاة لليسار',
         center: 'توسيط',
         right: 'محاذاة لليمين',
-        justify: 'ملئ السطر'
+        justify: 'ملئ السطر',
       },
       color: {
         recent: 'تم إستخدامه',
@@ -216,7 +216,7 @@ return /******/ (function(modules) { // webpackBootstrap
         setTransparent: 'بدون خلفية',
         reset: 'إعادة الضبط',
         resetToDefault: 'إعادة الضبط',
-        cpSelect: 'اختار'
+        cpSelect: 'اختار',
       },
       shortcut: {
         shortcuts: 'إختصارات',
@@ -225,7 +225,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Action',
         paragraphFormatting: 'تنسيق الفقرة',
         documentStyle: 'تنسيق المستند',
-        extraKeys: 'أزرار إضافية'
+        extraKeys: 'أزرار إضافية',
       },
       help: {
         'insertParagraph': 'إدراج فقرة',
@@ -254,19 +254,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'تغيير التنسيق للكتلة الحالية إلى ترويسة 5',
         'formatH6': 'تغيير التنسيق للكتلة الحالية إلى ترويسة 6',
         'insertHorizontalRule': 'إدراج خط أفقي',
-        'linkDialog.show': 'إظهار خصائص الرابط'
+        'linkDialog.show': 'إظهار خصائص الرابط',
       },
       history: {
         undo: 'تراجع',
-        redo: 'إعادة'
+        redo: 'إعادة',
       },
       specialChar: {
         specialChar: 'محارف خاصة',
-        select: 'اختر المحرف الخاص'
-      }
-    }
+        select: 'اختر المحرف الخاص',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

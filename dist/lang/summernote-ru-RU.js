@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 36:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'ru-RU': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Зачёркнутый',
         subscript: 'Нижний индекс',
         superscript: 'Верхний индекс',
-        size: 'Размер шрифта'
+        size: 'Размер шрифта',
       },
       image: {
         image: 'Картинка',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Превышен максимальный размер файла',
         url: 'URL картинки',
         remove: 'Удалить картинку',
-        original: 'Оригинал'
+        original: 'Оригинал',
       },
       video: {
         video: 'Видео',
         videoLink: 'Ссылка на видео',
         insert: 'Вставить видео',
         url: 'URL видео',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion или Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion или Youku)',
       },
       link: {
         link: 'Ссылка',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Редактировать',
         textToDisplay: 'Отображаемый текст',
         url: 'URL для перехода',
-        openInNewWindow: 'Открывать в новом окне'
+        openInNewWindow: 'Открывать в новом окне',
       },
       table: {
         table: 'Таблица',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Добавить столбец справа',
         delRow: 'Удалить строку',
         delCol: 'Удалить столбец',
-        delTable: 'Удалить таблицу'
+        delTable: 'Удалить таблицу',
       },
       hr: {
-        insert: 'Вставить горизонтальную линию'
+        insert: 'Вставить горизонтальную линию',
       },
       style: {
         style: 'Стиль',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Заголовок 3',
         h4: 'Заголовок 4',
         h5: 'Заголовок 5',
-        h6: 'Заголовок 6'
+        h6: 'Заголовок 6',
       },
       lists: {
         unordered: 'Маркированный список',
-        ordered: 'Нумерованный список'
+        ordered: 'Нумерованный список',
       },
       options: {
         help: 'Помощь',
         fullscreen: 'На весь экран',
-        codeview: 'Исходный код'
+        codeview: 'Исходный код',
       },
       paragraph: {
         paragraph: 'Параграф',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Выровнять по левому краю',
         center: 'Выровнять по центру',
         right: 'Выровнять по правому краю',
-        justify: 'Растянуть по ширине'
+        justify: 'Растянуть по ширине',
       },
       color: {
         recent: 'Последний цвет',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Прозрачный',
         setTransparent: 'Сделать прозрачным',
         reset: 'Сброс',
-        resetToDefault: 'Восстановить умолчания'
+        resetToDefault: 'Восстановить умолчания',
       },
       shortcut: {
         shortcuts: 'Сочетания клавиш',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Действие',
         paragraphFormatting: 'Форматирование параграфа',
         documentStyle: 'Стиль документа',
-        extraKeys: 'Дополнительные комбинации'
+        extraKeys: 'Дополнительные комбинации',
       },
       help: {
         'insertParagraph': 'Новый параграф',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Форматировать текущий блок как H5',
         'formatH6': 'Форматировать текущий блок как H6',
         'insertHorizontalRule': 'Вставить горизонтальную черту',
-        'linkDialog.show': 'Показать диалог "Ссылка"'
+        'linkDialog.show': 'Показать диалог "Ссылка"',
       },
       history: {
         undo: 'Отменить',
-        redo: 'Повтор'
+        redo: 'Повтор',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

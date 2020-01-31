@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 33:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'pt-BR': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Riscado',
         subscript: 'Subscrito',
         superscript: 'Sobrescrito',
-        size: 'Tamanho da fonte'
+        size: 'Tamanho da fonte',
       },
       image: {
         image: 'Imagem',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Tamanho máximo do arquivo excedido.',
         url: 'URL da imagem',
         remove: 'Remover Imagem',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Vídeo',
         videoLink: 'Link para vídeo',
         insert: 'Inserir vídeo',
         url: 'URL do vídeo?',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ou Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ou Youku)',
       },
       link: {
         link: 'Link',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Editar',
         textToDisplay: 'Texto para exibir',
         url: 'Para qual URL este link leva?',
-        openInNewWindow: 'Abrir em uma nova janela'
+        openInNewWindow: 'Abrir em uma nova janela',
       },
       table: {
         table: 'Tabela',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Adicionar coluna à direita',
         delRow: 'Excluir linha',
         delCol: 'Excluir coluna',
-        delTable: 'Excluir tabela'
+        delTable: 'Excluir tabela',
       },
       hr: {
-        insert: 'Linha horizontal'
+        insert: 'Linha horizontal',
       },
       style: {
         style: 'Estilo',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Título 3',
         h4: 'Título 4',
         h5: 'Título 5',
-        h6: 'Título 6'
+        h6: 'Título 6',
       },
       lists: {
         unordered: 'Lista com marcadores',
-        ordered: 'Lista numerada'
+        ordered: 'Lista numerada',
       },
       options: {
         help: 'Ajuda',
         fullscreen: 'Tela cheia',
-        codeview: 'Ver código-fonte'
+        codeview: 'Ver código-fonte',
       },
       paragraph: {
         paragraph: 'Parágrafo',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Alinhar à esquerda',
         center: 'Alinhar ao centro',
         right: 'Alinha à direita',
-        justify: 'Justificado'
+        justify: 'Justificado',
       },
       color: {
         recent: 'Cor recente',
@@ -216,7 +216,7 @@ return /******/ (function(modules) { // webpackBootstrap
         setTransparent: 'Fundo transparente',
         reset: 'Restaurar',
         resetToDefault: 'Restaurar padrão',
-        cpSelect: 'Selecionar'
+        cpSelect: 'Selecionar',
       },
       shortcut: {
         shortcuts: 'Atalhos do teclado',
@@ -225,7 +225,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Ação',
         paragraphFormatting: 'Formatação de parágrafo',
         documentStyle: 'Estilo de documento',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Inserir Parágrafo',
@@ -254,19 +254,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Alterar formato do bloco para H5',
         'formatH6': 'Alterar formato do bloco para H6',
         'insertHorizontalRule': 'Inserir Régua horizontal',
-        'linkDialog.show': 'Inserir um Hiperlink'
+        'linkDialog.show': 'Inserir um Hiperlink',
       },
       history: {
         undo: 'Desfazer',
-        redo: 'Refazer'
+        redo: 'Refazer',
       },
       specialChar: {
         specialChar: 'CARACTERES ESPECIAIS',
-        select: 'Selecionar Caracteres Especiais'
-      }
-    }
+        select: 'Selecionar Caracteres Especiais',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 45:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'uk-UA': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Закреслений',
         subscript: 'Нижній індекс',
         superscript: 'Верхній індекс',
-        size: 'Розмір шрифту'
+        size: 'Розмір шрифту',
       },
       image: {
         image: 'Картинка',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'URL картинки',
         remove: 'Видалити картинку',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Відео',
         videoLink: 'Посилання на відео',
         insert: 'Вставити відео',
         url: 'URL відео',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion чи Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion чи Youku)',
       },
       link: {
         link: 'Посилання',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Редагувати',
         textToDisplay: 'Текст, що відображається',
         url: 'URL для переходу',
-        openInNewWindow: 'Відкривати у новому вікні'
+        openInNewWindow: 'Відкривати у новому вікні',
       },
       table: {
         table: 'Таблиця',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Вставити горизонтальну лінію'
+        insert: 'Вставити горизонтальну лінію',
       },
       style: {
         style: 'Стиль',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Заголовок 3',
         h4: 'Заголовок 4',
         h5: 'Заголовок 5',
-        h6: 'Заголовок 6'
+        h6: 'Заголовок 6',
       },
       lists: {
         unordered: 'Маркований список',
-        ordered: 'Нумерований список'
+        ordered: 'Нумерований список',
       },
       options: {
         help: 'Допомога',
         fullscreen: 'На весь екран',
-        codeview: 'Початковий код'
+        codeview: 'Початковий код',
       },
       paragraph: {
         paragraph: 'Параграф',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Вирівняти по лівому краю',
         center: 'Вирівняти по центру',
         right: 'Вирівняти по правому краю',
-        justify: 'Розтягнути по ширині'
+        justify: 'Розтягнути по ширині',
       },
       color: {
         recent: 'Останній колір',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Прозорий',
         setTransparent: 'Зробити прозорим',
         reset: 'Відновити',
-        resetToDefault: 'Відновити початкові'
+        resetToDefault: 'Відновити початкові',
       },
       shortcut: {
         shortcuts: 'Комбінації клавіш',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Дія',
         paragraphFormatting: 'Форматування параграфу',
         documentStyle: 'Стиль документу',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Insert Paragraph',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Відмінити',
-        redo: 'Повторити'
+        redo: 'Повторити',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 
