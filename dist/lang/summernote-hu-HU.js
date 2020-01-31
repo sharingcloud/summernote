@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 22:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'hu-HU': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Áthúzott',
         subscript: 'Subscript',
         superscript: 'Superscript',
-        size: 'Betűméret'
+        size: 'Betűméret',
       },
       image: {
         image: 'Kép',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'Kép URL címe',
         remove: 'Kép törlése',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Videó',
         videoLink: 'Videó hivatkozás',
         insert: 'Videó beszúrása',
         url: 'Videó URL címe',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion vagy Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion vagy Youku)',
       },
       link: {
         link: 'Hivatkozás',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Szerkesztés',
         textToDisplay: 'Megjelenítendő szöveg',
         url: 'Milyen URL címre hivatkozzon?',
-        openInNewWindow: 'Megnyitás új ablakban'
+        openInNewWindow: 'Megnyitás új ablakban',
       },
       table: {
         table: 'Táblázat',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Elválasztó vonal beszúrása'
+        insert: 'Elválasztó vonal beszúrása',
       },
       style: {
         style: 'Stílus',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Fejléc 3',
         h4: 'Fejléc 4',
         h5: 'Fejléc 5',
-        h6: 'Fejléc 6'
+        h6: 'Fejléc 6',
       },
       lists: {
         unordered: 'Listajeles lista',
-        ordered: 'Számozott lista'
+        ordered: 'Számozott lista',
       },
       options: {
         help: 'Súgó',
         fullscreen: 'Teljes képernyő',
-        codeview: 'Kód nézet'
+        codeview: 'Kód nézet',
       },
       paragraph: {
         paragraph: 'Bekezdés',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Igazítás balra',
         center: 'Igazítás középre',
         right: 'Igazítás jobbra',
-        justify: 'Sorkizárt'
+        justify: 'Sorkizárt',
       },
       color: {
         recent: 'Jelenlegi szín',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Átlátszó',
         setTransparent: 'Átlászóság beállítása',
         reset: 'Visszaállítás',
-        resetToDefault: 'Alaphelyzetbe állítás'
+        resetToDefault: 'Alaphelyzetbe állítás',
       },
       shortcut: {
         shortcuts: 'Gyorsbillentyű',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Művelet',
         paragraphFormatting: 'Bekezdés formázása',
         documentStyle: 'Dokumentumstílus',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Új bekezdés',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Blokk formázása, mint Fejléc 5',
         'formatH6': 'Blokk formázása, mint Fejléc 6',
         'insertHorizontalRule': 'Vízszintes vonal beszúrása',
-        'linkDialog.show': 'Link párbeszédablak megjelenítése'
+        'linkDialog.show': 'Link párbeszédablak megjelenítése',
       },
       history: {
         undo: 'Visszavonás',
-        redo: 'Újra'
+        redo: 'Újra',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -154,7 +154,7 @@ class Renderer {
 
     if (this.children) {
       const $container = $node.find('.note-children-container');
-      this.children.forEach(child => {
+      this.children.forEach((child) => {
         child.render($container.length ? $container : $node);
       });
     }
@@ -173,23 +173,21 @@ class Renderer {
 
     return $node;
   }
-
 }
 
 /* harmony default export */ __webpack_exports__["a"] = ({
   create: (markup, callback) => {
-    return function () {
+    return function() {
       const options = typeof arguments[1] === 'object' ? arguments[1] : arguments[0];
       let children = Array.isArray(arguments[0]) ? arguments[0] : [];
-
       if (options && options.children) {
         children = options.children;
       }
-
       return new Renderer(markup, children, options, callback);
     };
-  }
+  },
 });
+
 
 /***/ }),
 
@@ -214,9 +212,11 @@ var external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default = /
 
 // CONCATENATED MODULE: ./src/js/base/summernote-en-US.js
 
+
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote || {
-  lang: {}
+  lang: {},
 };
+
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang, {
   'en-US': {
     font: {
@@ -230,7 +230,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       subscript: 'Subscript',
       superscript: 'Superscript',
       size: 'Font Size',
-      sizeunit: 'Font Size Unit'
+      sizeunit: 'Font Size Unit',
     },
     image: {
       image: 'Picture',
@@ -253,14 +253,14 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       maximumFileSizeError: 'Maximum file size exceeded.',
       url: 'Image URL',
       remove: 'Remove Image',
-      original: 'Original'
+      original: 'Original',
     },
     video: {
       video: 'Video',
       videoLink: 'Video Link',
       insert: 'Insert Video',
       url: 'Video URL',
-      providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)'
+      providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)',
     },
     link: {
       link: 'Link',
@@ -270,7 +270,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       textToDisplay: 'Text to display',
       url: 'To what URL should this link go?',
       openInNewWindow: 'Open in new window',
-      useProtocol: 'Use default protocol'
+      useProtocol: 'Use default protocol',
     },
     table: {
       table: 'Table',
@@ -280,10 +280,10 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       addColRight: 'Add column right',
       delRow: 'Delete row',
       delCol: 'Delete column',
-      delTable: 'Delete table'
+      delTable: 'Delete table',
     },
     hr: {
-      insert: 'Insert Horizontal Rule'
+      insert: 'Insert Horizontal Rule',
     },
     style: {
       style: 'Style',
@@ -295,16 +295,16 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       h3: 'Header 3',
       h4: 'Header 4',
       h5: 'Header 5',
-      h6: 'Header 6'
+      h6: 'Header 6',
     },
     lists: {
       unordered: 'Unordered list',
-      ordered: 'Ordered list'
+      ordered: 'Ordered list',
     },
     options: {
       help: 'Help',
       fullscreen: 'Full Screen',
-      codeview: 'Code View'
+      codeview: 'Code View',
     },
     paragraph: {
       paragraph: 'Paragraph',
@@ -313,7 +313,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       left: 'Align left',
       center: 'Align center',
       right: 'Align right',
-      justify: 'Justify full'
+      justify: 'Justify full',
     },
     color: {
       recent: 'Recent Color',
@@ -324,7 +324,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       setTransparent: 'Set transparent',
       reset: 'Reset',
       resetToDefault: 'Reset to default',
-      cpSelect: 'Select'
+      cpSelect: 'Select',
     },
     shortcut: {
       shortcuts: 'Keyboard shortcuts',
@@ -333,7 +333,7 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       action: 'Action',
       paragraphFormatting: 'Paragraph formatting',
       documentStyle: 'Document Style',
-      extraKeys: 'Extra keys'
+      extraKeys: 'Extra keys',
     },
     help: {
       'insertParagraph': 'Insert Paragraph',
@@ -362,21 +362,22 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.exten
       'formatH5': 'Change current block\'s format as H5',
       'formatH6': 'Change current block\'s format as H6',
       'insertHorizontalRule': 'Insert horizontal rule',
-      'linkDialog.show': 'Show Link Dialog'
+      'linkDialog.show': 'Show Link Dialog',
     },
     history: {
       undo: 'Undo',
-      redo: 'Redo'
+      redo: 'Redo',
     },
     specialChar: {
       specialChar: 'SPECIAL CHARACTERS',
-      select: 'Select Special characters'
+      select: 'Select Special characters',
     },
     output: {
-      noSelection: 'No Selection Made!'
-    }
-  }
+      noSelection: 'No Selection Made!',
+    },
+  },
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/env.js
 
 const isSupportAmd = typeof define === 'function' && __webpack_require__(2); // eslint-disable-line
@@ -387,50 +388,56 @@ const isSupportAmd = typeof define === 'function' && __webpack_require__(2); // 
  * @param {String} fontName
  * @return {Boolean}
  */
-
 const genericFontFamilies = ['sans-serif', 'serif', 'monospace', 'cursive', 'fantasy'];
 
 function validFontName(fontName) {
-  return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.inArray(fontName.toLowerCase(), genericFontFamilies) === -1 ? `'${fontName}'` : fontName;
+  return (external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.inArray(fontName.toLowerCase(), genericFontFamilies) === -1) ? `'${fontName}'` : fontName;
 }
 
 function isFontInstalled(fontName) {
   const testFontName = fontName === 'Comic Sans MS' ? 'Courier New' : 'Comic Sans MS';
   const testText = 'mmmmmmmmmmwwwww';
   const testSize = '200px';
+
   var canvas = document.createElement('canvas');
   var context = canvas.getContext('2d');
+
   context.font = testSize + " '" + testFontName + "'";
   const originalWidth = context.measureText(testText).width;
+
   context.font = testSize + ' ' + validFontName(fontName) + ', "' + testFontName + '"';
   const width = context.measureText(testText).width;
+
   return originalWidth !== width;
 }
 
 const userAgent = navigator.userAgent;
 const isMSIE = /MSIE|Trident/i.test(userAgent);
 let browserVersion;
-
 if (isMSIE) {
   let matches = /MSIE (\d+[.]\d+)/.exec(userAgent);
-
   if (matches) {
     browserVersion = parseFloat(matches[1]);
   }
-
   matches = /Trident\/.*rv:([0-9]{1,}[.0-9]{0,})/.exec(userAgent);
-
   if (matches) {
     browserVersion = parseFloat(matches[1]);
   }
 }
 
 const isEdge = /Edge\/\d+/.test(userAgent);
-let hasCodeMirror = !!window.CodeMirror;
-const isSupportTouch = 'ontouchstart' in window || navigator.MaxTouchPoints > 0 || navigator.msMaxTouchPoints > 0; // [workaround] IE doesn't have input events for contentEditable
-// - see: https://goo.gl/4bfIvA
 
-const inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOMNodeInserted' : 'input';
+let hasCodeMirror = !!window.CodeMirror;
+
+const isSupportTouch =
+  (('ontouchstart' in window) ||
+   (navigator.MaxTouchPoints > 0) ||
+   (navigator.msMaxTouchPoints > 0));
+
+// [workaround] IE doesn't have input events for contentEditable
+// - see: https://goo.gl/4bfIvA
+const inputEventName = (isMSIE) ? 'DOMCharacterDataModified DOMSubtreeModified DOMNodeInserted' : 'input';
+
 /**
  * @class core.env
  *
@@ -439,7 +446,6 @@ const inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOM
  * @singleton
  * @alternateClassName env
  */
-
 /* harmony default export */ var env = ({
   isMac: navigator.appVersion.indexOf('Mac') > -1,
   isMSIE,
@@ -448,7 +454,7 @@ const inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOM
   isPhantom: /PhantomJS/i.test(userAgent),
   isWebkit: !isEdge && /webkit/i.test(userAgent),
   isChrome: !isEdge && /chrome/i.test(userAgent),
-  isSafari: !isEdge && /safari/i.test(userAgent) && !/chrome/i.test(userAgent),
+  isSafari: !isEdge && /safari/i.test(userAgent) && (!/chrome/i.test(userAgent)),
   browserVersion,
   jqueryVersion: parseFloat(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.jquery),
   isSupportAmd,
@@ -458,9 +464,11 @@ const inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOM
   isW3CRangeSupport: !!document.createRange,
   inputEventName,
   genericFontFamilies,
-  validFontName
+  validFontName,
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/func.js
+
 
 /**
  * @class core.func
@@ -470,9 +478,8 @@ const inputEventName = isMSIE ? 'DOMCharacterDataModified DOMSubtreeModified DOM
  * @singleton
  * @alternateClassName func
  */
-
 function eq(itemA) {
-  return function (itemB) {
+  return function(itemB) {
     return itemA === itemB;
   };
 }
@@ -482,7 +489,7 @@ function eq2(itemA, itemB) {
 }
 
 function peq2(propName) {
-  return function (itemA, itemB) {
+  return function(itemA, itemB) {
     return itemA[propName] === itemB[propName];
   };
 }
@@ -496,13 +503,13 @@ function fail() {
 }
 
 function not(f) {
-  return function () {
+  return function() {
     return !f.apply(f, arguments);
   };
 }
 
 function and(fA, fB) {
-  return function (item) {
+  return function(item) {
     return fA(item) && fB(item);
   };
 }
@@ -512,31 +519,31 @@ function func_self(a) {
 }
 
 function invoke(obj, method) {
-  return function () {
+  return function() {
     return obj[method].apply(obj, arguments);
   };
 }
 
 let idCounter = 0;
+
 /**
  * reset globally-unique id
  *
  */
-
 function resetUniqueId() {
   idCounter = 0;
 }
+
 /**
  * generate a globally-unique id
  *
  * @param {String} [prefix]
  */
-
-
 function uniqueId(prefix) {
   const id = ++idCounter + '';
   return prefix ? prefix + id : id;
 }
+
 /**
  * returns bnd (bounds) from rect
  *
@@ -550,48 +557,43 @@ function uniqueId(prefix) {
  * @return {Number} bounds.width
  * @return {Number} bounds.height
  */
-
-
 function rect2bnd(rect) {
   const $document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
   return {
     top: rect.top + $document.scrollTop(),
     left: rect.left + $document.scrollLeft(),
     width: rect.right - rect.left,
-    height: rect.bottom - rect.top
+    height: rect.bottom - rect.top,
   };
 }
+
 /**
  * returns a copy of the object where the keys have become the values and the values the keys.
  * @param {Object} obj
  * @return {Object}
  */
-
-
 function invertObject(obj) {
   const inverted = {};
-
   for (const key in obj) {
     if (obj.hasOwnProperty(key)) {
       inverted[obj[key]] = key;
     }
   }
-
   return inverted;
 }
+
 /**
  * @param {String} namespace
  * @param {String} [prefix]
  * @return {String}
  */
-
-
 function namespaceToCamel(namespace, prefix) {
   prefix = prefix || '';
-  return prefix + namespace.split('.').map(function (name) {
+  return prefix + namespace.split('.').map(function(name) {
     return name.substring(0, 1).toUpperCase() + name.substring(1);
   }).join('');
 }
+
 /**
  * Returns a function, that, as long as it continues to be invoked, will not
  * be triggered. The function will be called after it stops being called for
@@ -602,38 +604,31 @@ function namespaceToCamel(namespace, prefix) {
  * @param {Boolean} immediate
  * @return {Function}
  */
-
-
 function debounce(func, wait, immediate) {
   let timeout;
-  return function () {
+  return function() {
     const context = this;
     const args = arguments;
-
     const later = () => {
       timeout = null;
-
       if (!immediate) {
         func.apply(context, args);
       }
     };
-
     const callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
-
     if (callNow) {
       func.apply(context, args);
     }
   };
 }
+
 /**
  *
  * @param {String} url
  * @return {Boolean}
  */
-
-
 function isValidUrl(url) {
   const expression = /[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/gi;
   return expression.test(url);
@@ -655,82 +650,75 @@ function isValidUrl(url) {
   invertObject,
   namespaceToCamel,
   debounce,
-  isValidUrl
+  isValidUrl,
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/lists.js
+
 
 /**
  * returns the first item of an array.
  *
  * @param {Array} array
  */
-
 function lists_head(array) {
   return array[0];
 }
+
 /**
  * returns the last item of an array.
  *
  * @param {Array} array
  */
-
-
 function lists_last(array) {
   return array[array.length - 1];
 }
+
 /**
  * returns everything but the last entry of the array.
  *
  * @param {Array} array
  */
-
-
 function initial(array) {
   return array.slice(0, array.length - 1);
 }
+
 /**
  * returns the rest of the items in an array.
  *
  * @param {Array} array
  */
-
-
 function tail(array) {
   return array.slice(1);
 }
+
 /**
  * returns item of array
  */
-
-
 function find(array, pred) {
   for (let idx = 0, len = array.length; idx < len; idx++) {
     const item = array[idx];
-
     if (pred(item)) {
       return item;
     }
   }
 }
+
 /**
  * returns true if all of the values in the array pass the predicate truth test.
  */
-
-
 function lists_all(array, pred) {
   for (let idx = 0, len = array.length; idx < len; idx++) {
     if (!pred(array[idx])) {
       return false;
     }
   }
-
   return true;
 }
+
 /**
  * returns true if the value is present in the list.
  */
-
-
 function contains(array, item) {
   if (array && array.length && item) {
     if (array.indexOf) {
@@ -740,48 +728,43 @@ function contains(array, item) {
       return array.contains(item);
     }
   }
-
   return false;
 }
+
 /**
  * get sum from a list
  *
  * @param {Array} array - array
  * @param {Function} fn - iterator
  */
-
-
 function sum(array, fn) {
   fn = fn || func.self;
-  return array.reduce(function (memo, v) {
+  return array.reduce(function(memo, v) {
     return memo + fn(v);
   }, 0);
 }
+
 /**
  * returns a copy of the collection with array type.
  * @param {Collection} collection - collection eg) node.childNodes, ...
  */
-
-
 function from(collection) {
   const result = [];
   const length = collection.length;
   let idx = -1;
-
   while (++idx < length) {
     result[idx] = collection[idx];
   }
-
   return result;
 }
+
 /**
  * returns whether list is empty or not
  */
-
-
 function isEmpty(array) {
   return !array || !array.length;
 }
+
 /**
  * cluster elements by predicate function.
  *
@@ -789,52 +772,39 @@ function isEmpty(array) {
  * @param {Function} fn - predicate function for cluster rule
  * @param {Array[]}
  */
-
-
 function clusterBy(array, fn) {
-  if (!array.length) {
-    return [];
-  }
-
+  if (!array.length) { return []; }
   const aTail = tail(array);
-  return aTail.reduce(function (memo, v) {
+  return aTail.reduce(function(memo, v) {
     const aLast = lists_last(memo);
-
     if (fn(lists_last(aLast), v)) {
       aLast[aLast.length] = v;
     } else {
       memo[memo.length] = [v];
     }
-
     return memo;
   }, [[lists_head(array)]]);
 }
+
 /**
  * returns a copy of the array with all false values removed
  *
  * @param {Array} array - array
  * @param {Function} fn - predicate function for cluster rule
  */
-
-
 function compact(array) {
   const aResult = [];
-
   for (let idx = 0, len = array.length; idx < len; idx++) {
-    if (array[idx]) {
-      aResult.push(array[idx]);
-    }
+    if (array[idx]) { aResult.push(array[idx]); }
   }
-
   return aResult;
 }
+
 /**
  * produces a duplicate-free version of the array
  *
  * @param {Array} array
  */
-
-
 function unique(array) {
   const results = [];
 
@@ -846,34 +816,31 @@ function unique(array) {
 
   return results;
 }
+
 /**
  * returns next item.
  * @param {Array} array
  */
-
-
 function lists_next(array, item) {
   if (array && array.length && item) {
     const idx = array.indexOf(item);
     return idx === -1 ? null : array[idx + 1];
   }
-
   return null;
 }
+
 /**
  * returns prev item.
  * @param {Array} array
  */
-
-
 function prev(array, item) {
   if (array && array.length && item) {
     const idx = array.indexOf(item);
     return idx === -1 ? null : array[idx - 1];
   }
-
   return null;
 }
+
 /**
  * @class core.list
  *
@@ -882,8 +849,6 @@ function prev(array, item) {
  * @singleton
  * @alternateClassName list
  */
-
-
 /* harmony default export */ var lists = ({
   head: lists_head,
   last: lists_last,
@@ -899,15 +864,18 @@ function prev(array, item) {
   isEmpty,
   clusterBy,
   compact,
-  unique
+  unique,
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/dom.js
+
 
 
 
 
 const NBSP_CHAR = String.fromCharCode(160);
 const ZERO_WIDTH_NBSP_CHAR = '\ufeff';
+
 /**
  * @method isEditable
  *
@@ -916,10 +884,10 @@ const ZERO_WIDTH_NBSP_CHAR = '\ufeff';
  * @param {Node} node
  * @return {Boolean}
  */
-
 function isEditable(node) {
   return node && external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).hasClass('note-editable');
 }
+
 /**
  * @method isControlSizing
  *
@@ -928,11 +896,10 @@ function isEditable(node) {
  * @param {Node} node
  * @return {Boolean}
  */
-
-
 function isControlSizing(node) {
   return node && external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).hasClass('note-control-sizing');
 }
+
 /**
  * @method makePredByNodeName
  *
@@ -941,14 +908,13 @@ function isControlSizing(node) {
  * @param {String} nodeName
  * @return {Function}
  */
-
-
 function makePredByNodeName(nodeName) {
   nodeName = nodeName.toUpperCase();
-  return function (node) {
+  return function(node) {
     return node && node.nodeName.toUpperCase() === nodeName;
   };
 }
+
 /**
  * @method isText
  *
@@ -957,11 +923,10 @@ function makePredByNodeName(nodeName) {
  * @param {Node} node
  * @return {Boolean} true if node's type is text(3)
  */
-
-
 function isText(node) {
   return node && node.nodeType === 3;
 }
+
 /**
  * @method isElement
  *
@@ -970,17 +935,14 @@ function isText(node) {
  * @param {Node} node
  * @return {Boolean} true if node's type is element(1)
  */
-
-
 function isElement(node) {
   return node && node.nodeType === 1;
 }
+
 /**
  * ex) br, col, embed, hr, img, input, ...
  * @see http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements
  */
-
-
 function isVoid(node) {
   return node && /^BR|^IMG|^HR|^IFRAME|^BUTTON|^INPUT|^AUDIO|^VIDEO|^EMBED/.test(node.nodeName.toUpperCase());
 }
@@ -988,9 +950,9 @@ function isVoid(node) {
 function isPara(node) {
   if (isEditable(node)) {
     return false;
-  } // Chrome(v31.0), FF(v25.0.1) use DIV for paragraph
+  }
 
-
+  // Chrome(v31.0), FF(v25.0.1) use DIV for paragraph
   return node && /^DIV|^P|^LI|^H[1-7]/.test(node.nodeName.toUpperCase());
 }
 
@@ -999,6 +961,7 @@ function isHeading(node) {
 }
 
 const isPre = makePredByNodeName('PRE');
+
 const isLi = makePredByNodeName('LI');
 
 function isPurePara(node) {
@@ -1006,10 +969,17 @@ function isPurePara(node) {
 }
 
 const isTable = makePredByNodeName('TABLE');
+
 const isData = makePredByNodeName('DATA');
 
 function dom_isInline(node) {
-  return !isBodyContainer(node) && !isList(node) && !isHr(node) && !isPara(node) && !isTable(node) && !isBlockquote(node) && !isData(node);
+  return !isBodyContainer(node) &&
+         !isList(node) &&
+         !isHr(node) &&
+         !isPara(node) &&
+         !isTable(node) &&
+         !isBlockquote(node) &&
+         !isData(node);
 }
 
 function isList(node) {
@@ -1039,6 +1009,7 @@ function isBodyInline(node) {
 }
 
 const isBody = makePredByNodeName('BODY');
+
 /**
  * returns whether nodeB is closest sibling of nodeA
  *
@@ -1046,10 +1017,11 @@ const isBody = makePredByNodeName('BODY');
  * @param {Node} nodeB
  * @return {Boolean}
  */
-
 function isClosestSibling(nodeA, nodeB) {
-  return nodeA.nextSibling === nodeB || nodeA.previousSibling === nodeB;
+  return nodeA.nextSibling === nodeB ||
+         nodeA.previousSibling === nodeB;
 }
+
 /**
  * returns array of closest siblings with node
  *
@@ -1057,32 +1029,27 @@ function isClosestSibling(nodeA, nodeB) {
  * @param {function} [pred] - predicate function
  * @return {Node[]}
  */
-
-
 function withClosestSiblings(node, pred) {
   pred = pred || func.ok;
-  const siblings = [];
 
+  const siblings = [];
   if (node.previousSibling && pred(node.previousSibling)) {
     siblings.push(node.previousSibling);
   }
-
   siblings.push(node);
-
   if (node.nextSibling && pred(node.nextSibling)) {
     siblings.push(node.nextSibling);
   }
-
   return siblings;
 }
+
 /**
  * blank HTML for cursor position
  * - [workaround] old IE only works with &nbsp;
  * - [workaround] IE11 and other browser works with bogus br
  */
-
-
 const blankHTML = env.isMSIE && env.browserVersion < 11 ? '&nbsp;' : '<br>';
+
 /**
  * @method nodeLength
  *
@@ -1090,7 +1057,6 @@ const blankHTML = env.isMSIE && env.browserVersion < 11 ? '&nbsp;' : '<br>';
  *
  * @param {Node} node
  */
-
 function nodeLength(node) {
   if (isText(node)) {
     return node.nodeValue.length;
@@ -1102,29 +1068,27 @@ function nodeLength(node) {
 
   return 0;
 }
+
 /**
  * returns whether deepest child node is empty or not.
  *
  * @param {Node} node
  * @return {Boolean}
  */
-
-
 function deepestChildIsEmpty(node) {
   do {
     if (node.firstElementChild === null || node.firstElementChild.innerHTML === '') break;
-  } while (node = node.firstElementChild);
+  } while ((node = node.firstElementChild));
 
   return dom_isEmpty(node);
 }
+
 /**
  * returns whether node is empty or not.
  *
  * @param {Node} node
  * @return {Boolean}
  */
-
-
 function dom_isEmpty(node) {
   const len = nodeLength(node);
 
@@ -1140,80 +1104,62 @@ function dom_isEmpty(node) {
 
   return false;
 }
+
 /**
  * padding blankHTML if node is empty (for cursor position)
  */
-
-
 function paddingBlankHTML(node) {
   if (!isVoid(node) && !nodeLength(node)) {
     node.innerHTML = blankHTML;
   }
 }
+
 /**
  * find nearest ancestor predicate hit
  *
  * @param {Node} node
  * @param {Function} pred - predicate function
  */
-
-
 function dom_ancestor(node, pred) {
   while (node) {
-    if (pred(node)) {
-      return node;
-    }
-
-    if (isEditable(node)) {
-      break;
-    }
+    if (pred(node)) { return node; }
+    if (isEditable(node)) { break; }
 
     node = node.parentNode;
   }
-
   return null;
 }
+
 /**
  * find nearest ancestor only single child blood line and predicate hit
  *
  * @param {Node} node
  * @param {Function} pred - predicate function
  */
-
-
 function singleChildAncestor(node, pred) {
   node = node.parentNode;
 
   while (node) {
-    if (nodeLength(node) !== 1) {
-      break;
-    }
-
-    if (pred(node)) {
-      return node;
-    }
-
-    if (isEditable(node)) {
-      break;
-    }
+    if (nodeLength(node) !== 1) { break; }
+    if (pred(node)) { return node; }
+    if (isEditable(node)) { break; }
 
     node = node.parentNode;
   }
-
   return null;
 }
+
 /**
  * returns new array of ancestor nodes (until predicate hit).
  *
  * @param {Node} node
  * @param {Function} [optional] pred - predicate function
  */
-
-
 function listAncestor(node, pred) {
   pred = pred || func.fail;
+
   const ancestors = [];
-  dom_ancestor(node, function (el) {
+  dom_ancestor(node, function(el) {
     if (!isEditable(el)) {
       ancestors.push(el);
     }
@@ -1222,95 +1168,80 @@ function listAncestor(node, pred) {
   });
   return ancestors;
 }
+
 /**
  * find farthest ancestor predicate hit
  */
-
-
 function lastAncestor(node, pred) {
   const ancestors = listAncestor(node);
   return lists.last(ancestors.filter(pred));
 }
+
 /**
  * returns common ancestor node between two nodes.
  *
  * @param {Node} nodeA
  * @param {Node} nodeB
  */
-
-
 function commonAncestor(nodeA, nodeB) {
   const ancestors = listAncestor(nodeA);
-
   for (let n = nodeB; n; n = n.parentNode) {
     if (ancestors.indexOf(n) > -1) return n;
   }
-
   return null; // difference document area
 }
+
 /**
  * listing all previous siblings (until predicate hit).
  *
  * @param {Node} node
  * @param {Function} [optional] pred - predicate function
  */
-
-
 function listPrev(node, pred) {
   pred = pred || func.fail;
+
   const nodes = [];
-
   while (node) {
-    if (pred(node)) {
-      break;
-    }
-
+    if (pred(node)) { break; }
     nodes.push(node);
     node = node.previousSibling;
   }
-
   return nodes;
 }
+
 /**
  * listing next siblings (until predicate hit).
  *
  * @param {Node} node
  * @param {Function} [pred] - predicate function
  */
-
-
 function listNext(node, pred) {
   pred = pred || func.fail;
+
   const nodes = [];
-
   while (node) {
-    if (pred(node)) {
-      break;
-    }
-
+    if (pred(node)) { break; }
     nodes.push(node);
     node = node.nextSibling;
   }
-
   return nodes;
 }
+
 /**
  * listing descendant nodes
  *
  * @param {Node} node
  * @param {Function} [pred] - predicate function
  */
-
-
 function listDescendant(node, pred) {
   const descendants = [];
-  pred = pred || func.ok; // start DFS(depth first search) with node
+  pred = pred || func.ok;
 
+  // start DFS(depth first search) with node
   (function fnWalk(current) {
     if (node !== current && pred(current)) {
       descendants.push(current);
     }
-
     for (let idx = 0, len = current.childNodes.length; idx < len; idx++) {
       fnWalk(current.childNodes[idx]);
     }
@@ -1318,6 +1249,7 @@ function listDescendant(node, pred) {
 
   return descendants;
 }
+
 /**
  * wrap node with new tag.
  *
@@ -1325,82 +1257,76 @@ function listDescendant(node, pred) {
  * @param {Node} tagName of wrapper
  * @return {Node} - wrapper
  */
-
-
 function wrap(node, wrapperName) {
   const parent = node.parentNode;
   const wrapper = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<' + wrapperName + '>')[0];
+
   parent.insertBefore(wrapper, node);
   wrapper.appendChild(node);
+
   return wrapper;
 }
+
 /**
  * insert node after preceding
  *
  * @param {Node} node
  * @param {Node} preceding - predicate function
  */
-
-
 function insertAfter(node, preceding) {
   const next = preceding.nextSibling;
   let parent = preceding.parentNode;
-
   if (next) {
     parent.insertBefore(node, next);
   } else {
     parent.appendChild(node);
   }
-
   return node;
 }
+
 /**
  * append elements.
  *
  * @param {Node} node
  * @param {Collection} aChild
  */
-
-
 function appendChildNodes(node, aChild) {
-  external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(aChild, function (idx, child) {
+  external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(aChild, function(idx, child) {
     node.appendChild(child);
   });
   return node;
 }
+
 /**
  * returns whether boundaryPoint is left edge or not.
  *
  * @param {BoundaryPoint} point
  * @return {Boolean}
  */
-
-
 function isLeftEdgePoint(point) {
   return point.offset === 0;
 }
+
 /**
  * returns whether boundaryPoint is right edge or not.
  *
  * @param {BoundaryPoint} point
  * @return {Boolean}
  */
-
-
 function isRightEdgePoint(point) {
   return point.offset === nodeLength(point.node);
 }
+
 /**
  * returns whether boundaryPoint is edge or not.
  *
  * @param {BoundaryPoint} point
  * @return {Boolean}
  */
-
-
 function isEdgePoint(point) {
   return isLeftEdgePoint(point) || isRightEdgePoint(point);
 }
+
 /**
  * returns whether node is left edge of ancestor or not.
  *
@@ -1408,19 +1334,17 @@ function isEdgePoint(point) {
  * @param {Node} ancestor
  * @return {Boolean}
  */
-
-
 function isLeftEdgeOf(node, ancestor) {
   while (node && node !== ancestor) {
     if (dom_position(node) !== 0) {
       return false;
     }
-
     node = node.parentNode;
   }
 
   return true;
 }
+
 /**
  * returns whether node is right edge of ancestor or not.
  *
@@ -1428,65 +1352,57 @@ function isLeftEdgeOf(node, ancestor) {
  * @param {Node} ancestor
  * @return {Boolean}
  */
-
-
 function isRightEdgeOf(node, ancestor) {
   if (!ancestor) {
     return false;
   }
-
   while (node && node !== ancestor) {
     if (dom_position(node) !== nodeLength(node.parentNode) - 1) {
       return false;
     }
-
     node = node.parentNode;
   }
 
   return true;
 }
+
 /**
  * returns whether point is left edge of ancestor or not.
  * @param {BoundaryPoint} point
  * @param {Node} ancestor
  * @return {Boolean}
  */
-
-
 function isLeftEdgePointOf(point, ancestor) {
   return isLeftEdgePoint(point) && isLeftEdgeOf(point.node, ancestor);
 }
+
 /**
  * returns whether point is right edge of ancestor or not.
  * @param {BoundaryPoint} point
  * @param {Node} ancestor
  * @return {Boolean}
  */
-
-
 function isRightEdgePointOf(point, ancestor) {
   return isRightEdgePoint(point) && isRightEdgeOf(point.node, ancestor);
 }
+
 /**
  * returns offset from parent.
  *
  * @param {Node} node
  */
-
-
 function dom_position(node) {
   let offset = 0;
-
-  while (node = node.previousSibling) {
+  while ((node = node.previousSibling)) {
     offset += 1;
   }
-
   return offset;
 }
 
 function hasChildren(node) {
   return !!(node && node.childNodes && node.childNodes.length);
 }
+
 /**
  * returns previous boundaryPoint
  *
@@ -1494,8 +1410,6 @@ function hasChildren(node) {
  * @param {Boolean} isSkipInnerOffset
  * @return {BoundaryPoint}
  */
-
-
 function dom_prevPoint(point, isSkipInnerOffset) {
   let node;
   let offset;
@@ -1517,9 +1431,10 @@ function dom_prevPoint(point, isSkipInnerOffset) {
 
   return {
     node: node,
-    offset: offset
+    offset: offset,
   };
 }
+
 /**
  * returns next boundaryPoint
  *
@@ -1527,8 +1442,6 @@ function dom_prevPoint(point, isSkipInnerOffset) {
  * @param {Boolean} isSkipInnerOffset
  * @return {BoundaryPoint}
  */
-
-
 function dom_nextPoint(point, isSkipInnerOffset) {
   let node, offset;
 
@@ -1546,7 +1459,6 @@ function dom_nextPoint(point, isSkipInnerOffset) {
   } else if (hasChildren(point.node)) {
     node = point.node.childNodes[point.offset];
     offset = 0;
-
     if (dom_isEmpty(node)) {
       return null;
     }
@@ -1561,9 +1473,10 @@ function dom_nextPoint(point, isSkipInnerOffset) {
 
   return {
     node: node,
-    offset: offset
+    offset: offset,
   };
 }
+
 /**
  * returns whether pointA and pointB is same or not.
  *
@@ -1571,19 +1484,16 @@ function dom_nextPoint(point, isSkipInnerOffset) {
  * @param {BoundaryPoint} pointB
  * @return {Boolean}
  */
-
-
 function isSamePoint(pointA, pointB) {
   return pointA.node === pointB.node && pointA.offset === pointB.offset;
 }
+
 /**
  * returns whether point is visible (can set cursor) or not.
  *
  * @param {BoundaryPoint} point
  * @return {Boolean}
  */
-
-
 function isVisiblePoint(point) {
   if (isText(point.node) || !hasChildren(point.node) || dom_isEmpty(point.node)) {
     return true;
@@ -1591,13 +1501,13 @@ function isVisiblePoint(point) {
 
   const leftNode = point.node.childNodes[point.offset - 1];
   const rightNode = point.node.childNodes[point.offset];
-
   if ((!leftNode || isVoid(leftNode)) && (!rightNode || isVoid(rightNode))) {
     return true;
   }
 
   return false;
 }
+
 /**
  * @method prevPointUtil
  *
@@ -1605,8 +1515,6 @@ function isVisiblePoint(point) {
  * @param {Function} pred
  * @return {BoundaryPoint}
  */
-
-
 function prevPointUntil(point, pred) {
   while (point) {
     if (pred(point)) {
@@ -1618,6 +1526,7 @@ function prevPointUntil(point, pred) {
 
   return null;
 }
+
 /**
  * @method nextPointUntil
  *
@@ -1625,8 +1534,6 @@ function prevPointUntil(point, pred) {
  * @param {Function} pred
  * @return {BoundaryPoint}
  */
-
-
 function nextPointUntil(point, pred) {
   while (point) {
     if (pred(point)) {
@@ -1638,30 +1545,28 @@ function nextPointUntil(point, pred) {
 
   return null;
 }
+
 /**
  * returns whether point has character or not.
  *
  * @param {Point} point
  * @return {Boolean}
  */
-
-
 function isCharPoint(point) {
   if (!isText(point.node)) {
     return false;
   }
 
   const ch = point.node.nodeValue.charAt(point.offset - 1);
-  return ch && ch !== ' ' && ch !== NBSP_CHAR;
+  return ch && (ch !== ' ' && ch !== NBSP_CHAR);
 }
+
 /**
  * returns whether point has space or not.
  *
  * @param {Point} point
  * @return {Boolean}
  */
-
-
 function isSpacePoint(point) {
   if (!isText(point.node)) {
     return false;
@@ -1671,7 +1576,6 @@ function isSpacePoint(point) {
   return ch === ' ' || ch === NBSP_CHAR;
 }
 
-;
 /**
  * @method walkPoint
  *
@@ -1680,7 +1584,6 @@ function isSpacePoint(point) {
  * @param {Function} handler
  * @param {Boolean} isSkipInnerOffset
  */
-
 function walkPoint(startPoint, endPoint, handler, isSkipInnerOffset) {
   let point = startPoint;
 
@@ -1691,10 +1594,13 @@ function walkPoint(startPoint, endPoint, handler, isSkipInnerOffset) {
       break;
     }
 
-    const isSkipOffset = isSkipInnerOffset && startPoint.node !== point.node && endPoint.node !== point.node;
+    const isSkipOffset = isSkipInnerOffset &&
+                       startPoint.node !== point.node &&
+                       endPoint.node !== point.node;
     point = dom_nextPoint(point, isSkipOffset);
   }
 }
+
 /**
  * @method makeOffsetPath
  *
@@ -1703,12 +1609,11 @@ function walkPoint(startPoint, endPoint, handler, isSkipInnerOffset) {
  * @param {Node} ancestor - ancestor node
  * @param {Node} node
  */
-
-
 function makeOffsetPath(ancestor, node) {
   const ancestors = listAncestor(node, func.eq(ancestor));
   return ancestors.map(dom_position).reverse();
 }
+
 /**
  * @method fromOffsetPath
  *
@@ -1717,11 +1622,8 @@ function makeOffsetPath(ancestor, node) {
  * @param {Node} ancestor - ancestor node
  * @param {array} offsets - offsetPath
  */
-
-
 function fromOffsetPath(ancestor, offsets) {
   let current = ancestor;
-
   for (let i = 0, len = offsets.length; i < len; i++) {
     if (current.childNodes.length <= offsets[i]) {
       current = current.childNodes[current.childNodes.length - 1];
@@ -1729,9 +1631,9 @@ function fromOffsetPath(ancestor, offsets) {
       current = current.childNodes[offsets[i]];
     }
   }
-
   return current;
 }
+
 /**
  * @method splitNode
  *
@@ -1744,8 +1646,6 @@ function fromOffsetPath(ancestor, offsets) {
  * @param {Boolean} [options.isDiscardEmptySplits] - default: false
  * @return {Node} right node of boundaryPoint
  */
-
-
 function splitNode(point, options) {
   let isSkipPaddingBlankHTML = options && options.isSkipPaddingBlankHTML;
   const isNotSplitEdgePoint = options && options.isNotSplitEdgePoint;
@@ -1753,18 +1653,18 @@ function splitNode(point, options) {
 
   if (isDiscardEmptySplits) {
     isSkipPaddingBlankHTML = true;
-  } // edge case
+  }
 
-
+  // edge case
   if (isEdgePoint(point) && (isText(point.node) || isNotSplitEdgePoint)) {
     if (isLeftEdgePoint(point)) {
       return point.node;
     } else if (isRightEdgePoint(point)) {
       return point.node.nextSibling;
     }
-  } // split #text
+  }
 
-
+  // split #text
   if (isText(point.node)) {
     return point.node.splitText(point.offset);
   } else {
@@ -1781,7 +1681,6 @@ function splitNode(point, options) {
       if (dom_isEmpty(point.node)) {
         remove(point.node);
       }
-
       if (dom_isEmpty(clone)) {
         remove(clone);
         return point.node.nextSibling;
@@ -1791,6 +1690,7 @@ function splitNode(point, options) {
     return clone;
   }
 }
+
 /**
  * @method splitTree
  *
@@ -1803,8 +1703,6 @@ function splitNode(point, options) {
  * @param {Boolean} [options.isNotSplitEdgePoint] - default: false
  * @return {Node} right node of boundaryPoint
  */
-
-
 function splitTree(root, point, options) {
   // ex) [#text, <span>, <p>]
   const ancestors = listAncestor(point.node, func.eq(root));
@@ -1815,17 +1713,18 @@ function splitTree(root, point, options) {
     return splitNode(point, options);
   }
 
-  return ancestors.reduce(function (node, parent) {
+  return ancestors.reduce(function(node, parent) {
     if (node === point.node) {
       node = splitNode(point, options);
     }
 
     return splitNode({
       node: parent,
-      offset: node ? dom_position(node) : nodeLength(parent)
+      offset: node ? dom_position(node) : nodeLength(parent),
     }, options);
   });
 }
+
 /**
  * split point
  *
@@ -1833,8 +1732,6 @@ function splitTree(root, point, options) {
  * @param {Boolean} isInline
  * @return {Object}
  */
-
-
 function splitPoint(point, isInline) {
   // find splitRoot, container
   //  - inline: splitRoot is a child of paragraph
@@ -1842,29 +1739,30 @@ function splitPoint(point, isInline) {
   const pred = isInline ? isPara : isBodyContainer;
   const ancestors = listAncestor(point.node, pred);
   const topAncestor = lists.last(ancestors) || point.node;
-  let splitRoot, container;
 
+  let splitRoot, container;
   if (pred(topAncestor)) {
     splitRoot = ancestors[ancestors.length - 2];
     container = topAncestor;
   } else {
     splitRoot = topAncestor;
     container = splitRoot.parentNode;
-  } // if splitRoot is exists, split with splitTree
+  }
 
-
+  // if splitRoot is exists, split with splitTree
   let pivot = splitRoot && splitTree(splitRoot, point, {
     isSkipPaddingBlankHTML: isInline,
-    isNotSplitEdgePoint: isInline
-  }); // if container is point.node, find pivot with point.offset
+    isNotSplitEdgePoint: isInline,
+  });
 
+  // if container is point.node, find pivot with point.offset
   if (!pivot && container === point.node) {
     pivot = point.node.childNodes[point.offset];
   }
 
   return {
     rightNode: pivot,
-    container: container
+    container: container,
   };
 }
 
@@ -1875,6 +1773,7 @@ function create(nodeName) {
 function createText(text) {
   return document.createTextNode(text);
 }
+
 /**
  * @method remove
  *
@@ -1883,22 +1782,13 @@ function createText(text) {
  * @param {Node} node
  * @param {Boolean} isRemoveChild
  */
-
-
 function remove(node, isRemoveChild) {
-  if (!node || !node.parentNode) {
-    return;
-  }
-
-  if (node.removeNode) {
-    return node.removeNode(isRemoveChild);
-  }
+  if (!node || !node.parentNode) { return; }
+  if (node.removeNode) { return node.removeNode(isRemoveChild); }
 
   const parent = node.parentNode;
-
   if (!isRemoveChild) {
     const nodes = [];
-
     for (let i = 0, len = node.childNodes.length; i < len; i++) {
       nodes.push(node.childNodes[i]);
     }
@@ -1910,14 +1800,13 @@ function remove(node, isRemoveChild) {
 
   parent.removeChild(node);
 }
+
 /**
  * @method removeWhile
  *
  * @param {Node} node
  * @param {Function} pred
  */
-
-
 function removeWhile(node, pred) {
   while (node) {
     if (isEditable(node) || !pred(node)) {
@@ -1929,6 +1818,7 @@ function removeWhile(node, pred) {
     node = parent;
   }
 }
+
 /**
  * @method replace
  *
@@ -1938,8 +1828,6 @@ function removeWhile(node, pred) {
  * @param {String} nodeName
  * @return {Node} - new node
  */
-
-
 function replace(node, nodeName) {
   if (node.nodeName.toUpperCase() === nodeName.toUpperCase()) {
     return node;
@@ -1954,24 +1842,24 @@ function replace(node, nodeName) {
   appendChildNodes(newNode, lists.from(node.childNodes));
   insertAfter(newNode, node);
   remove(node);
+
   return newNode;
 }
 
 const isTextarea = makePredByNodeName('TEXTAREA');
+
 /**
  * @param {jQuery} $node
  * @param {Boolean} [stripLinebreaks] - default: false
  */
-
 function dom_value($node, stripLinebreaks) {
   const val = isTextarea($node[0]) ? $node.val() : $node.html();
-
   if (stripLinebreaks) {
     return val.replace(/[\n\r]/g, '');
   }
-
   return val;
 }
+
 /**
  * @method html
  *
@@ -1980,18 +1868,18 @@ function dom_value($node, stripLinebreaks) {
  * @param {jQuery} $node
  * @param {Boolean} [isNewlineOnBlock]
  */
-
-
 function dom_html($node, isNewlineOnBlock) {
   let markup = dom_value($node);
 
   if (isNewlineOnBlock) {
     const regexTag = /<(\/?)(\b(?!!)[^>\s]*)(.*?)(\s*\/?>)/g;
-    markup = markup.replace(regexTag, function (match, endSlash, name) {
+    markup = markup.replace(regexTag, function(match, endSlash, name) {
       name = name.toUpperCase();
-      const isEndOfInlineContainer = /^DIV|^TD|^TH|^P|^LI|^H[1-7]/.test(name) && !!endSlash;
+      const isEndOfInlineContainer = /^DIV|^TD|^TH|^P|^LI|^H[1-7]/.test(name) &&
+                                   !!endSlash;
       const isBlockNode = /^BLOCKQUOTE|^TABLE|^TBODY|^TR|^HR|^UL|^OL/.test(name);
-      return match + (isEndOfInlineContainer || isBlockNode ? '\n' : '');
+
+      return match + ((isEndOfInlineContainer || isBlockNode) ? '\n' : '');
     });
     markup = markup.trim();
   }
@@ -2006,21 +1894,22 @@ function posFromPlaceholder(placeholder) {
 
   return {
     left: pos.left,
-    top: pos.top + height
+    top: pos.top + height,
   };
 }
 
 function attachEvents($node, events) {
-  Object.keys(events).forEach(function (key) {
+  Object.keys(events).forEach(function(key) {
     $node.on(key, events[key]);
   });
 }
 
 function detachEvents($node, events) {
-  Object.keys(events).forEach(function (key) {
+  Object.keys(events).forEach(function(key) {
     $node.off(key, events[key]);
   });
 }
+
 /**
  * @method isCustomStyleTag
  *
@@ -2029,8 +1918,6 @@ function detachEvents($node, events) {
  *
  * @param {Node} an HTML DOM node
  */
-
-
 function isCustomStyleTag(node) {
   return node && !isText(node) && lists.contains(node.classList, 'note-styletag');
 }
@@ -2038,13 +1925,10 @@ function isCustomStyleTag(node) {
 /* harmony default export */ var dom = ({
   /** @property {String} NBSP_CHAR */
   NBSP_CHAR,
-
   /** @property {String} ZERO_WIDTH_NBSP_CHAR */
   ZERO_WIDTH_NBSP_CHAR,
-
   /** @property {String} blank */
   blank: blankHTML,
-
   /** @property {String} emptyPara */
   emptyPara: `<p>${blankHTML}</p>`,
   makePredByNodeName,
@@ -2128,9 +2012,11 @@ function isCustomStyleTag(node) {
   posFromPlaceholder,
   attachEvents,
   detachEvents,
-  isCustomStyleTag
+  isCustomStyleTag,
 });
+
 // CONCATENATED MODULE: ./src/js/base/Context.js
+
 
 
 
@@ -2142,50 +2028,45 @@ class Context_Context {
    */
   constructor($note, options) {
     this.$note = $note;
+
     this.memos = {};
     this.modules = {};
     this.layoutInfo = {};
-    this.options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(true, {}, options); // init ui with options
+    this.options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(true, {}, options);
 
+    // init ui with options
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui_template(this.options);
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+
     this.initialize();
   }
+
   /**
    * create layout and initialize modules and other resources
    */
-
-
   initialize() {
     this.layoutInfo = this.ui.createLayout(this.$note);
-
     this._initialize();
-
     this.$note.hide();
     return this;
   }
+
   /**
    * destroy modules and other resources and remove layout
    */
-
-
   destroy() {
     this._destroy();
-
     this.$note.removeData('summernote');
     this.ui.removeLayout(this.$note, this.layoutInfo);
   }
+
   /**
    * destory modules and other resources and initialize it again
    */
-
-
   reset() {
     const disabled = this.isDisabled();
     this.code(dom.emptyPara);
-
     this._destroy();
-
     this._initialize();
 
     if (disabled) {
@@ -2195,33 +2076,38 @@ class Context_Context {
 
   _initialize() {
     // set own id
-    this.options.id = func.uniqueId(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now()); // set default container for tooltips, popovers, and dialogs
+    this.options.id = func.uniqueId(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now());
+    // set default container for tooltips, popovers, and dialogs
+    this.options.container = this.options.container || this.layoutInfo.editor;
 
-    this.options.container = this.options.container || this.layoutInfo.editor; // add optional buttons
-
+    // add optional buttons
     const buttons = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, this.options.buttons);
-    Object.keys(buttons).forEach(key => {
+    Object.keys(buttons).forEach((key) => {
       this.memo('button.' + key, buttons[key]);
     });
-    const modules = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, this.options.modules, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.plugins || {}); // add and initialize modules
 
-    Object.keys(modules).forEach(key => {
+    const modules = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, this.options.modules, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.plugins || {});
+
+    // add and initialize modules
+    Object.keys(modules).forEach((key) => {
       this.module(key, modules[key], true);
     });
-    Object.keys(this.modules).forEach(key => {
+
+    Object.keys(this.modules).forEach((key) => {
       this.initializeModule(key);
     });
   }
 
   _destroy() {
     // destroy modules with reversed order
-    Object.keys(this.modules).reverse().forEach(key => {
+    Object.keys(this.modules).reverse().forEach((key) => {
       this.removeModule(key);
     });
-    Object.keys(this.memos).forEach(key => {
-      this.removeMemo(key);
-    }); // trigger custom onDestroy callback
 
+    Object.keys(this.memos).forEach((key) => {
+      this.removeMemo(key);
+    });
+    // trigger custom onDestroy callback
     this.triggerEvent('destroy', this);
   }
 
@@ -2237,7 +2123,6 @@ class Context_Context {
       } else {
         this.layoutInfo.editable.html(html);
       }
-
       this.$note.val(html);
       this.triggerEvent('change', html, this.layoutInfo.editable);
     }
@@ -2259,39 +2144,37 @@ class Context_Context {
     if (this.invoke('codeview.isActivated')) {
       this.invoke('codeview.deactivate');
     }
-
     this.layoutInfo.editable.attr('contenteditable', false);
     this.options.editing = false;
     this.invoke('toolbar.deactivate', true);
+
     this.triggerEvent('disable', true);
   }
 
   triggerEvent() {
     const namespace = lists.head(arguments);
     const args = lists.tail(lists.from(arguments));
-    const callback = this.options.callbacks[func.namespaceToCamel(namespace, 'on')];
 
+    const callback = this.options.callbacks[func.namespaceToCamel(namespace, 'on')];
     if (callback) {
       callback.apply(this.$note[0], args);
     }
-
     this.$note.trigger('summernote.' + namespace, args);
   }
 
   initializeModule(key) {
     const module = this.modules[key];
     module.shouldInitialize = module.shouldInitialize || func.ok;
-
     if (!module.shouldInitialize()) {
       return;
-    } // initialize module
+    }
 
-
+    // initialize module
     if (module.initialize) {
       module.initialize();
-    } // attach events
+    }
 
-
+    // attach events
     if (module.events) {
       dom.attachEvents(this.$note, module.events);
     }
@@ -2311,7 +2194,6 @@ class Context_Context {
 
   removeModule(key) {
     const module = this.modules[key];
-
     if (module.shouldInitialize()) {
       if (module.events) {
         dom.detachEvents(this.$note, module.events);
@@ -2329,7 +2211,6 @@ class Context_Context {
     if (arguments.length === 1) {
       return this.memos[key];
     }
-
     this.memos[key] = obj;
   }
 
@@ -2340,20 +2221,19 @@ class Context_Context {
 
     delete this.memos[key];
   }
+
   /**
    * Some buttons need to change their visual style immediately once they get pressed
    */
-
-
   createInvokeHandlerAndUpdateState(namespace, value) {
-    return event => {
+    return (event) => {
       this.createInvokeHandler(namespace, value)(event);
       this.invoke('buttons.updateCurrentStyle');
     };
   }
 
   createInvokeHandler(namespace, value) {
-    return event => {
+    return (event) => {
       event.preventDefault();
       const $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
       this.invoke(namespace, value || $target.closest('[data-value]').data('value'), $target);
@@ -2363,21 +2243,23 @@ class Context_Context {
   invoke() {
     const namespace = lists.head(arguments);
     const args = lists.tail(lists.from(arguments));
+
     const splits = namespace.split('.');
     const hasSeparator = splits.length > 1;
     const moduleName = hasSeparator && lists.head(splits);
     const methodName = hasSeparator ? lists.last(splits) : lists.head(splits);
-    const module = this.modules[moduleName || 'editor'];
 
+    const module = this.modules[moduleName || 'editor'];
     if (!moduleName && this[methodName]) {
       return this[methodName].apply(this, args);
     } else if (module && module[methodName] && module.shouldInitialize()) {
       return module[methodName].apply(module, args);
     }
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/summernote.js
+
 
 
 
@@ -2389,29 +2271,30 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
    * @param {Object|String}
    * @return {this}
    */
-  summernote: function () {
+  summernote: function() {
     const type = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.type(lists.head(arguments));
     const isExternalAPICalled = type === 'string';
     const hasInitOptions = type === 'object';
-    const options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.options, hasInitOptions ? lists.head(arguments) : {}); // Update options
 
+    const options = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend({}, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.options, hasInitOptions ? lists.head(arguments) : {});
+
+    // Update options
     options.langInfo = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(true, {}, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang['en-US'], external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang[options.lang]);
     options.icons = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(true, {}, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.options.icons, options.icons);
     options.tooltip = options.tooltip === 'auto' ? !env.isSupportTouch : options.tooltip;
+
     this.each((idx, note) => {
       const $note = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(note);
-
       if (!$note.data('summernote')) {
         const context = new Context_Context($note, options);
         $note.data('summernote', context);
         $note.data('summernote').triggerEvent('init', context.layoutInfo);
       }
     });
-    const $note = this.first();
 
+    const $note = this.first();
     if ($note.length) {
       const context = $note.data('summernote');
-
       if (isExternalAPICalled) {
         return context.invoke.apply(context, lists.from(arguments));
       } else if (options.focus) {
@@ -2420,9 +2303,11 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
     }
 
     return this;
-  }
+  },
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/range.js
+
 
 
 
@@ -2437,25 +2322,21 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.fn.ex
  *
  * @see http://msdn.microsoft.com/en-us/library/ie/ms535872(v=vs.85).aspx
  */
-
 function textRangeToPoint(textRange, isStart) {
   let container = textRange.parentElement();
   let offset;
+
   const tester = document.body.createTextRange();
   let prevContainer;
   const childNodes = lists.from(container.childNodes);
-
   for (offset = 0; offset < childNodes.length; offset++) {
     if (dom.isText(childNodes[offset])) {
       continue;
     }
-
     tester.moveToElementText(childNodes[offset]);
-
     if (tester.compareEndPoints('StartToStart', textRange) >= 0) {
       break;
     }
-
     prevContainer = childNodes[offset];
   }
 
@@ -2465,6 +2346,7 @@ function textRangeToPoint(textRange, isStart) {
     textRangeStart.moveToElementText(prevContainer || container);
     textRangeStart.collapse(!prevContainer);
     curTextNode = prevContainer ? prevContainer.nextSibling : container.firstChild;
+
     const pointTester = textRange.duplicate();
     pointTester.setEndPoint('StartToStart', textRangeStart);
     let textCount = pointTester.text.replace(/[\r\n]/g, '').length;
@@ -2472,12 +2354,13 @@ function textRangeToPoint(textRange, isStart) {
     while (textCount > curTextNode.nodeValue.length && curTextNode.nextSibling) {
       textCount -= curTextNode.nodeValue.length;
       curTextNode = curTextNode.nextSibling;
-    } // [workaround] enforce IE to re-reference curTextNode, hack
+    }
 
-
+    // [workaround] enforce IE to re-reference curTextNode, hack
     const dummy = curTextNode.nodeValue; // eslint-disable-line
 
-    if (isStart && curTextNode.nextSibling && dom.isText(curTextNode.nextSibling) && textCount === curTextNode.nodeValue.length) {
+    if (isStart && curTextNode.nextSibling && dom.isText(curTextNode.nextSibling) &&
+      textCount === curTextNode.nodeValue.length) {
       textCount -= curTextNode.nodeValue.length;
       curTextNode = curTextNode.nextSibling;
     }
@@ -2488,18 +2371,17 @@ function textRangeToPoint(textRange, isStart) {
 
   return {
     cont: container,
-    offset: offset
+    offset: offset,
   };
 }
+
 /**
  * return TextRange from boundary point (inspired by google closure-library)
  * @param {BoundaryPoint} point
  * @return {TextRange}
  */
-
-
 function pointToTextRange(point) {
-  const textRangeInfo = function (container, offset) {
+  const textRangeInfo = function(container, offset) {
     let node, isCollapseToStart;
 
     if (dom.isText(container)) {
@@ -2510,7 +2392,6 @@ function pointToTextRange(point) {
       isCollapseToStart = !prevContainer;
     } else {
       node = container.childNodes[offset] || container;
-
       if (dom.isText(node)) {
         return textRangeInfo(node, 0);
       }
@@ -2522,17 +2403,19 @@ function pointToTextRange(point) {
     return {
       node: node,
       collapseToStart: isCollapseToStart,
-      offset: offset
+      offset: offset,
     };
   };
 
   const textRange = document.body.createTextRange();
   const info = textRangeInfo(point.node, point.offset);
+
   textRange.moveToElementText(info.node);
   textRange.collapse(info.collapseToStart);
   textRange.moveStart('character', info.offset);
   return textRange;
 }
+
 /**
    * Wrapped Range
    *
@@ -2542,42 +2425,44 @@ function pointToTextRange(point) {
    * @param {Node} ec - end container
    * @param {Number} eo - end offset
    */
-
-
 class range_WrappedRange {
   constructor(sc, so, ec, eo) {
     this.sc = sc;
     this.so = so;
     this.ec = ec;
-    this.eo = eo; // isOnEditable: judge whether range is on editable or not
+    this.eo = eo;
 
-    this.isOnEditable = this.makeIsOn(dom.isEditable); // isOnList: judge whether range is on list node or not
-
-    this.isOnList = this.makeIsOn(dom.isList); // isOnAnchor: judge whether range is on anchor node or not
-
-    this.isOnAnchor = this.makeIsOn(dom.isAnchor); // isOnCell: judge whether range is on cell node or not
-
-    this.isOnCell = this.makeIsOn(dom.isCell); // isOnData: judge whether range is on data node or not
-
+    // isOnEditable: judge whether range is on editable or not
+    this.isOnEditable = this.makeIsOn(dom.isEditable);
+    // isOnList: judge whether range is on list node or not
+    this.isOnList = this.makeIsOn(dom.isList);
+    // isOnAnchor: judge whether range is on anchor node or not
+    this.isOnAnchor = this.makeIsOn(dom.isAnchor);
+    // isOnCell: judge whether range is on cell node or not
+    this.isOnCell = this.makeIsOn(dom.isCell);
+    // isOnData: judge whether range is on data node or not
     this.isOnData = this.makeIsOn(dom.isData);
-  } // nativeRange: get nativeRange from sc, so, ec, eo
+  }
 
-
+  // nativeRange: get nativeRange from sc, so, ec, eo
   nativeRange() {
     if (env.isW3CRangeSupport) {
       const w3cRange = document.createRange();
       w3cRange.setStart(this.sc, this.sc.data && this.so > this.sc.data.length ? 0 : this.so);
       w3cRange.setEnd(this.ec, this.sc.data ? Math.min(this.eo, this.sc.data.length) : this.eo);
+
       return w3cRange;
     } else {
       const textRange = pointToTextRange({
         node: this.sc,
-        offset: this.so
+        offset: this.so,
       });
+
       textRange.setEndPoint('EndToEnd', pointToTextRange({
         node: this.ec,
-        offset: this.eo
+        offset: this.eo,
       }));
+
       return textRange;
     }
   }
@@ -2587,38 +2472,34 @@ class range_WrappedRange {
       sc: this.sc,
       so: this.so,
       ec: this.ec,
-      eo: this.eo
+      eo: this.eo,
     };
   }
 
   getStartPoint() {
     return {
       node: this.sc,
-      offset: this.so
+      offset: this.so,
     };
   }
 
   getEndPoint() {
     return {
       node: this.ec,
-      offset: this.eo
+      offset: this.eo,
     };
   }
+
   /**
    * select update visible range
    */
-
-
   select() {
     const nativeRng = this.nativeRange();
-
     if (env.isW3CRangeSupport) {
       const selection = document.getSelection();
-
       if (selection.rangeCount > 0) {
         selection.removeAllRanges();
       }
-
       selection.addRange(nativeRng);
     } else {
       nativeRng.select();
@@ -2626,27 +2507,24 @@ class range_WrappedRange {
 
     return this;
   }
+
   /**
    * Moves the scrollbar to start container(sc) of current range
    *
    * @return {WrappedRange}
    */
-
-
   scrollIntoView(container) {
     const height = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(container).height();
-
     if (container.scrollTop + height < this.sc.offsetTop) {
       container.scrollTop += Math.abs(container.scrollTop + height - this.sc.offsetTop);
     }
 
     return this;
   }
+
   /**
    * @return {WrappedRange}
    */
-
-
   normalize() {
     /**
      * @param {BoundaryPoint} point
@@ -2654,41 +2532,41 @@ class range_WrappedRange {
      *                                - false: prefer to choose left node
      * @return {BoundaryPoint}
      */
-    const getVisiblePoint = function (point, isLeftToRight) {
+    const getVisiblePoint = function(point, isLeftToRight) {
       if (!point) {
         return point;
-      } // Just use the given point [XXX:Adhoc]
+      }
+
+      // Just use the given point [XXX:Adhoc]
       //  - case 01. if the point is on the middle of the node
       //  - case 02. if the point is on the right edge and prefer to choose left node
       //  - case 03. if the point is on the left edge and prefer to choose right node
       //  - case 04. if the point is on the right edge and prefer to choose right node but the node is void
       //  - case 05. if the point is on the left edge and prefer to choose left node but the node is void
       //  - case 06. if the point is on the block node and there is no children
-
-
       if (dom.isVisiblePoint(point)) {
-        if (!dom.isEdgePoint(point) || dom.isRightEdgePoint(point) && !isLeftToRight || dom.isLeftEdgePoint(point) && isLeftToRight || dom.isRightEdgePoint(point) && isLeftToRight && dom.isVoid(point.node.nextSibling) || dom.isLeftEdgePoint(point) && !isLeftToRight && dom.isVoid(point.node.previousSibling) || dom.isBlock(point.node) && dom.isEmpty(point.node)) {
+        if (!dom.isEdgePoint(point) ||
+            (dom.isRightEdgePoint(point) && !isLeftToRight) ||
+            (dom.isLeftEdgePoint(point) && isLeftToRight) ||
+            (dom.isRightEdgePoint(point) && isLeftToRight && dom.isVoid(point.node.nextSibling)) ||
+            (dom.isLeftEdgePoint(point) && !isLeftToRight && dom.isVoid(point.node.previousSibling)) ||
+            (dom.isBlock(point.node) && dom.isEmpty(point.node))) {
           return point;
         }
-      } // point on block's edge
+      }
 
-
+      // point on block's edge
       const block = dom.ancestor(point.node, dom.isBlock);
       let hasRightNode = false;
 
       if (!hasRightNode) {
-        const prevPoint = dom.prevPoint(point) || {
-          node: null
-        };
+        const prevPoint = dom.prevPoint(point) || { node: null };
         hasRightNode = (dom.isLeftEdgePointOf(point, block) || dom.isVoid(prevPoint.node)) && !isLeftToRight;
       }
 
       let hasLeftNode = false;
-
       if (!hasLeftNode) {
-        const nextPoint = dom.nextPoint(point) || {
-          node: null
-        };
+        const nextPoint = dom.nextPoint(point) || { node: null };
         hasLeftNode = (dom.isRightEdgePointOf(point, block) || dom.isVoid(nextPoint.node)) && isLeftToRight;
       }
 
@@ -2696,20 +2574,27 @@ class range_WrappedRange {
         // returns point already on visible point
         if (dom.isVisiblePoint(point)) {
           return point;
-        } // reverse direction
-
-
+        }
+        // reverse direction
         isLeftToRight = !isLeftToRight;
       }
 
-      const nextPoint = isLeftToRight ? dom.nextPointUntil(dom.nextPoint(point), dom.isVisiblePoint) : dom.prevPointUntil(dom.prevPoint(point), dom.isVisiblePoint);
+      const nextPoint = isLeftToRight ? dom.nextPointUntil(dom.nextPoint(point), dom.isVisiblePoint)
+        : dom.prevPointUntil(dom.prevPoint(point), dom.isVisiblePoint);
       return nextPoint || point;
     };
 
     const endPoint = getVisiblePoint(this.getEndPoint(), false);
     const startPoint = this.isCollapsed() ? endPoint : getVisiblePoint(this.getStartPoint(), true);
-    return new range_WrappedRange(startPoint.node, startPoint.offset, endPoint.node, endPoint.offset);
+
+    return new range_WrappedRange(
+      startPoint.node,
+      startPoint.offset,
+      endPoint.node,
+      endPoint.offset
+    );
   }
+
   /**
    * returns matched nodes on range
    *
@@ -2719,29 +2604,29 @@ class range_WrappedRange {
    * @param {Boolean} [options.fullyContains]
    * @return {Node[]}
    */
-
-
   nodes(pred, options) {
     pred = pred || func.ok;
-    const includeAncestor = options && options.includeAncestor;
-    const fullyContains = options && options.fullyContains; // TODO compare points and sort
 
+    const includeAncestor = options && options.includeAncestor;
+    const fullyContains = options && options.fullyContains;
+
+    // TODO compare points and sort
     const startPoint = this.getStartPoint();
     const endPoint = this.getEndPoint();
+
     const nodes = [];
     const leftEdgeNodes = [];
-    dom.walkPoint(startPoint, endPoint, function (point) {
+
+    dom.walkPoint(startPoint, endPoint, function(point) {
       if (dom.isEditable(point.node)) {
         return;
       }
 
       let node;
-
       if (fullyContains) {
         if (dom.isLeftEdgePoint(point)) {
           leftEdgeNodes.push(point.node);
         }
-
         if (dom.isRightEdgePoint(point) && lists.contains(leftEdgeNodes, point.node)) {
           node = point.node;
         }
@@ -2755,25 +2640,24 @@ class range_WrappedRange {
         nodes.push(node);
       }
     }, true);
+
     return lists.unique(nodes);
   }
+
   /**
    * returns commonAncestor of range
    * @return {Element} - commonAncestor
    */
-
-
   commonAncestor() {
     return dom.commonAncestor(this.sc, this.ec);
   }
+
   /**
    * returns expanded range by pred
    *
    * @param {Function} pred - predicate function
    * @return {WrappedRange}
    */
-
-
   expand(pred) {
     const startAncestor = dom.ancestor(this.sc, pred);
     const endAncestor = dom.ancestor(this.ec, pred);
@@ -2794,14 +2678,18 @@ class range_WrappedRange {
       boundaryPoints.eo = dom.nodeLength(endAncestor);
     }
 
-    return new range_WrappedRange(boundaryPoints.sc, boundaryPoints.so, boundaryPoints.ec, boundaryPoints.eo);
+    return new range_WrappedRange(
+      boundaryPoints.sc,
+      boundaryPoints.so,
+      boundaryPoints.ec,
+      boundaryPoints.eo
+    );
   }
+
   /**
    * @param {Boolean} isCollapseToStart
    * @return {WrappedRange}
    */
-
-
   collapse(isCollapseToStart) {
     if (isCollapseToStart) {
       return new range_WrappedRange(this.sc, this.so, this.sc, this.so);
@@ -2809,11 +2697,10 @@ class range_WrappedRange {
       return new range_WrappedRange(this.ec, this.eo, this.ec, this.eo);
     }
   }
+
   /**
    * splitText on range
    */
-
-
   splitText() {
     const isSameContainer = this.sc === this.ec;
     const boundaryPoints = this.getPoints();
@@ -2832,14 +2719,18 @@ class range_WrappedRange {
       }
     }
 
-    return new range_WrappedRange(boundaryPoints.sc, boundaryPoints.so, boundaryPoints.ec, boundaryPoints.eo);
+    return new range_WrappedRange(
+      boundaryPoints.sc,
+      boundaryPoints.so,
+      boundaryPoints.ec,
+      boundaryPoints.eo
+    );
   }
+
   /**
    * delete contents on range
    * @return {WrappedRange}
    */
-
-
   deleteContents() {
     if (this.isCollapsed()) {
       return this;
@@ -2847,46 +2738,51 @@ class range_WrappedRange {
 
     const rng = this.splitText();
     const nodes = rng.nodes(null, {
-      fullyContains: true
-    }); // find new cursor point
+      fullyContains: true,
+    });
 
-    const point = dom.prevPointUntil(rng.getStartPoint(), function (point) {
+    // find new cursor point
+    const point = dom.prevPointUntil(rng.getStartPoint(), function(point) {
       return !lists.contains(nodes, point.node);
     });
+
     const emptyParents = [];
-    external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(nodes, function (idx, node) {
+    external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(nodes, function(idx, node) {
       // find empty parents
       const parent = node.parentNode;
-
       if (point.node !== parent && dom.nodeLength(parent) === 1) {
         emptyParents.push(parent);
       }
-
-      dom.remove(node, false);
-    }); // remove empty parents
-
-    external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyParents, function (idx, node) {
       dom.remove(node, false);
     });
-    return new range_WrappedRange(point.node, point.offset, point.node, point.offset).normalize();
+
+    // remove empty parents
+    external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyParents, function(idx, node) {
+      dom.remove(node, false);
+    });
+
+    return new range_WrappedRange(
+      point.node,
+      point.offset,
+      point.node,
+      point.offset
+    ).normalize();
   }
+
   /**
    * makeIsOn: return isOn(pred) function
    */
-
-
   makeIsOn(pred) {
-    return function () {
+    return function() {
       const ancestor = dom.ancestor(this.sc, pred);
-      return !!ancestor && ancestor === dom.ancestor(this.ec, pred);
+      return !!ancestor && (ancestor === dom.ancestor(this.ec, pred));
     };
   }
+
   /**
    * @param {Function} pred
    * @return {Boolean}
    */
-
-
   isLeftEdgeOf(pred) {
     if (!dom.isLeftEdgePoint(this.getStartPoint())) {
       return false;
@@ -2895,46 +2791,40 @@ class range_WrappedRange {
     const node = dom.ancestor(this.sc, pred);
     return node && dom.isLeftEdgeOf(this.sc, node);
   }
+
   /**
    * returns whether range was collapsed or not
    */
-
-
   isCollapsed() {
     return this.sc === this.ec && this.so === this.eo;
   }
+
   /**
    * wrap inline nodes which children of body with paragraph
    *
    * @return {WrappedRange}
    */
-
-
   wrapBodyInlineWithPara() {
     if (dom.isBodyContainer(this.sc) && dom.isEmpty(this.sc)) {
       this.sc.innerHTML = dom.emptyPara;
       return new range_WrappedRange(this.sc.firstChild, 0, this.sc.firstChild, 0);
     }
+
     /**
      * [workaround] firefox often create range on not visible point. so normalize here.
      *  - firefox: |<p>text</p>|
      *  - chrome: <p>|text|</p>
      */
-
-
     const rng = this.normalize();
-
     if (dom.isParaInline(this.sc) || dom.isPara(this.sc)) {
       return rng;
-    } // find inline top ancestor
+    }
 
-
+    // find inline top ancestor
     let topAncestor;
-
     if (dom.isInline(rng.sc)) {
       const ancestors = dom.listAncestor(rng.sc, func.not(dom.isInline));
       topAncestor = lists.last(ancestors);
-
       if (!dom.isInline(topAncestor)) {
         topAncestor = ancestors[ancestors.length - 2] || rng.sc.childNodes[rng.so];
       }
@@ -2945,8 +2835,9 @@ class range_WrappedRange {
     if (topAncestor) {
       // siblings not in paragraph
       let inlineSiblings = dom.listPrev(topAncestor, dom.isParaInline).reverse();
-      inlineSiblings = inlineSiblings.concat(dom.listNext(topAncestor.nextSibling, dom.isParaInline)); // wrap with paragraph
+      inlineSiblings = inlineSiblings.concat(dom.listNext(topAncestor.nextSibling, dom.isParaInline));
 
+      // wrap with paragraph
       if (inlineSiblings.length) {
         const para = dom.wrap(lists.head(inlineSiblings), 'p');
         dom.appendChildNodes(para, lists.tail(inlineSiblings));
@@ -2955,14 +2846,13 @@ class range_WrappedRange {
 
     return this.normalize();
   }
+
   /**
    * insert node at current cursor
    *
    * @param {Node} node
    * @return {Node}
    */
-
-
   insertNode(node) {
     let rng = this;
 
@@ -2971,7 +2861,6 @@ class range_WrappedRange {
     }
 
     const info = dom.splitPoint(rng.getStartPoint(), dom.isInline(node));
-
     if (info.rightNode) {
       info.rightNode.parentNode.insertBefore(node, info.rightNode);
     } else {
@@ -2980,51 +2869,47 @@ class range_WrappedRange {
 
     return node;
   }
+
   /**
    * insert html at current cursor
    */
-
-
   pasteHTML(markup) {
     markup = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.trim(markup);
-    const contentsContainer = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').html(markup)[0];
-    let childNodes = lists.from(contentsContainer.childNodes); // const rng = this.wrapBodyInlineWithPara().deleteContents();
 
+    const contentsContainer = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').html(markup)[0];
+    let childNodes = lists.from(contentsContainer.childNodes);
+
+    // const rng = this.wrapBodyInlineWithPara().deleteContents();
     const rng = this;
 
     if (rng.so >= 0) {
       childNodes = childNodes.reverse();
     }
-
-    childNodes = childNodes.map(function (childNode) {
+    childNodes = childNodes.map(function(childNode) {
       return rng.insertNode(childNode);
     });
-
     if (rng.so > 0) {
       childNodes = childNodes.reverse();
     }
-
     return childNodes;
   }
+
   /**
    * returns text in range
    *
    * @return {String}
    */
-
-
   toString() {
     const nativeRng = this.nativeRange();
     return env.isW3CRangeSupport ? nativeRng.toString() : nativeRng.text;
   }
+
   /**
    * returns range for word before cursor
    *
    * @param {Boolean} [findAfter] - find after cursor, default: false
    * @return {WrappedRange}
    */
-
-
   getWordRange(findAfter) {
     let endPoint = this.getEndPoint();
 
@@ -3032,30 +2917,34 @@ class range_WrappedRange {
       return this;
     }
 
-    const startPoint = dom.prevPointUntil(endPoint, function (point) {
+    const startPoint = dom.prevPointUntil(endPoint, function(point) {
       return !dom.isCharPoint(point);
     });
 
     if (findAfter) {
-      endPoint = dom.nextPointUntil(endPoint, function (point) {
+      endPoint = dom.nextPointUntil(endPoint, function(point) {
         return !dom.isCharPoint(point);
       });
     }
 
-    return new range_WrappedRange(startPoint.node, startPoint.offset, endPoint.node, endPoint.offset);
+    return new range_WrappedRange(
+      startPoint.node,
+      startPoint.offset,
+      endPoint.node,
+      endPoint.offset
+    );
   }
+
   /**
    * returns range for words before cursor
    *
    * @param {Boolean} [findAfter] - find after cursor, default: false
    * @return {WrappedRange}
    */
-
-
   getWordsRange(findAfter) {
     var endPoint = this.getEndPoint();
 
-    var isNotTextPoint = function (point) {
+    var isNotTextPoint = function(point) {
       return !dom.isCharPoint(point) && !dom.isSpacePoint(point);
     };
 
@@ -3069,7 +2958,12 @@ class range_WrappedRange {
       endPoint = dom.nextPointUntil(endPoint, isNotTextPoint);
     }
 
-    return new range_WrappedRange(startPoint.node, startPoint.offset, endPoint.node, endPoint.offset);
+    return new range_WrappedRange(
+      startPoint.node,
+      startPoint.offset,
+      endPoint.node,
+      endPoint.offset
+    );
   }
 
   /**
@@ -3085,16 +2979,28 @@ class range_WrappedRange {
    */
   getWordsMatchRange(regex) {
     var endPoint = this.getEndPoint();
-    var startPoint = dom.prevPointUntil(endPoint, function (point) {
+
+    var startPoint = dom.prevPointUntil(endPoint, function(point) {
       if (!dom.isCharPoint(point) && !dom.isSpacePoint(point)) {
         return true;
       }
-
-      var rng = new range_WrappedRange(point.node, point.offset, endPoint.node, endPoint.offset);
+      var rng = new range_WrappedRange(
+        point.node,
+        point.offset,
+        endPoint.node,
+        endPoint.offset
+      );
       var result = regex.exec(rng.toString());
       return result && result.index === 0;
     });
-    var rng = new range_WrappedRange(startPoint.node, startPoint.offset, endPoint.node, endPoint.offset);
+
+    var rng = new range_WrappedRange(
+      startPoint.node,
+      startPoint.offset,
+      endPoint.node,
+      endPoint.offset
+    );
+
     var text = rng.toString();
     var result = regex.exec(text);
 
@@ -3114,45 +3020,43 @@ class range_WrappedRange {
     return {
       s: {
         path: dom.makeOffsetPath(editable, this.sc),
-        offset: this.so
+        offset: this.so,
       },
       e: {
         path: dom.makeOffsetPath(editable, this.ec),
-        offset: this.eo
-      }
+        offset: this.eo,
+      },
     };
   }
+
   /**
    * create offsetPath bookmark base on paragraph
    *
    * @param {Node[]} paras
    */
-
-
   paraBookmark(paras) {
     return {
       s: {
         path: lists.tail(dom.makeOffsetPath(lists.head(paras), this.sc)),
-        offset: this.so
+        offset: this.so,
       },
       e: {
         path: lists.tail(dom.makeOffsetPath(lists.last(paras), this.ec)),
-        offset: this.eo
-      }
+        offset: this.eo,
+      },
     };
   }
+
   /**
    * getClientRects
    * @return {Rect[]}
    */
-
-
   getClientRects() {
     const nativeRng = this.nativeRange();
     return nativeRng.getClientRects();
   }
-
 }
+
 /**
  * Data structure
  *  * BoundaryPoint: a point of dom tree
@@ -3160,8 +3064,6 @@ class range_WrappedRange {
  *
  * See to http://www.w3.org/TR/DOM-Level-2-Traversal-Range/ranges.html#Level-2-Range-Position
  */
-
-
 /* harmony default export */ var core_range = ({
   /**
    * create Range Object From arguments or Browser Selection
@@ -3172,11 +3074,10 @@ class range_WrappedRange {
    * @param {Number} eo - end offset
    * @return {WrappedRange}
    */
-  create: function (sc, so, ec, eo) {
+  create: function(sc, so, ec, eo) {
     if (arguments.length === 4) {
       return new range_WrappedRange(sc, so, ec, eo);
-    } else if (arguments.length === 2) {
-      // collapsed
+    } else if (arguments.length === 2) { // collapsed
       ec = sc;
       eo = so;
       return new range_WrappedRange(sc, so, ec, eo);
@@ -3185,27 +3086,24 @@ class range_WrappedRange {
 
       if (!wrappedRange && arguments.length === 1) {
         let bodyElement = arguments[0];
-
         if (dom.isEditable(bodyElement)) {
           bodyElement = bodyElement.lastChild;
         }
-
         return this.createFromBodyElement(bodyElement, dom.emptyPara === arguments[0].innerHTML);
       }
-
       return wrappedRange;
     }
   },
-  createFromBodyElement: function (bodyElement, isCollapseToStart = false) {
+
+  createFromBodyElement: function(bodyElement, isCollapseToStart = false) {
     var wrappedRange = this.createFromNode(bodyElement);
     return wrappedRange.collapse(isCollapseToStart);
   },
-  createFromSelection: function () {
-    let sc, so, ec, eo;
 
+  createFromSelection: function() {
+    let sc, so, ec, eo;
     if (env.isW3CRangeSupport) {
       const selection = document.getSelection();
-
       if (!selection || selection.rangeCount === 0) {
         return null;
       } else if (dom.isBody(selection.anchorNode)) {
@@ -3219,17 +3117,20 @@ class range_WrappedRange {
       so = nativeRng.startOffset;
       ec = nativeRng.endContainer;
       eo = nativeRng.endOffset;
-    } else {
-      // IE8: TextRange
+    } else { // IE8: TextRange
       const textRange = document.selection.createRange();
       const textRangeEnd = textRange.duplicate();
       textRangeEnd.collapse(false);
       const textRangeStart = textRange;
       textRangeStart.collapse(true);
-      let startPoint = textRangeToPoint(textRangeStart, true);
-      let endPoint = textRangeToPoint(textRangeEnd, false); // same visible point case: range was collapsed.
 
-      if (dom.isText(startPoint.node) && dom.isLeftEdgePoint(startPoint) && dom.isTextNode(endPoint.node) && dom.isRightEdgePoint(endPoint) && endPoint.node.nextSibling === startPoint.node) {
+      let startPoint = textRangeToPoint(textRangeStart, true);
+      let endPoint = textRangeToPoint(textRangeEnd, false);
+
+      // same visible point case: range was collapsed.
+      if (dom.isText(startPoint.node) && dom.isLeftEdgePoint(startPoint) &&
+        dom.isTextNode(endPoint.node) && dom.isRightEdgePoint(endPoint) &&
+        endPoint.node.nextSibling === startPoint.node) {
         startPoint = endPoint;
       }
 
@@ -3250,17 +3151,17 @@ class range_WrappedRange {
    * @param {Node} node
    * @return {WrappedRange}
    */
-  createFromNode: function (node) {
+  createFromNode: function(node) {
     let sc = node;
     let so = 0;
     let ec = node;
-    let eo = dom.nodeLength(ec); // browsers can't target a picture or void node
+    let eo = dom.nodeLength(ec);
 
+    // browsers can't target a picture or void node
     if (dom.isVoid(sc)) {
       so = dom.listPrev(sc).length - 1;
       sc = sc.parentNode;
     }
-
     if (dom.isBR(ec)) {
       eo = dom.listPrev(ec).length - 1;
       ec = ec.parentNode;
@@ -3278,7 +3179,7 @@ class range_WrappedRange {
    * @param {Node} node
    * @return {WrappedRange}
    */
-  createFromNodeBefore: function (node) {
+  createFromNodeBefore: function(node) {
     return this.createFromNode(node).collapse(true);
   },
 
@@ -3288,7 +3189,7 @@ class range_WrappedRange {
    * @param {Node} node
    * @return {WrappedRange}
    */
-  createFromNodeAfter: function (node) {
+  createFromNodeAfter: function(node) {
     return this.createFromNode(node).collapse();
   },
 
@@ -3301,7 +3202,7 @@ class range_WrappedRange {
    * @param {Object} bookmark
    * @return {WrappedRange}
    */
-  createFromBookmark: function (editable, bookmark) {
+  createFromBookmark: function(editable, bookmark) {
     const sc = dom.fromOffsetPath(editable, bookmark.s.path);
     const so = bookmark.s.offset;
     const ec = dom.fromOffsetPath(editable, bookmark.e.path);
@@ -3318,15 +3219,18 @@ class range_WrappedRange {
    * @param {Node[]} paras
    * @return {WrappedRange}
    */
-  createFromParaBookmark: function (bookmark, paras) {
+  createFromParaBookmark: function(bookmark, paras) {
     const so = bookmark.s.offset;
     const eo = bookmark.e.offset;
     const sc = dom.fromOffsetPath(lists.head(paras), bookmark.s.path);
     const ec = dom.fromOffsetPath(lists.last(paras), bookmark.e.path);
+
     return new range_WrappedRange(sc, so, ec, eo);
-  }
+  },
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/key.js
+
 
 
 const KEY_MAP = {
@@ -3335,11 +3239,13 @@ const KEY_MAP = {
   'ENTER': 13,
   'SPACE': 32,
   'DELETE': 46,
+
   // Arrow
   'LEFT': 37,
   'UP': 38,
   'RIGHT': 39,
   'DOWN': 40,
+
   // Number: 0-9
   'NUM0': 48,
   'NUM1': 49,
@@ -3350,6 +3256,7 @@ const KEY_MAP = {
   'NUM6': 54,
   'NUM7': 55,
   'NUM8': 56,
+
   // Alphabet: a-z
   'B': 66,
   'E': 69,
@@ -3363,16 +3270,19 @@ const KEY_MAP = {
   'V': 86,
   'Y': 89,
   'Z': 90,
+
   'SLASH': 191,
   'LEFTBRACKET': 219,
   'BACKSLASH': 220,
   'RIGHTBRACKET': 221,
+
   // Navigation
   'HOME': 36,
   'END': 35,
   'PAGEUP': 33,
-  'PAGEDOWN': 34
+  'PAGEDOWN': 34,
 };
+
 /**
  * @class core.key
  *
@@ -3381,7 +3291,6 @@ const KEY_MAP = {
  * @singleton
  * @alternateClassName key
  */
-
 /* harmony default export */ var core_key = ({
   /**
    * @method isEdit
@@ -3389,38 +3298,53 @@ const KEY_MAP = {
    * @param {Number} keyCode
    * @return {Boolean}
    */
-  isEdit: keyCode => {
-    return lists.contains([KEY_MAP.BACKSPACE, KEY_MAP.TAB, KEY_MAP.ENTER, KEY_MAP.SPACE, KEY_MAP.DELETE], keyCode);
+  isEdit: (keyCode) => {
+    return lists.contains([
+      KEY_MAP.BACKSPACE,
+      KEY_MAP.TAB,
+      KEY_MAP.ENTER,
+      KEY_MAP.SPACE,
+      KEY_MAP.DELETE,
+    ], keyCode);
   },
-
   /**
    * @method isMove
    *
    * @param {Number} keyCode
    * @return {Boolean}
    */
-  isMove: keyCode => {
-    return lists.contains([KEY_MAP.LEFT, KEY_MAP.UP, KEY_MAP.RIGHT, KEY_MAP.DOWN], keyCode);
+  isMove: (keyCode) => {
+    return lists.contains([
+      KEY_MAP.LEFT,
+      KEY_MAP.UP,
+      KEY_MAP.RIGHT,
+      KEY_MAP.DOWN,
+    ], keyCode);
   },
-
   /**
    * @method isNavigation
    *
    * @param {Number} keyCode
    * @return {Boolean}
    */
-  isNavigation: keyCode => {
-    return lists.contains([KEY_MAP.HOME, KEY_MAP.END, KEY_MAP.PAGEUP, KEY_MAP.PAGEDOWN], keyCode);
+  isNavigation: (keyCode) => {
+    return lists.contains([
+      KEY_MAP.HOME,
+      KEY_MAP.END,
+      KEY_MAP.PAGEUP,
+      KEY_MAP.PAGEDOWN,
+    ], keyCode);
   },
-
   /**
    * @property {Object} nameFromCode
    * @property {String} nameFromCode.8 "BACKSPACE"
    */
   nameFromCode: func.invertObject(KEY_MAP),
-  code: KEY_MAP
+  code: KEY_MAP,
 });
+
 // CONCATENATED MODULE: ./src/js/base/core/async.js
+
 
 /**
  * @method readFileAsDataURL
@@ -3430,20 +3354,20 @@ const KEY_MAP = {
  * @param {File} file
  * @return {Promise} - then: dataUrl
  */
-
 function readFileAsDataURL(file) {
-  return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(deferred => {
+  return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred((deferred) => {
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(new FileReader(), {
-      onload: e => {
+      onload: (e) => {
         const dataURL = e.target.result;
         deferred.resolve(dataURL);
       },
-      onerror: err => {
+      onerror: (err) => {
         deferred.reject(err);
-      }
+      },
     }).readAsDataURL(file);
   }).promise();
 }
+
 /**
  * @method createImage
  *
@@ -3452,10 +3376,10 @@ function readFileAsDataURL(file) {
  * @param {String} url
  * @return {Promise} - then: $image
  */
-
 function createImage(url) {
-  return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(deferred => {
+  return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred((deferred) => {
     const $img = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<img>');
+
     $img.one('load', () => {
       $img.off('error abort');
       deferred.resolve($img);
@@ -3463,35 +3387,30 @@ function createImage(url) {
       $img.off('load').detach();
       deferred.reject($img);
     }).css({
-      display: 'none'
+      display: 'none',
     }).appendTo(document.body).attr('src', url);
   }).promise();
 }
+
 // CONCATENATED MODULE: ./src/js/base/editing/History.js
 
+
 class History_History {
-  constructor($editable) {
+  constructor(context) {
     this.stack = [];
     this.stackOffset = -1;
-    this.$editable = $editable;
-    this.editable = $editable[0];
+    this.context = context;
+    this.$editable = context.layoutInfo.editable;
+    this.editable = this.$editable[0];
   }
 
   makeSnapshot() {
     const rng = core_range.create(this.editable);
-    const emptyBookmark = {
-      s: {
-        path: [],
-        offset: 0
-      },
-      e: {
-        path: [],
-        offset: 0
-      }
-    };
+    const emptyBookmark = { s: { path: [], offset: 0 }, e: { path: [], offset: 0 } };
+
     return {
       contents: this.$editable.html(),
-      bookmark: rng && rng.isOnEditable() ? rng.bookmark(this.editable) : emptyBookmark
+      bookmark: ((rng && rng.isOnEditable()) ? rng.bookmark(this.editable) : emptyBookmark),
     };
   }
 
@@ -3499,64 +3418,65 @@ class History_History {
     if (snapshot.contents !== null) {
       this.$editable.html(snapshot.contents);
     }
-
     if (snapshot.bookmark !== null) {
       core_range.createFromBookmark(this.editable, snapshot.bookmark).select();
     }
   }
+
   /**
   * @method rewind
   * Rewinds the history stack back to the first snapshot taken.
   * Leaves the stack intact, so that "Redo" can still be used.
   */
-
-
   rewind() {
     // Create snap shot if not yet recorded
     if (this.$editable.html() !== this.stack[this.stackOffset].contents) {
       this.recordUndo();
-    } // Return to the first available snapshot.
+    }
 
+    // Return to the first available snapshot.
+    this.stackOffset = 0;
 
-    this.stackOffset = 0; // Apply that snapshot.
-
+    // Apply that snapshot.
     this.applySnapshot(this.stack[this.stackOffset]);
   }
+
   /**
   *  @method commit
   *  Resets history stack, but keeps current editor's content.
   */
-
-
   commit() {
     // Clear the stack.
-    this.stack = []; // Restore stackOffset to its original value.
+    this.stack = [];
 
-    this.stackOffset = -1; // Record our first snapshot (of nothing).
+    // Restore stackOffset to its original value.
+    this.stackOffset = -1;
 
+    // Record our first snapshot (of nothing).
     this.recordUndo();
   }
+
   /**
   * @method reset
   * Resets the history stack completely; reverting to an empty editor.
   */
-
-
   reset() {
     // Clear the stack.
-    this.stack = []; // Restore stackOffset to its original value.
+    this.stack = [];
 
-    this.stackOffset = -1; // Clear the editable area.
+    // Restore stackOffset to its original value.
+    this.stackOffset = -1;
 
-    this.$editable.html(''); // Record our first snapshot (of nothing).
+    // Clear the editable area.
+    this.$editable.html('');
 
+    // Record our first snapshot (of nothing).
     this.recordUndo();
   }
+
   /**
    * undo
    */
-
-
   undo() {
     // Create snap shot if not yet recorded
     if (this.$editable.html() !== this.stack[this.stackOffset].contents) {
@@ -3568,35 +3488,41 @@ class History_History {
       this.applySnapshot(this.stack[this.stackOffset]);
     }
   }
+
   /**
    * redo
    */
-
-
   redo() {
     if (this.stack.length - 1 > this.stackOffset) {
       this.stackOffset++;
       this.applySnapshot(this.stack[this.stackOffset]);
     }
   }
+
   /**
    * recorded undo
    */
-
-
   recordUndo() {
-    this.stackOffset++; // Wash out stack after stackOffset
+    this.stackOffset++;
 
+    // Wash out stack after stackOffset
     if (this.stack.length > this.stackOffset) {
       this.stack = this.stack.slice(0, this.stackOffset);
-    } // Create new snapshot and push it to the end
+    }
 
-
+    // Create new snapshot and push it to the end
     this.stack.push(this.makeSnapshot());
-  }
 
+    // If the stack size reachs to the limit, then slice it
+    if (this.stack.length > this.context.options.historyLimit) {
+      this.stack.shift();
+      this.stackOffset -= 1;
+    }
+  }
 }
+
 // CONCATENATED MODULE: ./src/js/base/editing/Style.js
+
 
 
 
@@ -3624,40 +3550,41 @@ class Style_Style {
       });
       return result;
     }
-
     return $obj.css(propertyNames);
   }
+
   /**
    * returns style object from node
    *
    * @param {jQuery} $node
    * @return {Object}
    */
-
-
   fromNode($node) {
     const properties = ['font-family', 'font-size', 'text-align', 'list-style-type', 'line-height'];
     const styleInfo = this.jQueryCSS($node, properties) || {};
+
     const fontSize = $node[0].style.fontSize || styleInfo['font-size'];
+
     styleInfo['font-size'] = parseInt(fontSize, 10);
     styleInfo['font-size-unit'] = fontSize.match(/[a-z%]+$/);
+
     return styleInfo;
   }
+
   /**
    * paragraph level style
    *
    * @param {WrappedRange} rng
    * @param {Object} styleInfo
    */
-
-
   stylePara(rng, styleInfo) {
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(rng.nodes(dom.isPara, {
-      includeAncestor: true
+      includeAncestor: true,
     }), (idx, para) => {
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css(styleInfo);
     });
   }
+
   /**
    * insert and returns styleNodes on range.
    *
@@ -3668,11 +3595,10 @@ class Style_Style {
    * @param {Boolean} [options.onlyPartialContains] - default: `false`
    * @return {Node[]}
    */
-
-
   styleNodes(rng, options) {
     rng = rng.splitText();
-    const nodeName = options && options.nodeName || 'SPAN';
+
+    const nodeName = (options && options.nodeName) || 'SPAN';
     const expandClosestSibling = !!(options && options.expandClosestSibling);
     const onlyPartialContains = !!(options && options.onlyPartialContains);
 
@@ -3682,21 +3608,21 @@ class Style_Style {
 
     let pred = dom.makePredByNodeName(nodeName);
     const nodes = rng.nodes(dom.isText, {
-      fullyContains: true
-    }).map(text => {
+      fullyContains: true,
+    }).map((text) => {
       return dom.singleChildAncestor(text, pred) || dom.wrap(text, nodeName);
     });
 
     if (expandClosestSibling) {
       if (onlyPartialContains) {
-        const nodesInRange = rng.nodes(); // compose with partial contains predication
-
-        pred = func.and(pred, node => {
+        const nodesInRange = rng.nodes();
+        // compose with partial contains predication
+        pred = func.and(pred, (node) => {
           return lists.contains(nodesInRange, node);
         });
       }
 
-      return nodes.map(node => {
+      return nodes.map((node) => {
         const siblings = dom.withClosestSiblings(node, pred);
         const head = lists.head(siblings);
         const tails = lists.tail(siblings);
@@ -3710,19 +3636,19 @@ class Style_Style {
       return nodes;
     }
   }
+
   /**
    * get current style on cursor
    *
    * @param {WrappedRange} rng
    * @return {Object} - object contains style properties.
    */
-
-
   current(rng) {
     const $cont = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(!dom.isElement(rng.sc) ? rng.sc.parentNode : rng.sc);
-    let styleInfo = this.fromNode($cont); // document.queryCommandState for toggle state
-    // [workaround] prevent Firefox nsresult: "0x80004005 (NS_ERROR_FAILURE)"
+    let styleInfo = this.fromNode($cont);
 
+    // document.queryCommandState for toggle state
+    // [workaround] prevent Firefox nsresult: "0x80004005 (NS_ERROR_FAILURE)"
     try {
       styleInfo = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(styleInfo, {
         'font-bold': document.queryCommandState('bold') ? 'bold' : 'normal',
@@ -3731,11 +3657,13 @@ class Style_Style {
         'font-subscript': document.queryCommandState('subscript') ? 'subscript' : 'normal',
         'font-superscript': document.queryCommandState('superscript') ? 'superscript' : 'normal',
         'font-strikethrough': document.queryCommandState('strikethrough') ? 'strikethrough' : 'normal',
-        'font-family': document.queryCommandValue('fontname') || styleInfo['font-family']
+        'font-family': document.queryCommandValue('fontname') || styleInfo['font-family'],
       });
-    } catch (e) {} // list-style-type to list-style(unordered, ordered)
+    } catch (e) {
+      // eslint-disable-next-line
+    }
 
-
+    // list-style-type to list-style(unordered, ordered)
     if (!rng.isOnList()) {
       styleInfo['list-style'] = 'none';
     } else {
@@ -3745,7 +3673,6 @@ class Style_Style {
     }
 
     const para = dom.ancestor(rng.sc, dom.isPara);
-
     if (para && para.style['line-height']) {
       styleInfo['line-height'] = para.style.lineHeight;
     } else {
@@ -3756,11 +3683,13 @@ class Style_Style {
     styleInfo.anchor = rng.isOnAnchor() && dom.ancestor(rng.sc, dom.isAnchor);
     styleInfo.ancestors = dom.listAncestor(rng.sc, dom.isEditable);
     styleInfo.range = rng;
+
     return styleInfo;
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/editing/Bullet.js
+
 
 
 
@@ -3773,36 +3702,35 @@ class Bullet_Bullet {
   insertOrderedList(editable) {
     this.toggleList('OL', editable);
   }
+
   /**
    * toggle unordered list
    */
-
-
   insertUnorderedList(editable) {
     this.toggleList('UL', editable);
   }
+
   /**
    * indent
    */
-
-
   indent(editable) {
     const rng = core_range.create(editable).wrapBodyInlineWithPara();
-    const paras = rng.nodes(dom.isPara, {
-      includeAncestor: true
-    });
+
+    const paras = rng.nodes(dom.isPara, { includeAncestor: true });
     const clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
+
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, (idx, paras) => {
       const head = lists.head(paras);
-
       if (dom.isLi(head)) {
         const previousList = this.findList(head.previousSibling);
-
         if (previousList) {
-          paras.map(para => previousList.appendChild(para));
+          paras
+            .map(para => previousList.appendChild(para));
         } else {
           this.wrapList(paras, head.parentNode.nodeName);
-          paras.map(para => para.parentNode).map(para => this.appendToPrevious(para));
+          paras
+            .map((para) => para.parentNode)
+            .map((para) => this.appendToPrevious(para));
         }
       } else {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(paras, (idx, para) => {
@@ -3812,60 +3740,60 @@ class Bullet_Bullet {
         });
       }
     });
+
     rng.select();
   }
+
   /**
    * outdent
    */
-
-
   outdent(editable) {
     const rng = core_range.create(editable).wrapBodyInlineWithPara();
-    const paras = rng.nodes(dom.isPara, {
-      includeAncestor: true
-    });
+
+    const paras = rng.nodes(dom.isPara, { includeAncestor: true });
     const clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
+
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, (idx, paras) => {
       const head = lists.head(paras);
-
       if (dom.isLi(head)) {
         this.releaseList([paras]);
       } else {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(paras, (idx, para) => {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(para).css('marginLeft', (idx, val) => {
-            val = parseInt(val, 10) || 0;
+            val = (parseInt(val, 10) || 0);
             return val > 25 ? val - 25 : '';
           });
         });
       }
     });
+
     rng.select();
   }
+
   /**
    * toggle list
    *
    * @param {String} listName - OL or UL
    */
-
-
   toggleList(listName, editable) {
     const rng = core_range.create(editable).wrapBodyInlineWithPara();
-    let paras = rng.nodes(dom.isPara, {
-      includeAncestor: true
-    });
-    const bookmark = rng.paraBookmark(paras);
-    const clustereds = lists.clusterBy(paras, func.peq2('parentNode')); // paragraph to list
 
+    let paras = rng.nodes(dom.isPara, { includeAncestor: true });
+    const bookmark = rng.paraBookmark(paras);
+    const clustereds = lists.clusterBy(paras, func.peq2('parentNode'));
+
+    // paragraph to list
     if (lists.find(paras, dom.isPurePara)) {
       let wrappedParas = [];
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, (idx, paras) => {
         wrappedParas = wrappedParas.concat(this.wrapList(paras, listName));
       });
-      paras = wrappedParas; // list to paragraph or change list style
+      paras = wrappedParas;
+    // list to paragraph or change list style
     } else {
       const diffLists = rng.nodes(dom.isList, {
-        includeAncestor: true
-      }).filter(listNode => {
+        includeAncestor: true,
+      }).filter((listNode) => {
         return !external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.nodeName(listNode, listName);
       });
 
@@ -3880,24 +3808,27 @@ class Bullet_Bullet {
 
     core_range.createFromParaBookmark(bookmark, paras).select();
   }
+
   /**
    * @param {Node[]} paras
    * @param {String} listName
    * @return {Node[]}
    */
-
-
   wrapList(paras, listName) {
     const head = lists.head(paras);
     const last = lists.last(paras);
+
     const prevList = dom.isList(head.previousSibling) && head.previousSibling;
     const nextList = dom.isList(last.nextSibling) && last.nextSibling;
-    const listNode = prevList || dom.insertAfter(dom.create(listName || 'UL'), last); // P to LI
 
-    paras = paras.map(para => {
+    const listNode = prevList || dom.insertAfter(dom.create(listName || 'UL'), last);
+
+    // P to LI
+    paras = paras.map((para) => {
       return dom.isPurePara(para) ? dom.replace(para, 'LI') : para;
-    }); // append to list(<ul>, <ol>)
+    });
 
+    // append to list(<ul>, <ol>)
     dom.appendChildNodes(listNode, paras);
 
     if (nextList) {
@@ -3907,6 +3838,7 @@ class Bullet_Bullet {
 
     return paras;
   }
+
   /**
    * @method releaseList
    *
@@ -3914,13 +3846,13 @@ class Bullet_Bullet {
    * @param {Boolean} isEscapseToBody
    * @return {Node[]}
    */
-
-
   releaseList(clustereds, isEscapseToBody) {
     let releasedParas = [];
+
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(clustereds, (idx, paras) => {
       const head = lists.head(paras);
       const last = lists.last(paras);
+
       const headList = isEscapseToBody ? dom.lastAncestor(head, dom.isList) : head.parentNode;
       const parentItem = headList.parentNode;
 
@@ -3929,7 +3861,10 @@ class Bullet_Bullet {
           const newList = this.findNextSiblings(para);
 
           if (parentItem.nextSibling) {
-            parentItem.parentNode.insertBefore(para, parentItem.nextSibling);
+            parentItem.parentNode.insertBefore(
+              para,
+              parentItem.nextSibling
+            );
           } else {
             parentItem.parentNode.appendChild(para);
           }
@@ -3950,28 +3885,33 @@ class Bullet_Bullet {
       } else {
         const lastList = headList.childNodes.length > 1 ? dom.splitTree(headList, {
           node: last.parentNode,
-          offset: dom.position(last) + 1
+          offset: dom.position(last) + 1,
         }, {
-          isSkipPaddingBlankHTML: true
+          isSkipPaddingBlankHTML: true,
         }) : null;
+
         const middleList = dom.splitTree(headList, {
           node: head.parentNode,
-          offset: dom.position(head)
+          offset: dom.position(head),
         }, {
-          isSkipPaddingBlankHTML: true
+          isSkipPaddingBlankHTML: true,
         });
-        paras = isEscapseToBody ? dom.listDescendant(middleList, dom.isLi) : lists.from(middleList.childNodes).filter(dom.isLi); // LI to P
 
+        paras = isEscapseToBody ? dom.listDescendant(middleList, dom.isLi)
+          : lists.from(middleList.childNodes).filter(dom.isLi);
+
+        // LI to P
         if (isEscapseToBody || !dom.isList(headList.parentNode)) {
-          paras = paras.map(para => {
+          paras = paras.map((para) => {
             return dom.replace(para, 'P');
           });
         }
 
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(lists.from(paras).reverse(), (idx, para) => {
           dom.insertAfter(para, headList);
-        }); // remove empty lists
+        });
 
+        // remove empty lists
         const rootLists = lists.compact([headList, middleList, lastList]);
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(rootLists, (idx, rootList) => {
           const listNodes = [rootList].concat(dom.listDescendant(rootList, dom.isList));
@@ -3985,8 +3925,10 @@ class Bullet_Bullet {
 
       releasedParas = releasedParas.concat(paras);
     });
+
     return releasedParas;
   }
+
   /**
    * @method appendToPrevious
    *
@@ -3996,11 +3938,12 @@ class Bullet_Bullet {
    * @param {HTMLNode} ListItem
    * @return {HTMLNode}
    */
-
-
   appendToPrevious(node) {
-    return node.previousSibling ? dom.appendChildNodes(node.previousSibling, [node]) : this.wrapList([node], 'LI');
+    return node.previousSibling
+      ? dom.appendChildNodes(node.previousSibling, [node])
+      : this.wrapList([node], 'LI');
   }
+
   /**
    * @method findList
    *
@@ -4009,11 +3952,12 @@ class Bullet_Bullet {
    * @param {HTMLNode} ListItem
    * @return {Array[]}
    */
-
-
   findList(node) {
-    return node ? lists.find(node.children, child => ['OL', 'UL'].indexOf(child.nodeName) > -1) : null;
+    return node
+      ? lists.find(node.children, child => ['OL', 'UL'].indexOf(child.nodeName) > -1)
+      : null;
   }
+
   /**
    * @method findNextSiblings
    *
@@ -4022,21 +3966,18 @@ class Bullet_Bullet {
    * @param {HTMLNode} ListItem
    * @return {HTMLNode}
    */
-
-
   findNextSiblings(node) {
     const siblings = [];
-
     while (node.nextSibling) {
       siblings.push(node.nextSibling);
       node = node.nextSibling;
     }
-
     return siblings;
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/editing/Typing.js
+
 
 
 
@@ -4047,28 +3988,28 @@ class Bullet_Bullet {
  * Typing
  *
  */
-
 class Typing_Typing {
   constructor(context) {
     // a Bullet instance to toggle lists off
     this.bullet = new Bullet_Bullet();
     this.options = context.options;
   }
+
   /**
    * insert tab
    *
    * @param {WrappedRange} rng
    * @param {Number} tabsize
    */
-
-
   insertTab(rng, tabsize) {
     const tab = dom.createText(new Array(tabsize + 1).join(dom.NBSP_CHAR));
     rng = rng.deleteContents();
     rng.insertNode(tab, true);
+
     rng = core_range.create(tab, tabsize);
     rng.select();
   }
+
   /**
    * insert paragraph
    *
@@ -4080,18 +4021,20 @@ class Typing_Typing {
    *   1 - Break the first blockquote in the ancestors list
    *   2 - Break all blockquotes, so that the new paragraph is not quoted (this is the default)
    */
-
-
   insertParagraph(editable, rng) {
-    rng = rng || core_range.create(editable); // deleteContents on range.
+    rng = rng || core_range.create(editable);
 
-    rng = rng.deleteContents(); // Wrap range if it needs to be wrapped by paragraph
+    // deleteContents on range.
+    rng = rng.deleteContents();
 
-    rng = rng.wrapBodyInlineWithPara(); // finding paragraph
+    // Wrap range if it needs to be wrapped by paragraph
+    rng = rng.wrapBodyInlineWithPara();
 
+    // finding paragraph
     const splitRoot = dom.ancestor(rng.sc, dom.isPara);
-    let nextPara; // on paragraph: split paragraph
 
+    let nextPara;
+    // on paragraph: split paragraph
     if (splitRoot) {
       // if it is an empty line with li
       if (dom.isLi(splitRoot) && (dom.isEmpty(splitRoot) || dom.deepestChildIsEmpty(splitRoot))) {
@@ -4100,7 +4043,6 @@ class Typing_Typing {
         return;
       } else {
         let blockquote = null;
-
         if (this.options.blockquoteBreakingLevel === 1) {
           blockquote = dom.ancestor(splitRoot, dom.isBlockquote);
         } else if (this.options.blockquoteBreakingLevel === 2) {
@@ -4109,41 +4051,39 @@ class Typing_Typing {
 
         if (blockquote) {
           // We're inside a blockquote and options ask us to break it
-          nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0]; // If the split is right before a <br>, remove it so that there's no "empty line"
+          nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0];
+          // If the split is right before a <br>, remove it so that there's no "empty line"
           // after the split in the new blockquote created
-
           if (dom.isRightEdgePoint(rng.getStartPoint()) && dom.isBR(rng.sc.nextSibling)) {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(rng.sc.nextSibling).remove();
           }
-
-          const split = dom.splitTree(blockquote, rng.getStartPoint(), {
-            isDiscardEmptySplits: true
-          });
-
+          const split = dom.splitTree(blockquote, rng.getStartPoint(), { isDiscardEmptySplits: true });
           if (split) {
             split.parentNode.insertBefore(nextPara, split);
           } else {
             dom.insertAfter(nextPara, blockquote); // There's no split if we were at the end of the blockquote
           }
         } else {
-          nextPara = dom.splitTree(splitRoot, rng.getStartPoint()); // not a blockquote, just insert the paragraph
+          nextPara = dom.splitTree(splitRoot, rng.getStartPoint());
 
+          // not a blockquote, just insert the paragraph
           let emptyAnchors = dom.listDescendant(splitRoot, dom.isEmptyAnchor);
           emptyAnchors = emptyAnchors.concat(dom.listDescendant(nextPara, dom.isEmptyAnchor));
+
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(emptyAnchors, (idx, anchor) => {
             dom.remove(anchor);
-          }); // replace empty heading, pre or custom-made styleTag with P tag
+          });
 
+          // replace empty heading, pre or custom-made styleTag with P tag
           if ((dom.isHeading(nextPara) || dom.isPre(nextPara) || dom.isCustomStyleTag(nextPara)) && dom.isEmpty(nextPara)) {
             nextPara = dom.replace(nextPara, 'p');
           }
         }
-      } // no paragraph: insert empty paragraph
-
+      }
+    // no paragraph: insert empty paragraph
     } else {
       const next = rng.sc.childNodes[rng.so];
       nextPara = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(dom.emptyPara)[0];
-
       if (next) {
         rng.sc.insertBefore(nextPara, next);
       } else {
@@ -4153,9 +4093,10 @@ class Typing_Typing {
 
     core_range.create(nextPara, 0).normalize().select().scrollIntoView(editable);
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/editing/Table.js
+
 
 
 
@@ -4167,36 +4108,31 @@ class Typing_Typing {
  * @param {enum} action Action to be applied. Use enum: TableResultAction.requestAction
  * @param {object} domTable Dom element of table to make changes.
  */
-
-const TableResultAction = function (startPoint, where, action, domTable) {
-  const _startPoint = {
-    'colPos': 0,
-    'rowPos': 0
-  };
+const TableResultAction = function(startPoint, where, action, domTable) {
+  const _startPoint = { 'colPos': 0, 'rowPos': 0 };
   const _virtualTable = [];
-  const _actionCellList = []; /// ///////////////////////////////////////////
+  const _actionCellList = [];
+
+  /// ///////////////////////////////////////////
   // Private functions
   /// ///////////////////////////////////////////
 
   /**
    * Set the startPoint of action.
    */
-
   function setStartPoint() {
-    if (!startPoint || !startPoint.tagName || startPoint.tagName.toLowerCase() !== 'td' && startPoint.tagName.toLowerCase() !== 'th') {
-      console.error('Impossible to identify start Cell point.', startPoint);
+    if (!startPoint || !startPoint.tagName || (startPoint.tagName.toLowerCase() !== 'td' && startPoint.tagName.toLowerCase() !== 'th')) {
+      // Impossible to identify start Cell point
       return;
     }
-
     _startPoint.colPos = startPoint.cellIndex;
-
     if (!startPoint.parentElement || !startPoint.parentElement.tagName || startPoint.parentElement.tagName.toLowerCase() !== 'tr') {
-      console.error('Impossible to identify start Row point.', startPoint);
+      // Impossible to identify start Row point
       return;
     }
-
     _startPoint.rowPos = startPoint.parentElement.rowIndex;
   }
+
   /**
    * Define virtual table position info object.
    *
@@ -4206,104 +4142,94 @@ const TableResultAction = function (startPoint, where, action, domTable) {
    * @param {object} baseCell Cell affected by this position.
    * @param {bool} isSpan Inform if it is an span cell/row.
    */
-
-
   function setVirtualTablePosition(rowIndex, cellIndex, baseRow, baseCell, isRowSpan, isColSpan, isVirtualCell) {
     const objPosition = {
       'baseRow': baseRow,
       'baseCell': baseCell,
       'isRowSpan': isRowSpan,
       'isColSpan': isColSpan,
-      'isVirtual': isVirtualCell
+      'isVirtual': isVirtualCell,
     };
-
     if (!_virtualTable[rowIndex]) {
       _virtualTable[rowIndex] = [];
     }
-
     _virtualTable[rowIndex][cellIndex] = objPosition;
   }
+
   /**
    * Create action cell object.
    *
    * @param {object} virtualTableCellObj Object of specific position on virtual table.
    * @param {enum} resultAction Action to be applied in that item.
    */
-
-
   function getActionCell(virtualTableCellObj, resultAction, virtualRowPosition, virtualColPosition) {
     return {
       'baseCell': virtualTableCellObj.baseCell,
       'action': resultAction,
       'virtualTable': {
         'rowIndex': virtualRowPosition,
-        'cellIndex': virtualColPosition
-      }
+        'cellIndex': virtualColPosition,
+      },
     };
   }
+
   /**
    * Recover free index of row to append Cell.
    *
    * @param {int} rowIndex Index of row to find free space.
    * @param {int} cellIndex Index of cell to find free space in table.
    */
-
-
   function recoverCellIndex(rowIndex, cellIndex) {
     if (!_virtualTable[rowIndex]) {
       return cellIndex;
     }
-
     if (!_virtualTable[rowIndex][cellIndex]) {
       return cellIndex;
     }
 
     let newCellIndex = cellIndex;
-
     while (_virtualTable[rowIndex][newCellIndex]) {
       newCellIndex++;
-
       if (!_virtualTable[rowIndex][newCellIndex]) {
         return newCellIndex;
       }
     }
   }
+
   /**
    * Recover info about row and cell and add information to virtual table.
    *
    * @param {object} row Row to recover information.
    * @param {object} cell Cell to recover information.
    */
-
-
   function addCellInfoToVirtual(row, cell) {
     const cellIndex = recoverCellIndex(row.rowIndex, cell.cellIndex);
-    const cellHasColspan = cell.colSpan > 1;
-    const cellHasRowspan = cell.rowSpan > 1;
-    const isThisSelectedCell = row.rowIndex === _startPoint.rowPos && cell.cellIndex === _startPoint.colPos;
-    setVirtualTablePosition(row.rowIndex, cellIndex, row, cell, cellHasRowspan, cellHasColspan, false); // Add span rows to virtual Table.
+    const cellHasColspan = (cell.colSpan > 1);
+    const cellHasRowspan = (cell.rowSpan > 1);
+    const isThisSelectedCell = (row.rowIndex === _startPoint.rowPos && cell.cellIndex === _startPoint.colPos);
+    setVirtualTablePosition(row.rowIndex, cellIndex, row, cell, cellHasRowspan, cellHasColspan, false);
 
+    // Add span rows to virtual Table.
     const rowspanNumber = cell.attributes.rowSpan ? parseInt(cell.attributes.rowSpan.value, 10) : 0;
-
     if (rowspanNumber > 1) {
       for (let rp = 1; rp < rowspanNumber; rp++) {
         const rowspanIndex = row.rowIndex + rp;
         adjustStartPoint(rowspanIndex, cellIndex, cell, isThisSelectedCell);
         setVirtualTablePosition(rowspanIndex, cellIndex, row, cell, true, cellHasColspan, true);
       }
-    } // Add span cols to virtual table.
+    }
 
-
+    // Add span cols to virtual table.
     const colspanNumber = cell.attributes.colSpan ? parseInt(cell.attributes.colSpan.value, 10) : 0;
-
     if (colspanNumber > 1) {
       for (let cp = 1; cp < colspanNumber; cp++) {
-        const cellspanIndex = recoverCellIndex(row.rowIndex, cellIndex + cp);
+        const cellspanIndex = recoverCellIndex(row.rowIndex, (cellIndex + cp));
         adjustStartPoint(row.rowIndex, cellspanIndex, cell, isThisSelectedCell);
         setVirtualTablePosition(row.rowIndex, cellspanIndex, row, cell, cellHasRowspan, true, true);
       }
     }
   }
+
   /**
    * Process validation and adjust of start point if needed
    *
@@ -4312,64 +4238,53 @@ const TableResultAction = function (startPoint, where, action, domTable) {
    * @param {object} cell
    * @param {bool} isSelectedCell
    */
-
-
   function adjustStartPoint(rowIndex, cellIndex, cell, isSelectedCell) {
     if (rowIndex === _startPoint.rowPos && _startPoint.colPos >= cell.cellIndex && cell.cellIndex <= cellIndex && !isSelectedCell) {
       _startPoint.colPos++;
     }
   }
+
   /**
    * Create virtual table of cells with all cells, including span cells.
    */
-
-
   function createVirtualTable() {
     const rows = domTable.rows;
-
     for (let rowIndex = 0; rowIndex < rows.length; rowIndex++) {
       const cells = rows[rowIndex].cells;
-
       for (let cellIndex = 0; cellIndex < cells.length; cellIndex++) {
         addCellInfoToVirtual(rows[rowIndex], cells[cellIndex]);
       }
     }
   }
+
   /**
    * Get action to be applied on the cell.
    *
    * @param {object} cell virtual table cell to apply action
    */
-
-
   function getDeleteResultActionToCell(cell) {
     switch (where) {
       case TableResultAction.where.Column:
         if (cell.isColSpan) {
           return TableResultAction.resultAction.SubtractSpanCount;
         }
-
         break;
-
       case TableResultAction.where.Row:
         if (!cell.isVirtual && cell.isRowSpan) {
           return TableResultAction.resultAction.AddCell;
         } else if (cell.isRowSpan) {
           return TableResultAction.resultAction.SubtractSpanCount;
         }
-
         break;
     }
-
     return TableResultAction.resultAction.RemoveCell;
   }
+
   /**
    * Get action to be applied on the cell.
    *
    * @param {object} cell virtual table cell to apply action
    */
-
-
   function getAddResultActionToCell(cell) {
     switch (where) {
       case TableResultAction.where.Column:
@@ -4378,72 +4293,61 @@ const TableResultAction = function (startPoint, where, action, domTable) {
         } else if (cell.isRowSpan && cell.isVirtual) {
           return TableResultAction.resultAction.Ignore;
         }
-
         break;
-
       case TableResultAction.where.Row:
         if (cell.isRowSpan) {
           return TableResultAction.resultAction.SumSpanCount;
         } else if (cell.isColSpan && cell.isVirtual) {
           return TableResultAction.resultAction.Ignore;
         }
-
         break;
     }
-
     return TableResultAction.resultAction.AddCell;
   }
 
   function init() {
     setStartPoint();
     createVirtualTable();
-  } /// ///////////////////////////////////////////
+  }
+
+  /// ///////////////////////////////////////////
   // Public functions
   /// ///////////////////////////////////////////
 
   /**
    * Recover array os what to do in table.
    */
+  this.getActionList = function() {
+    const fixedRow = (where === TableResultAction.where.Row) ? _startPoint.rowPos : -1;
+    const fixedCol = (where === TableResultAction.where.Column) ? _startPoint.colPos : -1;
 
-
-  this.getActionList = function () {
-    const fixedRow = where === TableResultAction.where.Row ? _startPoint.rowPos : -1;
-    const fixedCol = where === TableResultAction.where.Column ? _startPoint.colPos : -1;
     let actualPosition = 0;
     let canContinue = true;
-
     while (canContinue) {
-      const rowPosition = fixedRow >= 0 ? fixedRow : actualPosition;
-      const colPosition = fixedCol >= 0 ? fixedCol : actualPosition;
+      const rowPosition = (fixedRow >= 0) ? fixedRow : actualPosition;
+      const colPosition = (fixedCol >= 0) ? fixedCol : actualPosition;
       const row = _virtualTable[rowPosition];
-
       if (!row) {
         canContinue = false;
         return _actionCellList;
       }
-
       const cell = row[colPosition];
-
       if (!cell) {
         canContinue = false;
         return _actionCellList;
-      } // Define action to be applied in this cell
+      }
 
-
+      // Define action to be applied in this cell
       let resultAction = TableResultAction.resultAction.Ignore;
-
       switch (action) {
         case TableResultAction.requestAction.Add:
           resultAction = getAddResultActionToCell(cell);
           break;
-
         case TableResultAction.requestAction.Delete:
           resultAction = getDeleteResultActionToCell(cell);
           break;
       }
-
       _actionCellList.push(getActionCell(cell, resultAction, rowPosition, colPosition));
-
       actualPosition++;
     }
 
@@ -4456,33 +4360,18 @@ const TableResultAction = function (startPoint, where, action, domTable) {
 *
 * Where action occours enum.
 */
-
-
-TableResultAction.where = {
-  'Row': 0,
-  'Column': 1
-};
+TableResultAction.where = { 'Row': 0, 'Column': 1 };
 /**
 *
 * Requested action to apply enum.
 */
-
-TableResultAction.requestAction = {
-  'Add': 0,
-  'Delete': 1
-};
+TableResultAction.requestAction = { 'Add': 0, 'Delete': 1 };
 /**
 *
 * Result action to be executed enum.
 */
+TableResultAction.resultAction = { 'Ignore': 0, 'SubtractSpanCount': 1, 'RemoveCell': 2, 'AddCell': 3, 'SumSpanCount': 4 };
 
-TableResultAction.resultAction = {
-  'Ignore': 0,
-  'SubtractSpanCount': 1,
-  'RemoveCell': 2,
-  'AddCell': 3,
-  'SumSpanCount': 4
-};
 /**
  *
  * @class editing.Table
@@ -4490,7 +4379,6 @@ TableResultAction.resultAction = {
  * Table
  *
  */
-
 class Table_Table {
   /**
    * handle tab key
@@ -4502,12 +4390,13 @@ class Table_Table {
     const cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
     const table = dom.ancestor(cell, dom.isTable);
     const cells = dom.listDescendant(table, dom.isCell);
-    const nextCell = lists[isShift ? 'prev' : 'next'](cells, cell);
 
+    const nextCell = lists[isShift ? 'prev' : 'next'](cells, cell);
     if (nextCell) {
       core_range.create(nextCell, 0).select();
     }
   }
+
   /**
    * Add a new row
    *
@@ -4515,40 +4404,39 @@ class Table_Table {
    * @param {String} position (top/bottom)
    * @return {Node}
    */
-
-
   addRow(rng, position) {
     const cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
+
     const currentTr = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
     const trAttributes = this.recoverAttributes(currentTr);
     const html = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<tr' + trAttributes + '></tr>');
-    const vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).closest('table')[0]);
+
+    const vTable = new TableResultAction(cell, TableResultAction.where.Row,
+      TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).closest('table')[0]);
     const actions = vTable.getActionList();
 
     for (let idCell = 0; idCell < actions.length; idCell++) {
       const currentCell = actions[idCell];
       const tdAttributes = this.recoverAttributes(currentCell.baseCell);
-
       switch (currentCell.action) {
         case TableResultAction.resultAction.AddCell:
           html.append('<td' + tdAttributes + '>' + dom.blank + '</td>');
           break;
-
         case TableResultAction.resultAction.SumSpanCount:
-          if (position === 'top') {
-            const baseCellTr = currentCell.baseCell.parent;
-            const isTopFromRowSpan = (!baseCellTr ? 0 : currentCell.baseCell.closest('tr').rowIndex) <= currentTr[0].rowIndex;
-
-            if (isTopFromRowSpan) {
-              const newTd = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
-              html.append(newTd);
-              break;
+          {
+            if (position === 'top') {
+              const baseCellTr = currentCell.baseCell.parent;
+              const isTopFromRowSpan = (!baseCellTr ? 0 : currentCell.baseCell.closest('tr').rowIndex) <= currentTr[0].rowIndex;
+              if (isTopFromRowSpan) {
+                const newTd = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div></div>').append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<td' + tdAttributes + '>' + dom.blank + '</td>').removeAttr('rowspan')).html();
+                html.append(newTd);
+                break;
+              }
             }
+            let rowspanNumber = parseInt(currentCell.baseCell.rowSpan, 10);
+            rowspanNumber++;
+            currentCell.baseCell.setAttribute('rowSpan', rowspanNumber);
           }
-
-          let rowspanNumber = parseInt(currentCell.baseCell.rowSpan, 10);
-          rowspanNumber++;
-          currentCell.baseCell.setAttribute('rowSpan', rowspanNumber);
           break;
       }
     }
@@ -4556,17 +4444,16 @@ class Table_Table {
     if (position === 'top') {
       currentTr.before(html);
     } else {
-      const cellHasRowspan = cell.rowSpan > 1;
-
+      const cellHasRowspan = (cell.rowSpan > 1);
       if (cellHasRowspan) {
         const lastTrIndex = currentTr[0].rowIndex + (cell.rowSpan - 2);
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentTr).parent().find('tr')[lastTrIndex]).after(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(html));
         return;
       }
-
       currentTr.after(html);
     }
   }
+
   /**
    * Add a new col
    *
@@ -4574,20 +4461,19 @@ class Table_Table {
    * @param {String} position (left/right)
    * @return {Node}
    */
-
-
   addCol(rng, position) {
     const cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
     const row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
     const rowsGroup = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).siblings();
     rowsGroup.push(row);
-    const vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+
+    const vTable = new TableResultAction(cell, TableResultAction.where.Column,
+      TableResultAction.requestAction.Add, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
     const actions = vTable.getActionList();
 
     for (let actionIndex = 0; actionIndex < actions.length; actionIndex++) {
       const currentCell = actions[actionIndex];
       const tdAttributes = this.recoverAttributes(currentCell.baseCell);
-
       switch (currentCell.action) {
         case TableResultAction.resultAction.AddCell:
           if (position === 'right') {
@@ -4595,9 +4481,7 @@ class Table_Table {
           } else {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
           }
-
           break;
-
         case TableResultAction.resultAction.SumSpanCount:
           if (position === 'right') {
             let colspanNumber = parseInt(currentCell.baseCell.colSpan, 10);
@@ -4606,19 +4490,17 @@ class Table_Table {
           } else {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(currentCell.baseCell).before('<td' + tdAttributes + '>' + dom.blank + '</td>');
           }
-
           break;
       }
     }
   }
+
   /*
   * Copy attributes from element.
   *
   * @param {object} Element to recover attributes.
   * @return {string} Copied string elements.
   */
-
-
   recoverAttributes(el) {
     let resultStr = '';
 
@@ -4640,20 +4522,21 @@ class Table_Table {
 
     return resultStr;
   }
+
   /**
    * Delete current row
    *
    * @param {WrappedRange} rng
    * @return {Node}
    */
-
-
   deleteRow(rng) {
     const cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
     const row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
     const cellPos = row.children('td, th').index(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell));
     const rowPos = row[0].rowIndex;
-    const vTable = new TableResultAction(cell, TableResultAction.where.Row, TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+
+    const vTable = new TableResultAction(cell, TableResultAction.where.Row,
+      TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
     const actions = vTable.getActionList();
 
     for (let actionIndex = 0; actionIndex < actions.length; actionIndex++) {
@@ -4663,120 +4546,96 @@ class Table_Table {
 
       const baseCell = actions[actionIndex].baseCell;
       const virtualPosition = actions[actionIndex].virtualTable;
-      const hasRowspan = baseCell.rowSpan && baseCell.rowSpan > 1;
-      let rowspanNumber = hasRowspan ? parseInt(baseCell.rowSpan, 10) : 0;
-
+      const hasRowspan = (baseCell.rowSpan && baseCell.rowSpan > 1);
+      let rowspanNumber = (hasRowspan) ? parseInt(baseCell.rowSpan, 10) : 0;
       switch (actions[actionIndex].action) {
         case TableResultAction.resultAction.Ignore:
           continue;
-
         case TableResultAction.resultAction.AddCell:
-          const nextRow = row.next('tr')[0];
-
-          if (!nextRow) {
-            continue;
-          }
-
-          const cloneRow = row[0].cells[cellPos];
-
-          if (hasRowspan) {
-            if (rowspanNumber > 2) {
-              rowspanNumber--;
-              nextRow.insertBefore(cloneRow, nextRow.cells[cellPos]);
-              nextRow.cells[cellPos].setAttribute('rowSpan', rowspanNumber);
-              nextRow.cells[cellPos].innerHTML = '';
-            } else if (rowspanNumber === 2) {
-              nextRow.insertBefore(cloneRow, nextRow.cells[cellPos]);
-              nextRow.cells[cellPos].removeAttribute('rowSpan');
-              nextRow.cells[cellPos].innerHTML = '';
+          {
+            const nextRow = row.next('tr')[0];
+            if (!nextRow) { continue; }
+            const cloneRow = row[0].cells[cellPos];
+            if (hasRowspan) {
+              if (rowspanNumber > 2) {
+                rowspanNumber--;
+                nextRow.insertBefore(cloneRow, nextRow.cells[cellPos]);
+                nextRow.cells[cellPos].setAttribute('rowSpan', rowspanNumber);
+                nextRow.cells[cellPos].innerHTML = '';
+              } else if (rowspanNumber === 2) {
+                nextRow.insertBefore(cloneRow, nextRow.cells[cellPos]);
+                nextRow.cells[cellPos].removeAttribute('rowSpan');
+                nextRow.cells[cellPos].innerHTML = '';
+              }
             }
           }
-
           continue;
-
         case TableResultAction.resultAction.SubtractSpanCount:
           if (hasRowspan) {
             if (rowspanNumber > 2) {
               rowspanNumber--;
               baseCell.setAttribute('rowSpan', rowspanNumber);
-
-              if (virtualPosition.rowIndex !== rowPos && baseCell.cellIndex === cellPos) {
-                baseCell.innerHTML = '';
-              }
+              if (virtualPosition.rowIndex !== rowPos && baseCell.cellIndex === cellPos) { baseCell.innerHTML = ''; }
             } else if (rowspanNumber === 2) {
               baseCell.removeAttribute('rowSpan');
-
-              if (virtualPosition.rowIndex !== rowPos && baseCell.cellIndex === cellPos) {
-                baseCell.innerHTML = '';
-              }
+              if (virtualPosition.rowIndex !== rowPos && baseCell.cellIndex === cellPos) { baseCell.innerHTML = ''; }
             }
           }
-
           continue;
-
         case TableResultAction.resultAction.RemoveCell:
           // Do not need remove cell because row will be deleted.
           continue;
       }
     }
-
     row.remove();
   }
+
   /**
    * Delete current col
    *
    * @param {WrappedRange} rng
    * @return {Node}
    */
-
-
   deleteCol(rng) {
     const cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
     const row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('tr');
     const cellPos = row.children('td, th').index(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell));
-    const vTable = new TableResultAction(cell, TableResultAction.where.Column, TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
+
+    const vTable = new TableResultAction(cell, TableResultAction.where.Column,
+      TableResultAction.requestAction.Delete, external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(row).closest('table')[0]);
     const actions = vTable.getActionList();
 
     for (let actionIndex = 0; actionIndex < actions.length; actionIndex++) {
       if (!actions[actionIndex]) {
         continue;
       }
-
       switch (actions[actionIndex].action) {
         case TableResultAction.resultAction.Ignore:
           continue;
-
         case TableResultAction.resultAction.SubtractSpanCount:
-          const baseCell = actions[actionIndex].baseCell;
-          const hasColspan = baseCell.colSpan && baseCell.colSpan > 1;
-
-          if (hasColspan) {
-            let colspanNumber = baseCell.colSpan ? parseInt(baseCell.colSpan, 10) : 0;
-
-            if (colspanNumber > 2) {
-              colspanNumber--;
-              baseCell.setAttribute('colSpan', colspanNumber);
-
-              if (baseCell.cellIndex === cellPos) {
-                baseCell.innerHTML = '';
-              }
-            } else if (colspanNumber === 2) {
-              baseCell.removeAttribute('colSpan');
-
-              if (baseCell.cellIndex === cellPos) {
-                baseCell.innerHTML = '';
+          {
+            const baseCell = actions[actionIndex].baseCell;
+            const hasColspan = (baseCell.colSpan && baseCell.colSpan > 1);
+            if (hasColspan) {
+              let colspanNumber = (baseCell.colSpan) ? parseInt(baseCell.colSpan, 10) : 0;
+              if (colspanNumber > 2) {
+                colspanNumber--;
+                baseCell.setAttribute('colSpan', colspanNumber);
+                if (baseCell.cellIndex === cellPos) { baseCell.innerHTML = ''; }
+              } else if (colspanNumber === 2) {
+                baseCell.removeAttribute('colSpan');
+                if (baseCell.cellIndex === cellPos) { baseCell.innerHTML = ''; }
               }
             }
           }
-
           continue;
-
         case TableResultAction.resultAction.RemoveCell:
           dom.remove(actions[actionIndex].baseCell, true);
           continue;
       }
     }
   }
+
   /**
    * create empty table element
    *
@@ -4784,47 +4643,40 @@ class Table_Table {
    * @param {Number} colCount
    * @return {Node}
    */
-
-
   createTable(colCount, rowCount, options) {
     const tds = [];
     let tdHTML;
-
     for (let idxCol = 0; idxCol < colCount; idxCol++) {
       tds.push('<td>' + dom.blank + '</td>');
     }
-
     tdHTML = tds.join('');
+
     const trs = [];
     let trHTML;
-
     for (let idxRow = 0; idxRow < rowCount; idxRow++) {
       trs.push('<tr>' + tdHTML + '</tr>');
     }
-
     trHTML = trs.join('');
     const $table = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<table>' + trHTML + '</table>');
-
     if (options && options.tableClassName) {
       $table.addClass(options.tableClassName);
     }
 
     return $table[0];
   }
+
   /**
    * Delete current table
    *
    * @param {WrappedRange} rng
    * @return {Node}
    */
-
-
   deleteTable(rng) {
     const cell = dom.ancestor(rng.commonAncestor(), dom.isCell);
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(cell).closest('table').remove();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Editor.js
 
 
@@ -4839,27 +4691,32 @@ class Table_Table {
 
 
 
+
 const KEY_BOGUS = 'bogus';
+
 /**
  * @class Editor
  */
-
 class Editor_Editor {
   constructor(context) {
     this.context = context;
+
     this.$note = context.layoutInfo.note;
     this.$editor = context.layoutInfo.editor;
     this.$editable = context.layoutInfo.editable;
     this.options = context.options;
     this.lang = this.options.langInfo;
+
     this.editable = this.$editable[0];
     this.lastRange = null;
     this.snapshot = null;
+
     this.style = new Style_Style();
     this.table = new Table_Table();
     this.typing = new Typing_Typing(context);
     this.bullet = new Bullet_Bullet();
-    this.history = new History_History(this.$editable);
+    this.history = new History_History(context);
+
     this.context.memo('help.undo', this.lang.help.undo);
     this.context.memo('help.redo', this.lang.help.redo);
     this.context.memo('help.tab', this.lang.help.tab);
@@ -4871,159 +4728,161 @@ class Editor_Editor {
     this.context.memo('help.outdent', this.lang.help.outdent);
     this.context.memo('help.formatPara', this.lang.help.formatPara);
     this.context.memo('help.insertHorizontalRule', this.lang.help.insertHorizontalRule);
-    this.context.memo('help.fontName', this.lang.help.fontName); // native commands(with execCommand), generate function for execCommand
+    this.context.memo('help.fontName', this.lang.help.fontName);
 
-    const commands = ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull', 'formatBlock', 'removeFormat', 'backColor'];
+    // native commands(with execCommand), generate function for execCommand
+    const commands = [
+      'bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript',
+      'justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull',
+      'formatBlock', 'removeFormat', 'backColor',
+    ];
 
     for (let idx = 0, len = commands.length; idx < len; idx++) {
-      this[commands[idx]] = (sCmd => {
-        return value => {
+      this[commands[idx]] = ((sCmd) => {
+        return (value) => {
           this.beforeCommand();
           document.execCommand(sCmd, false, value);
           this.afterCommand(true);
         };
       })(commands[idx]);
-
       this.context.memo('help.' + commands[idx], this.lang.help[commands[idx]]);
     }
 
-    this.fontName = this.wrapCommand(value => {
+    this.fontName = this.wrapCommand((value) => {
       return this.fontStyling('font-family', env.validFontName(value));
     });
-    this.fontSize = this.wrapCommand(value => {
+
+    this.fontSize = this.wrapCommand((value) => {
       const unit = this.currentStyle()['font-size-unit'];
       return this.fontStyling('font-size', value + unit);
     });
-    this.fontSizeUnit = this.wrapCommand(value => {
+
+    this.fontSizeUnit = this.wrapCommand((value) => {
       const size = this.currentStyle()['font-size'];
       return this.fontStyling('font-size', size + value);
     });
 
     for (let idx = 1; idx <= 6; idx++) {
-      this['formatH' + idx] = (idx => {
+      this['formatH' + idx] = ((idx) => {
         return () => {
           this.formatBlock('H' + idx);
         };
       })(idx);
-
       this.context.memo('help.formatH' + idx, this.lang.help['formatH' + idx]);
     }
 
-    ;
     this.insertParagraph = this.wrapCommand(() => {
       this.typing.insertParagraph(this.editable);
     });
+
     this.insertOrderedList = this.wrapCommand(() => {
       this.bullet.insertOrderedList(this.editable);
     });
+
     this.insertUnorderedList = this.wrapCommand(() => {
       this.bullet.insertUnorderedList(this.editable);
     });
+
     this.indent = this.wrapCommand(() => {
       this.bullet.indent(this.editable);
     });
+
     this.outdent = this.wrapCommand(() => {
       this.bullet.outdent(this.editable);
     });
+
     /**
      * insertNode
      * insert node
      * @param {Node} node
      */
-
-    this.insertNode = this.wrapCommand(node => {
+    this.insertNode = this.wrapCommand((node) => {
       if (this.isLimited(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).text().length)) {
         return;
       }
-
       const rng = this.getLastRange();
       rng.insertNode(node);
       this.setLastRange(core_range.createFromNodeAfter(node).select());
     });
+
     /**
      * insert text
      * @param {String} text
      */
-
-    this.insertText = this.wrapCommand(text => {
+    this.insertText = this.wrapCommand((text) => {
       if (this.isLimited(text.length)) {
         return;
       }
-
       const rng = this.getLastRange();
       const textNode = rng.insertNode(dom.createText(text));
       this.setLastRange(core_range.create(textNode, dom.nodeLength(textNode)).select());
     });
+
     /**
      * paste HTML
      * @param {String} markup
      */
-
-    this.pasteHTML = this.wrapCommand(markup => {
+    this.pasteHTML = this.wrapCommand((markup) => {
       if (this.isLimited(markup.length)) {
         return;
       }
-
       markup = this.context.invoke('codeview.purify', markup);
       const contents = this.getLastRange().pasteHTML(markup);
       this.setLastRange(core_range.createFromNodeAfter(lists.last(contents)).select());
     });
+
     /**
      * formatBlock
      *
      * @param {String} tagName
      */
-
     this.formatBlock = this.wrapCommand((tagName, $target) => {
       const onApplyCustomStyle = this.options.callbacks.onApplyCustomStyle;
-
       if (onApplyCustomStyle) {
         onApplyCustomStyle.call(this, $target, this.context, this.onFormatBlock);
       } else {
         this.onFormatBlock(tagName, $target);
       }
     });
+
     /**
      * insert horizontal rule
      */
-
     this.insertHorizontalRule = this.wrapCommand(() => {
       const hrNode = this.getLastRange().insertNode(dom.create('HR'));
-
       if (hrNode.nextSibling) {
         this.setLastRange(core_range.create(hrNode.nextSibling, 0).normalize().select());
       }
     });
+
     /**
      * lineHeight
      * @param {String} value
      */
-
-    this.lineHeight = this.wrapCommand(value => {
+    this.lineHeight = this.wrapCommand((value) => {
       this.style.stylePara(this.getLastRange(), {
-        lineHeight: value
+        lineHeight: value,
       });
     });
+
     /**
      * create link (command)
      *
      * @param {Object} linkInfo
      */
-
-    this.createLink = this.wrapCommand(linkInfo => {
+    this.createLink = this.wrapCommand((linkInfo) => {
       let linkUrl = linkInfo.url;
       const linkText = linkInfo.text;
       const isNewWindow = linkInfo.isNewWindow;
       const checkProtocol = linkInfo.checkProtocol;
       let rng = linkInfo.range || this.getLastRange();
       const additionalTextLength = linkText.length - rng.toString().length;
-
       if (additionalTextLength > 0 && this.isLimited(additionalTextLength)) {
         return;
       }
+      const isTextChanged = rng.toString() !== linkText;
 
-      const isTextChanged = rng.toString() !== linkText; // handle spaced urls from input
-
+      // handle spaced urls from input
       if (typeof linkUrl === 'string') {
         linkUrl = linkUrl.trim();
       }
@@ -5032,11 +4891,12 @@ class Editor_Editor {
         linkUrl = this.options.onCreateLink(linkUrl);
       } else if (checkProtocol) {
         // if url doesn't have any protocol and not even a relative or a label, use http:// as default
-        linkUrl = /^([A-Za-z][A-Za-z0-9+-.]*\:|#|\/)/.test(linkUrl) ? linkUrl : this.options.defaultProtocol + linkUrl;
+        if (!this.options.disableAutoUrlPrefix)
+          linkUrl = /^([A-Za-z][A-Za-z0-9+-.]*\:|#|\/)/.test(linkUrl)
+            ? linkUrl : this.options.defaultProtocol + linkUrl;
       }
 
       let anchors = [];
-
       if (isTextChanged) {
         rng = rng.deleteContents();
         const anchor = rng.insertNode(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<A>' + linkText + '</A>')[0]);
@@ -5045,25 +4905,34 @@ class Editor_Editor {
         anchors = this.style.styleNodes(rng, {
           nodeName: 'A',
           expandClosestSibling: true,
-          onlyPartialContains: true
+          onlyPartialContains: true,
         });
       }
 
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(anchors, (idx, anchor) => {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('href', linkUrl);
-
         if (isNewWindow) {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('target', '_blank');
         } else {
           external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).removeAttr('target');
         }
       });
+
       const startRange = core_range.createFromNodeBefore(lists.head(anchors));
       const startPoint = startRange.getStartPoint();
       const endRange = core_range.createFromNodeAfter(lists.last(anchors));
       const endPoint = endRange.getEndPoint();
-      this.setLastRange(core_range.create(startPoint.node, startPoint.offset, endPoint.node, endPoint.offset).select());
+
+      this.setLastRange(
+        core_range.create(
+          startPoint.node,
+          startPoint.offset,
+          endPoint.node,
+          endPoint.offset
+        ).select()
+      );
     });
+
     /**
      * setting color
      *
@@ -5071,82 +4940,74 @@ class Editor_Editor {
      * @param {String} sObjColor.foreColor foreground color
      * @param {String} sObjColor.backColor background color
      */
-
-    this.color = this.wrapCommand(colorInfo => {
+    this.color = this.wrapCommand((colorInfo) => {
       const foreColor = colorInfo.foreColor;
       const backColor = colorInfo.backColor;
 
-      if (foreColor) {
-        document.execCommand('foreColor', false, foreColor);
-      }
-
-      if (backColor) {
-        document.execCommand('backColor', false, backColor);
-      }
+      if (foreColor) { document.execCommand('foreColor', false, foreColor); }
+      if (backColor) { document.execCommand('backColor', false, backColor); }
     });
+
     /**
      * Set foreground color
      *
      * @param {String} colorCode foreground color code
      */
-
-    this.foreColor = this.wrapCommand(colorInfo => {
+    this.foreColor = this.wrapCommand((colorInfo) => {
       document.execCommand('styleWithCSS', false, true);
       document.execCommand('foreColor', false, colorInfo);
     });
+
     /**
      * insert Table
      *
      * @param {String} dimension of table (ex : "5x5")
      */
-
-    this.insertTable = this.wrapCommand(dim => {
+    this.insertTable = this.wrapCommand((dim) => {
       const dimension = dim.split('x');
+
       const rng = this.getLastRange().deleteContents();
       rng.insertNode(this.table.createTable(dimension[0], dimension[1], this.options));
     });
+
     /**
      * remove media object and Figure Elements if media object is img with Figure.
      */
-
     this.removeMedia = this.wrapCommand(() => {
       let $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.restoreTarget()).parent();
-
       if ($target.closest('figure').length) {
         $target.closest('figure').remove();
       } else {
         $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.restoreTarget()).detach();
       }
-
       this.context.triggerEvent('media.delete', $target, this.$editable);
     });
+
     /**
      * float me
      *
      * @param {String} value
      */
-
-    this.floatMe = this.wrapCommand(value => {
+    this.floatMe = this.wrapCommand((value) => {
       const $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.restoreTarget());
       $target.toggleClass('note-float-left', value === 'left');
       $target.toggleClass('note-float-right', value === 'right');
-      $target.css('float', value === 'none' ? '' : value);
+      $target.css('float', (value === 'none' ? '' : value));
     });
+
     /**
      * resize overlay element
      * @param {String} value
      */
-
-    this.resize = this.wrapCommand(value => {
+    this.resize = this.wrapCommand((value) => {
       const $target = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.restoreTarget());
       value = parseFloat(value);
-
       if (value === 0) {
         $target.css('width', '');
       } else {
         $target.css({
           width: value * 100 + '%',
-          height: ''
+          height: '',
         });
       }
     });
@@ -5154,88 +5015,100 @@ class Editor_Editor {
 
   initialize() {
     // bind custom events
-    this.$editable.on('keydown', event => {
+    this.$editable.on('keydown', (event) => {
       if (event.keyCode === core_key.code.ENTER) {
         this.context.triggerEvent('enter', event);
       }
+      this.context.triggerEvent('keydown', event);
 
-      this.context.triggerEvent('keydown', event); // keep a snapshot to limit text on input event
-
+      // keep a snapshot to limit text on input event
       this.snapshot = this.history.makeSnapshot();
-
+      this.hasKeyShortCut = false;
       if (!event.isDefaultPrevented()) {
         if (this.options.shortcuts) {
-          this.handleKeyMap(event);
+          this.hasKeyShortCut = this.handleKeyMap(event);
         } else {
           this.preventDefaultEditableShortCuts(event);
         }
       }
-
       if (this.isLimited(1, event)) {
         const lastRange = this.getLastRange();
-
         if (lastRange.eo - lastRange.so === 0) {
           return false;
         }
       }
-
       this.setLastRange();
-    }).on('keyup', event => {
+
+      // record undo in the key event except keyMap.
+      if (this.options.recordEveryKeystroke) {
+        if (this.hasKeyShortCut === false) {
+          this.history.recordUndo();
+        }
+      }
+    }).on('keyup', (event) => {
       this.setLastRange();
       this.context.triggerEvent('keyup', event);
-    }).on('focus', event => {
+    }).on('focus', (event) => {
       this.setLastRange();
       this.context.triggerEvent('focus', event);
-    }).on('blur', event => {
+    }).on('blur', (event) => {
       this.context.triggerEvent('blur', event);
-    }).on('mousedown', event => {
+    }).on('mousedown', (event) => {
       this.context.triggerEvent('mousedown', event);
-    }).on('mouseup', event => {
+    }).on('mouseup', (event) => {
       this.setLastRange();
       this.history.recordUndo();
       this.context.triggerEvent('mouseup', event);
-    }).on('scroll', event => {
+    }).on('scroll', (event) => {
       this.context.triggerEvent('scroll', event);
-    }).on('paste', event => {
+    }).on('paste', (event) => {
       this.setLastRange();
       this.context.triggerEvent('paste', event);
-    }).on('input', event => {
+    }).on('input', () => {
       // To limit composition characters (e.g. Korean)
       if (this.isLimited(0) && this.snapshot) {
         this.history.applySnapshot(this.snapshot);
       }
     });
+
     this.$editable.attr('spellcheck', this.options.spellCheck);
+
     this.$editable.attr('autocorrect', this.options.spellCheck);
 
     if (this.options.disableGrammar) {
       this.$editable.attr('data-gramm', false);
-    } // init content before set event
+    }
 
-
+    // init content before set event
     this.$editable.html(dom.html(this.$note) || dom.emptyPara);
+
     this.$editable.on(env.inputEventName, func.debounce(() => {
       this.context.triggerEvent('change', this.$editable.html(), this.$editable);
     }, 10));
-    this.$editor.on('focusin', event => {
+
+    this.$editor.on('focusin', (event) => {
       this.context.triggerEvent('focusin', event);
-    }).on('focusout', event => {
+    }).on('focusout', (event) => {
       this.context.triggerEvent('focusout', event);
     });
 
-    if (!this.options.airMode) {
+    if (this.options.airMode) {
+      if (this.options.overrideContextMenu) {
+        this.$editor.on('contextmenu', (event) => {
+          this.context.triggerEvent('contextmenu', event);
+          return false;
+        });
+      }
+    } else {
       if (this.options.width) {
         this.$editor.outerWidth(this.options.width);
       }
-
       if (this.options.height) {
         this.$editable.outerHeight(this.options.height);
       }
-
       if (this.options.maxHeight) {
         this.$editable.css('max-height', this.options.maxHeight);
       }
-
       if (this.options.minHeight) {
         this.$editable.css('min-height', this.options.minHeight);
       }
@@ -5253,20 +5126,11 @@ class Editor_Editor {
     const keyMap = this.options.keyMap[env.isMac ? 'mac' : 'pc'];
     const keys = [];
 
-    if (event.metaKey) {
-      keys.push('CMD');
-    }
-
-    if (event.ctrlKey && !event.altKey) {
-      keys.push('CTRL');
-    }
-
-    if (event.shiftKey) {
-      keys.push('SHIFT');
-    }
+    if (event.metaKey) { keys.push('CMD'); }
+    if (event.ctrlKey && !event.altKey) { keys.push('CTRL'); }
+    if (event.shiftKey) { keys.push('SHIFT'); }
 
     const keyName = core_key.nameFromCode[event.keyCode];
-
     if (keyName) {
       keys.push(keyName);
     }
@@ -5278,15 +5142,19 @@ class Editor_Editor {
     } else if (eventName) {
       if (this.context.invoke(eventName) !== false) {
         event.preventDefault();
+        // if keyMap action was invoked
+        return true;
       }
     } else if (core_key.isEdit(event.keyCode)) {
       this.afterCommand();
     }
+    return false;
   }
 
   preventDefaultEditableShortCuts(event) {
     // B(Bold, 66) / I(Italic, 73) / U(Underline, 85)
-    if ((event.ctrlKey || event.metaKey) && lists.contains([66, 73, 85], event.keyCode)) {
+    if ((event.ctrlKey || event.metaKey) &&
+      lists.contains([66, 73, 85], event.keyCode)) {
       event.preventDefault();
     }
   }
@@ -5295,25 +5163,25 @@ class Editor_Editor {
     pad = pad || 0;
 
     if (typeof event !== 'undefined') {
-      if (core_key.isMove(event.keyCode) || core_key.isNavigation(event.keyCode) || event.ctrlKey || event.metaKey || lists.contains([core_key.code.BACKSPACE, core_key.code.DELETE], event.keyCode)) {
+      if (core_key.isMove(event.keyCode) ||
+          core_key.isNavigation(event.keyCode) ||
+          (event.ctrlKey || event.metaKey) ||
+          lists.contains([core_key.code.BACKSPACE, core_key.code.DELETE], event.keyCode)) {
         return false;
       }
     }
 
     if (this.options.maxTextLength > 0) {
-      if (this.$editable.text().length + pad > this.options.maxTextLength) {
+      if ((this.$editable.text().length + pad) > this.options.maxTextLength) {
         return true;
       }
     }
-
     return false;
   }
   /**
    * create range
    * @return {WrappedRange}
    */
-
-
   createRange() {
     this.focus();
     this.setLastRange();
@@ -5336,9 +5204,9 @@ class Editor_Editor {
     if (!this.lastRange) {
       this.setLastRange();
     }
-
     return this.lastRange;
   }
+
   /**
    * saveRange
    *
@@ -5346,20 +5214,17 @@ class Editor_Editor {
    *
    * @param {Boolean} [thenCollapse=false]
    */
-
-
   saveRange(thenCollapse) {
     if (thenCollapse) {
       this.getLastRange().collapse().select();
     }
   }
+
   /**
    * restoreRange
    *
    * restore lately range
    */
-
-
   restoreRange() {
     if (this.lastRange) {
       this.lastRange.select();
@@ -5378,96 +5243,84 @@ class Editor_Editor {
   restoreTarget() {
     return this.$editable.data('target');
   }
+
   /**
    * currentStyle
    *
    * current style
    * @return {Object|Boolean} unfocus
    */
-
-
   currentStyle() {
     let rng = core_range.create();
-
     if (rng) {
       rng = rng.normalize();
     }
-
     return rng ? this.style.current(rng) : this.style.fromNode(this.$editable);
   }
+
   /**
    * style from node
    *
    * @param {jQuery} $node
    * @return {Object}
    */
-
-
   styleFromNode($node) {
     return this.style.fromNode($node);
   }
+
   /**
    * undo
    */
-
-
   undo() {
     this.context.triggerEvent('before.command', this.$editable.html());
     this.history.undo();
     this.context.triggerEvent('change', this.$editable.html(), this.$editable);
   }
+
   /*
   * commit
   */
-
-
   commit() {
     this.context.triggerEvent('before.command', this.$editable.html());
     this.history.commit();
     this.context.triggerEvent('change', this.$editable.html(), this.$editable);
   }
+
   /**
    * redo
    */
-
-
   redo() {
     this.context.triggerEvent('before.command', this.$editable.html());
     this.history.redo();
     this.context.triggerEvent('change', this.$editable.html(), this.$editable);
   }
+
   /**
    * before command
    */
-
-
   beforeCommand() {
-    this.context.triggerEvent('before.command', this.$editable.html()); // keep focus on editable before command execution
-
+    this.context.triggerEvent('before.command', this.$editable.html());
+    // keep focus on editable before command execution
     this.focus();
   }
+
   /**
    * after command
    * @param {Boolean} isPreventTrigger
    */
-
-
   afterCommand(isPreventTrigger) {
     this.normalizeContent();
     this.history.recordUndo();
-
     if (!isPreventTrigger) {
       this.context.triggerEvent('change', this.$editable.html(), this.$editable);
     }
   }
+
   /**
    * handle tab key
    */
-
-
   tab() {
     const rng = this.getLastRange();
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.table.tab(rng);
     } else {
@@ -5482,14 +5335,12 @@ class Editor_Editor {
       }
     }
   }
+
   /**
    * handle shift+tab key
    */
-
-
   untab() {
     const rng = this.getLastRange();
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.table.tab(rng, true);
     } else {
@@ -5498,18 +5349,18 @@ class Editor_Editor {
       }
     }
   }
+
   /**
    * run given function between beforeCommand and afterCommand
    */
-
-
   wrapCommand(fn) {
-    return function () {
+    return function() {
       this.beforeCommand();
       fn.apply(this, arguments);
       this.afterCommand();
     };
   }
+
   /**
    * insert image
    *
@@ -5517,10 +5368,8 @@ class Editor_Editor {
    * @param {String|Function} param
    * @return {Promise}
    */
-
-
   insertImage(src, param) {
-    return createImage(src, param).then($image => {
+    return createImage(src, param).then(($image) => {
       this.beforeCommand();
 
       if (typeof param === 'function') {
@@ -5529,7 +5378,6 @@ class Editor_Editor {
         if (typeof param === 'string') {
           $image.attr('data-filename', param);
         }
-
         $image.css('width', Math.min(this.$editable.width(), $image.width()));
       }
 
@@ -5537,24 +5385,22 @@ class Editor_Editor {
       this.getLastRange().insertNode($image[0]);
       this.setLastRange(core_range.createFromNodeAfter($image[0]).select());
       this.afterCommand();
-    }).fail(e => {
+    }).fail((e) => {
       this.context.triggerEvent('image.upload.error', e);
     });
   }
+
   /**
    * insertImages
    * @param {File[]} files
    */
-
-
   insertImagesAsDataURL(files) {
     external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(files, (idx, file) => {
       const filename = file.name;
-
       if (this.options.maximumImageFileSize && this.options.maximumImageFileSize < file.size) {
         this.context.triggerEvent('image.upload.error', this.lang.image.maximumFileSizeError);
       } else {
-        readFileAsDataURL(file).then(dataURL => {
+        readFileAsDataURL(file).then((dataURL) => {
           return this.insertImage(dataURL, filename);
         }).fail(() => {
           this.context.triggerEvent('image.upload.error');
@@ -5562,30 +5408,30 @@ class Editor_Editor {
       }
     });
   }
+
   /**
    * insertImagesOrCallback
    * @param {File[]} files
    */
-
-
   insertImagesOrCallback(files) {
-    const callbacks = this.options.callbacks; // If onImageUpload set,
-
+    const callbacks = this.options.callbacks;
+    // If onImageUpload set,
     if (callbacks.onImageUpload) {
-      this.context.triggerEvent('image.upload', files); // else insert Image as dataURL
+      this.context.triggerEvent('image.upload', files);
+      // else insert Image as dataURL
     } else {
       this.insertImagesAsDataURL(files);
     }
   }
+
   /**
    * return selected plain text
    * @return {String} text
    */
-
-
   getSelectedText() {
-    let rng = this.getLastRange(); // if range on anchor, expand range with anchor
+    let rng = this.getLastRange();
 
+    // if range on anchor, expand range with anchor
     if (rng.isOnAnchor()) {
       rng = core_range.createFromNode(dom.ancestor(rng.sc, dom.isAnchor));
     }
@@ -5595,8 +5441,9 @@ class Editor_Editor {
 
   onFormatBlock(tagName, $target) {
     // [workaround] for MSIE, IE need `<`
-    document.execCommand('FormatBlock', false, env.isMSIE ? '<' + tagName + '>' : tagName); // support custom class
+    document.execCommand('FormatBlock', false, env.isMSIE ? '<' + tagName + '>' : tagName);
 
+    // support custom class
     if ($target && $target.length) {
       // find the exact element has given tagName
       if ($target[0].tagName.toUpperCase() !== tagName.toUpperCase()) {
@@ -5605,9 +5452,9 @@ class Editor_Editor {
 
       if ($target && $target.length) {
         const className = $target[0].className || '';
-
         if (className) {
           const currentRange = this.createRange();
+
           const $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()([currentRange.sc, currentRange.ec]).closest(tagName);
           $parent.addClass(className);
         }
@@ -5625,12 +5472,12 @@ class Editor_Editor {
     if (rng !== '') {
       const spans = this.style.styleNodes(rng);
       this.$editor.find('.note-status-output').html('');
-      external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(spans).css(target, value); // [workaround] added styled bogus span for style
-      //  - also bogus character needed for cursor position
+      external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(spans).css(target, value);
 
+      // [workaround] added styled bogus span for style
+      //  - also bogus character needed for cursor position
       if (rng.isCollapsed()) {
         const firstSpan = lists.head(spans);
-
         if (firstSpan && !dom.nodeLength(firstSpan)) {
           firstSpan.innerHTML = dom.ZERO_WIDTH_NBSP_CHAR;
           core_range.createFromNodeAfter(firstSpan.firstChild).select();
@@ -5641,31 +5488,29 @@ class Editor_Editor {
     } else {
       const noteStatusOutput = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.now();
       this.$editor.find('.note-status-output').html('<div id="note-status-output-' + noteStatusOutput + '" class="alert alert-info">' + this.lang.output.noSelection + '</div>');
-      setTimeout(function () {
-        external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('#note-status-output-' + noteStatusOutput).remove();
-      }, 5000);
+      setTimeout(function() { external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('#note-status-output-' + noteStatusOutput).remove(); }, 5000);
     }
   }
+
   /**
    * unlink
    *
    * @type command
    */
-
-
   unlink() {
     let rng = this.getLastRange();
-
     if (rng.isOnAnchor()) {
       const anchor = dom.ancestor(rng.sc, dom.isAnchor);
       rng = core_range.createFromNode(anchor);
       rng.select();
       this.setLastRange();
+
       this.beforeCommand();
       document.execCommand('unlink');
       this.afterCommand();
     }
   }
+
   /**
    * returns link info
    *
@@ -5675,18 +5520,17 @@ class Editor_Editor {
    * @return {Boolean} [return.isNewWindow=true]
    * @return {String} [return.url=""]
    */
-
-
   getLinkInfo() {
-    const rng = this.getLastRange().expand(dom.isAnchor); // Get the first anchor on range(for edit).
-
+    const rng = this.getLastRange().expand(dom.isAnchor);
+    // Get the first anchor on range(for edit).
     const $anchor = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(lists.head(rng.nodes(dom.isAnchor)));
     const linkInfo = {
       range: rng,
       text: rng.toString(),
-      url: $anchor.length ? $anchor.attr('href') : ''
-    }; // When anchor exists,
+      url: $anchor.length ? $anchor.attr('href') : '',
+    };
 
+    // When anchor exists,
     if ($anchor.length) {
       // Set isNewWindow by checking its target.
       linkInfo.isNewWindow = $anchor.attr('target') === '_blank';
@@ -5697,7 +5541,6 @@ class Editor_Editor {
 
   addRow(position) {
     const rng = this.getLastRange(this.$editable);
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.beforeCommand();
       this.table.addRow(rng, position);
@@ -5707,7 +5550,6 @@ class Editor_Editor {
 
   addCol(position) {
     const rng = this.getLastRange(this.$editable);
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.beforeCommand();
       this.table.addCol(rng, position);
@@ -5717,7 +5559,6 @@ class Editor_Editor {
 
   deleteRow() {
     const rng = this.getLastRange(this.$editable);
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.beforeCommand();
       this.table.deleteRow(rng);
@@ -5727,7 +5568,6 @@ class Editor_Editor {
 
   deleteCol() {
     const rng = this.getLastRange(this.$editable);
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.beforeCommand();
       this.table.deleteCol(rng);
@@ -5737,52 +5577,47 @@ class Editor_Editor {
 
   deleteTable() {
     const rng = this.getLastRange(this.$editable);
-
     if (rng.isCollapsed() && rng.isOnCell()) {
       this.beforeCommand();
       this.table.deleteTable(rng);
       this.afterCommand();
     }
   }
+
   /**
    * @param {Position} pos
    * @param {jQuery} $target - target element
    * @param {Boolean} [bKeepRatio] - keep ratio
    */
-
-
   resizeTo(pos, $target, bKeepRatio) {
     let imageSize;
-
     if (bKeepRatio) {
       const newRatio = pos.y / pos.x;
       const ratio = $target.data('ratio');
       imageSize = {
         width: ratio > newRatio ? pos.x : pos.y / ratio,
-        height: ratio > newRatio ? pos.x * ratio : pos.y
+        height: ratio > newRatio ? pos.x * ratio : pos.y,
       };
     } else {
       imageSize = {
         width: pos.x,
-        height: pos.y
+        height: pos.y,
       };
     }
 
     $target.css(imageSize);
   }
+
   /**
    * returns whether editable area has focus or not.
    */
-
-
   hasFocus() {
     return this.$editable.is(':focus');
   }
+
   /**
    * set focus
    */
-
-
   focus() {
     // [workaround] Screen will move when page is scolled in IE.
     //  - do focus when not focused
@@ -5790,34 +5625,32 @@ class Editor_Editor {
       this.$editable.focus();
     }
   }
+
   /**
    * returns whether contents is empty or not.
    * @return {Boolean}
    */
-
-
   isEmpty() {
     return dom.isEmpty(this.$editable[0]) || dom.emptyPara === this.$editable.html();
   }
+
   /**
    * Removes all contents and restores the editable instance to an _emptyPara_.
    */
-
-
   empty() {
     this.context.invoke('code', dom.emptyPara);
   }
+
   /**
    * normalize content
    */
-
-
   normalizeContent() {
     this.$editable[0].normalize();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Clipboard.js
+
 
 class Clipboard_Clipboard {
   constructor(context) {
@@ -5828,37 +5661,43 @@ class Clipboard_Clipboard {
   initialize() {
     this.$editable.on('paste', this.pasteByEvent.bind(this));
   }
+
   /**
    * paste by clipboard event
    *
    * @param {Event} event
    */
-
-
   pasteByEvent(event) {
     const clipboardData = event.originalEvent.clipboardData;
 
     if (clipboardData && clipboardData.items && clipboardData.items.length) {
       const item = clipboardData.items.length > 1 ? clipboardData.items[1] : lists.head(clipboardData.items);
-
       if (item.kind === 'file' && item.type.indexOf('image/') !== -1) {
         // paste img file
         this.context.invoke('editor.insertImagesOrCallback', [item.getAsFile()]);
         event.preventDefault();
-        this.context.invoke('editor.afterCommand');
       } else if (item.kind === 'string') {
         // paste text with maxTextLength check
         if (this.context.invoke('editor.isLimited', clipboardData.getData('Text').length)) {
           event.preventDefault();
-        } else {
-          this.context.invoke('editor.afterCommand');
         }
       }
+    } else if (window.clipboardData) {
+      // for IE
+      let text = window.clipboardData.getData('text');
+      if (this.context.invoke('editor.isLimited', text.length)) {
+        event.preventDefault();
+      }
     }
+    // Call editor.afterCommand after proceeding default event handler
+    setTimeout(() => {
+      this.context.invoke('editor.afterCommand');
+    }, 10);
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Dropzone.js
+
 
 class Dropzone_Dropzone {
   constructor(context) {
@@ -5869,53 +5708,54 @@ class Dropzone_Dropzone {
     this.options = context.options;
     this.lang = this.options.langInfo;
     this.documentEventHandlers = {};
-    this.$dropzone = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-dropzone">', '<div class="note-dropzone-message"/>', '</div>'].join('')).prependTo(this.$editor);
+
+    this.$dropzone = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()([
+      '<div class="note-dropzone">',
+        '<div class="note-dropzone-message"/>',
+      '</div>',
+    ].join('')).prependTo(this.$editor);
   }
+
   /**
    * attach Drag and Drop Events
    */
-
-
   initialize() {
     if (this.options.disableDragAndDrop) {
       // prevent default drop event
-      this.documentEventHandlers.onDrop = e => {
+      this.documentEventHandlers.onDrop = (e) => {
         e.preventDefault();
-      }; // do not consider outside of dropzone
-
-
+      };
+      // do not consider outside of dropzone
       this.$eventListener = this.$dropzone;
       this.$eventListener.on('drop', this.documentEventHandlers.onDrop);
     } else {
       this.attachDragAndDropEvent();
     }
   }
+
   /**
    * attach Drag and Drop Events
    */
-
-
   attachDragAndDropEvent() {
     let collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
     const $dropzoneMessage = this.$dropzone.find('.note-dropzone-message');
 
-    this.documentEventHandlers.onDragenter = e => {
+    this.documentEventHandlers.onDragenter = (e) => {
       const isCodeview = this.context.invoke('codeview.isActivated');
       const hasEditorSize = this.$editor.width() > 0 && this.$editor.height() > 0;
-
       if (!isCodeview && !collection.length && hasEditorSize) {
         this.$editor.addClass('dragover');
         this.$dropzone.width(this.$editor.width());
         this.$dropzone.height(this.$editor.height());
         $dropzoneMessage.text(this.lang.image.dragImageHere);
       }
-
       collection = collection.add(e.target);
     };
 
-    this.documentEventHandlers.onDragleave = e => {
-      collection = collection.not(e.target); // If nodeName is BODY, then just make it over (fix for IE)
+    this.documentEventHandlers.onDragleave = (e) => {
+      collection = collection.not(e.target);
 
+      // If nodeName is BODY, then just make it over (fix for IE)
       if (!collection.length || e.target.nodeName === 'BODY') {
         collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
         this.$editor.removeClass('dragover');
@@ -5925,23 +5765,28 @@ class Dropzone_Dropzone {
     this.documentEventHandlers.onDrop = () => {
       collection = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()();
       this.$editor.removeClass('dragover');
-    }; // show dropzone on dragenter when dragging a object to document
+    };
+
+    // show dropzone on dragenter when dragging a object to document
     // -but only if the editor is visible, i.e. has a positive width and height
+    this.$eventListener.on('dragenter', this.documentEventHandlers.onDragenter)
+      .on('dragleave', this.documentEventHandlers.onDragleave)
+      .on('drop', this.documentEventHandlers.onDrop);
 
-
-    this.$eventListener.on('dragenter', this.documentEventHandlers.onDragenter).on('dragleave', this.documentEventHandlers.onDragleave).on('drop', this.documentEventHandlers.onDrop); // change dropzone's message on hover.
-
+    // change dropzone's message on hover.
     this.$dropzone.on('dragenter', () => {
       this.$dropzone.addClass('hover');
       $dropzoneMessage.text(this.lang.image.dropImage);
     }).on('dragleave', () => {
       this.$dropzone.removeClass('hover');
       $dropzoneMessage.text(this.lang.image.dragImageHere);
-    }); // attach dropImage
+    });
 
-    this.$dropzone.on('drop', event => {
-      const dataTransfer = event.originalEvent.dataTransfer; // stop the browser from opening the dropped content
+    // attach dropImage
+    this.$dropzone.on('drop', (event) => {
+      const dataTransfer = event.originalEvent.dataTransfer;
 
+      // stop the browser from opening the dropped content
       event.preventDefault();
 
       if (dataTransfer && dataTransfer.files && dataTransfer.files.length) {
@@ -5953,7 +5798,6 @@ class Dropzone_Dropzone {
           if (type.toLowerCase().indexOf('_moz_') > -1) {
             return;
           }
-
           const content = dataTransfer.getData(type);
 
           if (type.toLowerCase().indexOf('text') > -1) {
@@ -5969,26 +5813,25 @@ class Dropzone_Dropzone {
   }
 
   destroy() {
-    Object.keys(this.documentEventHandlers).forEach(key => {
+    Object.keys(this.documentEventHandlers).forEach((key) => {
       this.$eventListener.off(key.substr(2).toLowerCase(), this.documentEventHandlers[key]);
     });
     this.documentEventHandlers = {};
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Codeview.js
 
 
-let CodeMirror;
 
+let CodeMirror;
 if (env.hasCodeMirror) {
   CodeMirror = window.CodeMirror;
 }
+
 /**
  * @class Codeview
  */
-
-
 class Codeview_CodeView {
   constructor(context) {
     this.context = context;
@@ -6000,113 +5843,107 @@ class Codeview_CodeView {
 
   sync() {
     const isCodeview = this.isActivated();
-
     if (isCodeview && env.hasCodeMirror) {
       this.$codable.data('cmEditor').save();
     }
   }
+
   /**
    * @return {Boolean}
    */
-
-
   isActivated() {
     return this.$editor.hasClass('codeview');
   }
+
   /**
    * toggle codeview
    */
-
-
   toggle() {
     if (this.isActivated()) {
       this.deactivate();
     } else {
       this.activate();
     }
-
     this.context.triggerEvent('codeview.toggled');
   }
+
   /**
    * purify input value
    * @param value
    * @returns {*}
    */
-
-
   purify(value) {
     if (this.options.codeviewFilter) {
       // filter code view regex
-      value = value.replace(this.options.codeviewFilterRegex, ''); // allow specific iframe tag
-
+      value = value.replace(this.options.codeviewFilterRegex, '');
+      // allow specific iframe tag
       if (this.options.codeviewIframeFilter) {
         const whitelist = this.options.codeviewIframeWhitelistSrc.concat(this.options.codeviewIframeWhitelistSrcBase);
-        value = value.replace(/(<iframe.*?>.*?(?:<\/iframe>)?)/gi, function (tag) {
+        value = value.replace(/(<iframe.*?>.*?(?:<\/iframe>)?)/gi, function(tag) {
           // remove if src attribute is duplicated
           if (/<.+src(?==?('|"|\s)?)[\s\S]+src(?=('|"|\s)?)[^>]*?>/i.test(tag)) {
             return '';
           }
-
           for (const src of whitelist) {
             // pass if src is trusted
-            if (new RegExp('src="(https?:)?\/\/' + src.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\/(.+)"').test(tag)) {
+            if ((new RegExp('src="(https?:)?\/\/' + src.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\/(.+)"')).test(tag)) {
               return tag;
             }
           }
-
           return '';
         });
       }
     }
-
     return value;
   }
+
   /**
    * activate code view
    */
-
-
   activate() {
     this.$codable.val(dom.html(this.$editable, this.options.prettifyHtml));
     this.$codable.height(this.$editable.height());
+
     this.context.invoke('toolbar.updateCodeview', true);
     this.$editor.addClass('codeview');
-    this.$codable.focus(); // activate CodeMirror as codable
+    this.$codable.focus();
 
+    // activate CodeMirror as codable
     if (env.hasCodeMirror) {
-      const cmEditor = CodeMirror.fromTextArea(this.$codable[0], this.options.codemirror); // CodeMirror TernServer
+      const cmEditor = CodeMirror.fromTextArea(this.$codable[0], this.options.codemirror);
 
+      // CodeMirror TernServer
       if (this.options.codemirror.tern) {
         const server = new CodeMirror.TernServer(this.options.codemirror.tern);
         cmEditor.ternServer = server;
-        cmEditor.on('cursorActivity', cm => {
+        cmEditor.on('cursorActivity', (cm) => {
           server.updateArgHints(cm);
         });
       }
 
-      cmEditor.on('blur', event => {
+      cmEditor.on('blur', (event) => {
         this.context.triggerEvent('blur.codeview', cmEditor.getValue(), event);
       });
-      cmEditor.on('change', event => {
+      cmEditor.on('change', () => {
         this.context.triggerEvent('change.codeview', cmEditor.getValue(), cmEditor);
-      }); // CodeMirror hasn't Padding.
+      });
 
+      // CodeMirror hasn't Padding.
       cmEditor.setSize(null, this.$editable.outerHeight());
       this.$codable.data('cmEditor', cmEditor);
     } else {
-      this.$codable.on('blur', event => {
+      this.$codable.on('blur', (event) => {
         this.context.triggerEvent('blur.codeview', this.$codable.val(), event);
       });
-      this.$codable.on('input', event => {
+      this.$codable.on('input', () => {
         this.context.triggerEvent('change.codeview', this.$codable.val(), this.$codable);
       });
     }
   }
+
   /**
    * deactivate code view
    */
-
-
   deactivate() {
     // deactivate CodeMirror as codable
     if (env.hasCodeMirror) {
@@ -6117,6 +5954,7 @@ class Codeview_CodeView {
 
     const value = this.purify(dom.value(this.$codable, this.options.prettifyHtml) || dom.emptyPara);
     const isChange = this.$editable.html() !== value;
+
     this.$editable.html(value);
     this.$editable.height(this.options.height ? this.$codable.height() : 'auto');
     this.$editor.removeClass('codeview');
@@ -6126,6 +5964,7 @@ class Codeview_CodeView {
     }
 
     this.$editable.focus();
+
     this.context.invoke('toolbar.updateCodeview', false);
   }
 
@@ -6134,11 +5973,12 @@ class Codeview_CodeView {
       this.deactivate();
     }
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Statusbar.js
 
 const EDITABLE_PADDING = 24;
+
 class Statusbar_Statusbar {
   constructor(context) {
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
@@ -6153,15 +5993,17 @@ class Statusbar_Statusbar {
       return;
     }
 
-    this.$statusbar.on('mousedown', event => {
+    this.$statusbar.on('mousedown', (event) => {
       event.preventDefault();
       event.stopPropagation();
-      const editableTop = this.$editable.offset().top - this.$document.scrollTop();
 
-      const onMouseMove = event => {
+      const editableTop = this.$editable.offset().top - this.$document.scrollTop();
+      const onMouseMove = (event) => {
         let height = event.clientY - (editableTop + EDITABLE_PADDING);
-        height = this.options.minheight > 0 ? Math.max(height, this.options.minheight) : height;
-        height = this.options.maxHeight > 0 ? Math.min(height, this.options.maxHeight) : height;
+
+        height = (this.options.minheight > 0) ? Math.max(height, this.options.minheight) : height;
+        height = (this.options.maxHeight > 0) ? Math.min(height, this.options.maxHeight) : height;
+
         this.$editable.height(height);
       };
 
@@ -6175,23 +6017,26 @@ class Statusbar_Statusbar {
     this.$statusbar.off();
     this.$statusbar.addClass('locked');
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Fullscreen.js
+
 
 class Fullscreen_Fullscreen {
   constructor(context) {
     this.context = context;
+
     this.$editor = context.layoutInfo.editor;
     this.$toolbar = context.layoutInfo.toolbar;
     this.$editable = context.layoutInfo.editable;
     this.$codable = context.layoutInfo.codable;
+
     this.$window = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window);
     this.$scrollbar = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('html, body');
 
     this.onResize = () => {
       this.resizeTo({
-        h: this.$window.height() - this.$toolbar.outerHeight()
+        h: this.$window.height() - this.$toolbar.outerHeight(),
       });
     };
   }
@@ -6199,19 +6044,16 @@ class Fullscreen_Fullscreen {
   resizeTo(size) {
     this.$editable.css('height', size.h);
     this.$codable.css('height', size.h);
-
     if (this.$codable.data('cmeditor')) {
       this.$codable.data('cmeditor').setsize(null, size.h);
     }
   }
+
   /**
    * toggle fullscreen
    */
-
-
   toggle() {
     this.$editor.toggleClass('fullscreen');
-
     if (this.isFullscreen()) {
       this.$editable.data('orgHeight', this.$editable.css('height'));
       this.$editable.data('orgMaxHeight', this.$editable.css('maxHeight'));
@@ -6220,9 +6062,7 @@ class Fullscreen_Fullscreen {
       this.$scrollbar.css('overflow', 'hidden');
     } else {
       this.$window.off('resize', this.onResize);
-      this.resizeTo({
-        h: this.$editable.data('orgHeight')
-      });
+      this.resizeTo({ h: this.$editable.data('orgHeight') });
       this.$editable.css('maxHeight', this.$editable.css('orgMaxHeight'));
       this.$scrollbar.css('overflow', 'visible');
     }
@@ -6233,9 +6073,10 @@ class Fullscreen_Fullscreen {
   isFullscreen() {
     return this.$editor.hasClass('fullscreen');
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Handle.js
+
 
 
 class Handle_Handle {
@@ -6245,6 +6086,7 @@ class Handle_Handle {
     this.$editingArea = context.layoutInfo.editingArea;
     this.options = context.options;
     this.lang = this.options.langInfo;
+
     this.events = {
       'summernote.mousedown': (we, e) => {
         if (this.update(e.target, e)) {
@@ -6259,42 +6101,60 @@ class Handle_Handle {
       },
       'summernote.codeview.toggled': () => {
         this.update();
-      }
+      },
     };
   }
 
   initialize() {
-    this.$handle = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(['<div class="note-handle">', '<div class="note-control-selection">', '<div class="note-control-selection-bg"></div>', '<div class="note-control-holder note-control-nw"></div>', '<div class="note-control-holder note-control-ne"></div>', '<div class="note-control-holder note-control-sw"></div>', '<div class="', this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing', ' note-control-se"></div>', this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>', '</div>', '</div>'].join('')).prependTo(this.$editingArea);
-    this.$handle.on('mousedown', event => {
+    this.$handle = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()([
+      '<div class="note-handle">',
+        '<div class="note-control-selection">',
+          '<div class="note-control-selection-bg"></div>',
+          '<div class="note-control-holder note-control-nw"></div>',
+          '<div class="note-control-holder note-control-ne"></div>',
+          '<div class="note-control-holder note-control-sw"></div>',
+          '<div class="',
+            (this.options.disableResizeImage ? 'note-control-holder' : 'note-control-sizing'),
+          ' note-control-se"></div>',
+          (this.options.disableResizeImage ? '' : '<div class="note-control-selection-info"></div>'),
+        '</div>',
+      '</div>',
+    ].join('')).prependTo(this.$editingArea);
+
+    this.$handle.on('mousedown', (event) => {
       if (dom.isControlSizing(event.target)) {
         event.preventDefault();
         event.stopPropagation();
+
         const $target = this.$handle.find('.note-control-selection').data('target');
         const posStart = $target.offset();
         const scrollTop = this.$document.scrollTop();
 
-        const onMouseMove = event => {
+        const onMouseMove = (event) => {
           this.context.invoke('editor.resizeTo', {
             x: event.clientX - posStart.left,
-            y: event.clientY - (posStart.top - scrollTop)
+            y: event.clientY - (posStart.top - scrollTop),
           }, $target, !event.shiftKey);
+
           this.update($target[0], event);
         };
 
-        this.$document.on('mousemove', onMouseMove).one('mouseup', e => {
-          e.preventDefault();
-          this.$document.off('mousemove', onMouseMove);
-          this.context.invoke('editor.afterCommand');
-        });
+        this.$document
+          .on('mousemove', onMouseMove)
+          .one('mouseup', (e) => {
+            e.preventDefault();
+            this.$document.off('mousemove', onMouseMove);
+            this.context.invoke('editor.afterCommand');
+          });
 
-        if (!$target.data('ratio')) {
-          // original ratio.
+        if (!$target.data('ratio')) { // original ratio.
           $target.data('ratio', $target.height() / $target.width());
         }
       }
-    }); // Listen for scrolling on the handle overlay.
+    });
 
-    this.$handle.on('wheel', e => {
+    // Listen for scrolling on the handle overlay.
+    this.$handle.on('wheel', (e) => {
       e.preventDefault();
       this.update();
     });
@@ -6311,6 +6171,7 @@ class Handle_Handle {
 
     const isImage = dom.isImg(target);
     const $selection = this.$handle.find('.note-control-selection');
+
     this.context.invoke('imagePopover.update', target, event);
 
     if (isImage) {
@@ -6318,23 +6179,26 @@ class Handle_Handle {
       const position = $image.position();
       const pos = {
         left: position.left + parseInt($image.css('marginLeft'), 10),
-        top: position.top + parseInt($image.css('marginTop'), 10)
-      }; // exclude margin
+        top: position.top + parseInt($image.css('marginTop'), 10),
+      };
 
+      // exclude margin
       const imageSize = {
         w: $image.outerWidth(false),
-        h: $image.outerHeight(false)
+        h: $image.outerHeight(false),
       };
+
       $selection.css({
         display: 'block',
         left: pos.left,
         top: pos.top,
         width: imageSize.w,
-        height: imageSize.h
+        height: imageSize.h,
       }).data('target', $image); // save current image element.
 
       const origImageObj = new Image();
       origImageObj.src = $image.attr('src');
+
       const sizingText = imageSize.w + 'x' + imageSize.h + ' (' + this.lang.image.original + ': ' + origImageObj.width + 'x' + origImageObj.height + ')';
       $selection.find('.note-control-selection-info').text(sizingText);
       this.context.invoke('editor.saveTarget', target);
@@ -6344,25 +6208,26 @@ class Handle_Handle {
 
     return isImage;
   }
+
   /**
    * hide
    *
    * @param {jQuery} $handle
    */
-
-
   hide() {
     this.context.invoke('editor.clearTarget');
     this.$handle.children().hide();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/AutoLink.js
+
 
 
 
 const defaultScheme = 'http://';
 const linkPattern = /^([A-Za-z][A-Za-z0-9+-.]*\:[\/]{2}|tel:|mailto:[A-Z0-9._%+-]+@)?(www\.)?(.+)$/i;
+
 class AutoLink_AutoLink {
   constructor(context) {
     this.context = context;
@@ -6374,7 +6239,7 @@ class AutoLink_AutoLink {
       },
       'summernote.keydown': (we, e) => {
         this.handleKeydown(e);
-      }
+      },
     };
   }
 
@@ -6398,7 +6263,6 @@ class AutoLink_AutoLink {
       const link = match[1] ? keyword : defaultScheme + keyword;
       const urlText = keyword.replace(/^(?:https?:\/\/)?(?:tel?:?)?(?:mailto?:?)?(?:www\.)?/i, '').split('/')[0];
       const node = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<a />').html(urlText).attr('href', link)[0];
-
       if (this.context.options.linkTargetBlank) {
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(node).attr('target', '_blank');
       }
@@ -6421,30 +6285,31 @@ class AutoLink_AutoLink {
       this.replace();
     }
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/AutoSync.js
+
 
 /**
  * textarea auto sync.
  */
-
 class AutoSync_AutoSync {
   constructor(context) {
     this.$note = context.layoutInfo.note;
     this.events = {
       'summernote.change': () => {
         this.$note.val(context.invoke('code'));
-      }
+      },
     };
   }
 
   shouldInitialize() {
     return dom.isTextarea(this.$note[0]);
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/AutoReplace.js
+
 
 
 
@@ -6452,8 +6317,10 @@ class AutoReplace_AutoReplace {
   constructor(context) {
     this.context = context;
     this.options = context.options.replace || {};
+
     this.keys = [core_key.code.ENTER, core_key.code.SPACE, core_key.code.PERIOD, core_key.code.COMMA, core_key.code.SEMICOLON, core_key.code.SLASH];
     this.previousKeydownCode = null;
+
     this.events = {
       'summernote.keyup': (we, e) => {
         if (!e.isDefaultPrevented()) {
@@ -6462,7 +6329,7 @@ class AutoReplace_AutoReplace {
       },
       'summernote.keydown': (we, e) => {
         this.handleKeydown(e);
-      }
+      },
     };
   }
 
@@ -6485,7 +6352,7 @@ class AutoReplace_AutoReplace {
 
     const self = this;
     const keyword = this.lastWord.toString();
-    this.options.match(keyword, function (match) {
+    this.options.match(keyword, function(match) {
       if (match) {
         let node = '';
 
@@ -6517,7 +6384,6 @@ class AutoReplace_AutoReplace {
       const wordRange = this.context.invoke('editor.createRange').getWordRange();
       this.lastWord = wordRange;
     }
-
     this.previousKeydownCode = e.keyCode;
   }
 
@@ -6526,13 +6392,14 @@ class AutoReplace_AutoReplace {
       this.replace();
     }
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Placeholder.js
 
 class Placeholder_Placeholder {
   constructor(context) {
     this.context = context;
+
     this.$editingArea = context.layoutInfo.editingArea;
     this.options = context.options;
 
@@ -6547,7 +6414,7 @@ class Placeholder_Placeholder {
       },
       'summernote.codeview.toggled': () => {
         this.update();
-      }
+      },
     };
   }
 
@@ -6560,6 +6427,7 @@ class Placeholder_Placeholder {
     this.$placeholder.on('click', () => {
       this.context.invoke('focus');
     }).html(this.options.placeholder).prependTo(this.$editingArea);
+
     this.update();
   }
 
@@ -6571,9 +6439,10 @@ class Placeholder_Placeholder {
     const isShow = !this.context.invoke('codeview.isActivated') && this.context.invoke('editor.isEmpty');
     this.$placeholder.toggle(isShow);
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Buttons.js
+
 
 
 
@@ -6585,12 +6454,13 @@ class Buttons_Buttons {
     this.$toolbar = context.layoutInfo.toolbar;
     this.options = context.options;
     this.lang = this.options.langInfo;
-    this.invertedKeyMap = func.invertObject(this.options.keyMap[env.isMac ? 'mac' : 'pc']);
+    this.invertedKeyMap = func.invertObject(
+      this.options.keyMap[env.isMac ? 'mac' : 'pc']
+    );
   }
 
   representShortcut(editorMethod) {
     let shortcut = this.invertedKeyMap[editorMethod];
-
     if (!this.options.shortcuts || !shortcut) {
       return '';
     }
@@ -6599,7 +6469,11 @@ class Buttons_Buttons {
       shortcut = shortcut.replace('CMD', '⌘').replace('SHIFT', '⇧');
     }
 
-    shortcut = shortcut.replace('BACKSLASH', '\\').replace('SLASH', '/').replace('LEFTBRACKET', '[').replace('RIGHTBRACKET', ']');
+    shortcut = shortcut.replace('BACKSLASH', '\\')
+      .replace('SLASH', '/')
+      .replace('LEFTBRACKET', '[')
+      .replace('RIGHTBRACKET', ']');
+
     return ' (' + shortcut + ')';
   }
 
@@ -6607,7 +6481,6 @@ class Buttons_Buttons {
     if (!this.options.tooltip && o.tooltip) {
       delete o.tooltip;
     }
-
     o.container = this.options.container;
     return this.ui.button(o);
   }
@@ -6626,169 +6499,219 @@ class Buttons_Buttons {
 
   isFontInstalled(name) {
     if (!this.fontInstalledMap.hasOwnProperty(name)) {
-      this.fontInstalledMap[name] = env.isFontInstalled(name) || lists.contains(this.options.fontNamesIgnoreCheck, name);
+      this.fontInstalledMap[name] = env.isFontInstalled(name) ||
+        lists.contains(this.options.fontNamesIgnoreCheck, name);
     }
-
     return this.fontInstalledMap[name];
   }
 
   isFontDeservedToAdd(name) {
     name = name.toLowerCase();
-    return name !== '' && this.isFontInstalled(name) && env.genericFontFamilies.indexOf(name) === -1;
+    return (name !== '' && this.isFontInstalled(name) && env.genericFontFamilies.indexOf(name) === -1);
   }
 
   colorPalette(className, tooltip, backColor, foreColor) {
     return this.ui.buttonGroup({
       className: 'note-color ' + className,
-      children: [this.button({
-        className: 'note-current-color-button',
-        contents: this.ui.icon(this.options.icons.font + ' note-recent-color'),
-        tooltip: tooltip,
-        click: e => {
-          const $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget);
-
-          if (backColor && foreColor) {
-            this.context.invoke('editor.color', {
-              backColor: $button.attr('data-backColor'),
-              foreColor: $button.attr('data-foreColor')
+      children: [
+        this.button({
+          className: 'note-current-color-button',
+          contents: this.ui.icon(this.options.icons.font + ' note-recent-color'),
+          tooltip: tooltip,
+          click: (e) => {
+            const $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget);
+            if (backColor && foreColor) {
+              this.context.invoke('editor.color', {
+                backColor: $button.attr('data-backColor'),
+                foreColor: $button.attr('data-foreColor'),
+              });
+            } else if (backColor) {
+              this.context.invoke('editor.color', {
+                backColor: $button.attr('data-backColor'),
+              });
+            } else if (foreColor) {
+              this.context.invoke('editor.color', {
+                foreColor: $button.attr('data-foreColor'),
+              });
+            }
+          },
+          callback: ($button) => {
+            const $recentColor = $button.find('.note-recent-color');
+            if (backColor) {
+              $recentColor.css('background-color', this.options.colorButton.backColor);
+              $button.attr('data-backColor', this.options.colorButton.backColor);
+            }
+            if (foreColor) {
+              $recentColor.css('color', this.options.colorButton.foreColor);
+              $button.attr('data-foreColor', this.options.colorButton.foreColor);
+            } else {
+              $recentColor.css('color', 'transparent');
+            }
+          },
+        }),
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents('', this.options),
+          tooltip: this.lang.color.more,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdown({
+          items: (backColor ? [
+            '<div class="note-palette">',
+              '<div class="note-palette-title">' + this.lang.color.background + '</div>',
+              '<div>',
+                '<button type="button" class="note-color-reset btn btn-light" data-event="backColor" data-value="inherit">',
+                  this.lang.color.transparent,
+                '</button>',
+              '</div>',
+              '<div class="note-holder" data-event="backColor"/>',
+              '<div>',
+                '<button type="button" class="note-color-select btn" data-event="openPalette" data-value="backColorPicker">',
+                  this.lang.color.cpSelect,
+                '</button>',
+                '<input type="color" id="backColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.backColor + '" data-event="backColorPalette">',
+              '</div>',
+              '<div class="note-holder-custom" id="backColorPalette" data-event="backColor"/>',
+            '</div>',
+          ].join('') : '') +
+          (foreColor ? [
+            '<div class="note-palette">',
+              '<div class="note-palette-title">' + this.lang.color.foreground + '</div>',
+              '<div>',
+                '<button type="button" class="note-color-reset btn btn-light" data-event="removeFormat" data-value="foreColor">',
+                  this.lang.color.resetToDefault,
+                '</button>',
+              '</div>',
+              '<div class="note-holder" data-event="foreColor"/>',
+              '<div>',
+                '<button type="button" class="note-color-select btn" data-event="openPalette" data-value="foreColorPicker">',
+                  this.lang.color.cpSelect,
+                '</button>',
+                '<input type="color" id="foreColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.foreColor + '" data-event="foreColorPalette">',
+              '</div>', // Fix missing Div, Commented to find easily if it's wrong
+              '<div class="note-holder-custom" id="foreColorPalette" data-event="foreColor"/>',
+            '</div>',
+          ].join('') : ''),
+          callback: ($dropdown) => {
+            $dropdown.find('.note-holder').each((idx, item) => {
+              const $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+              $holder.append(this.ui.palette({
+                colors: this.options.colors,
+                colorsName: this.options.colorsName,
+                eventName: $holder.data('event'),
+                container: this.options.container,
+                tooltip: this.options.tooltip,
+              }).render());
             });
-          } else if (backColor) {
-            this.context.invoke('editor.color', {
-              backColor: $button.attr('data-backColor')
+            /* TODO: do we have to record recent custom colors within cookies? */
+            var customColors = [
+              ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF'],
+            ];
+            $dropdown.find('.note-holder-custom').each((idx, item) => {
+              const $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+              $holder.append(this.ui.palette({
+                colors: customColors,
+                colorsName: customColors,
+                eventName: $holder.data('event'),
+                container: this.options.container,
+                tooltip: this.options.tooltip,
+              }).render());
             });
-          } else if (foreColor) {
-            this.context.invoke('editor.color', {
-              foreColor: $button.attr('data-foreColor')
+            $dropdown.find('input[type=color]').each((idx, item) => {
+              external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).change(function() {
+                const $chip = $dropdown.find('#' + external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this).data('event')).find('.note-color-btn').first();
+                const color = this.value.toUpperCase();
+                $chip.css('background-color', color)
+                  .attr('aria-label', color)
+                  .attr('data-value', color)
+                  .attr('data-original-title', color);
+                $chip.click();
+              });
             });
-          }
-        },
-        callback: $button => {
-          const $recentColor = $button.find('.note-recent-color');
+          },
+          click: (event) => {
+            event.stopPropagation();
 
-          if (backColor) {
-            $recentColor.css('background-color', this.options.colorButton.backColor);
-            $button.attr('data-backColor', this.options.colorButton.backColor);
-          }
+            const $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('.' + className).find('.show');
+            const $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
+            const eventName = $button.data('event');
+            let value = $button.attr('data-value');
 
-          if (foreColor) {
-            $recentColor.css('color', this.options.colorButton.foreColor);
-            $button.attr('data-foreColor', this.options.colorButton.foreColor);
-          } else {
-            $recentColor.css('color', 'transparent');
-          }
-        }
-      }), this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents('', this.options),
-        tooltip: this.lang.color.more,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdown({
-        items: (backColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.background + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light" data-event="backColor" data-value="inherit">', this.lang.color.transparent, '</button>', '</div>', '<div class="note-holder" data-event="backColor"/>', '<div>', '<button type="button" class="note-color-select btn" data-event="openPalette" data-value="backColorPicker">', this.lang.color.cpSelect, '</button>', '<input type="color" id="backColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.backColor + '" data-event="backColorPalette">', '</div>', '<div class="note-holder-custom" id="backColorPalette" data-event="backColor"/>', '</div>'].join('') : '') + (foreColor ? ['<div class="note-palette">', '<div class="note-palette-title">' + this.lang.color.foreground + '</div>', '<div>', '<button type="button" class="note-color-reset btn btn-light" data-event="removeFormat" data-value="foreColor">', this.lang.color.resetToDefault, '</button>', '</div>', '<div class="note-holder" data-event="foreColor"/>', '<div>', '<button type="button" class="note-color-select btn" data-event="openPalette" data-value="foreColorPicker">', this.lang.color.cpSelect, '</button>', '<input type="color" id="foreColorPicker" class="note-btn note-color-select-btn" value="' + this.options.colorButton.foreColor + '" data-event="foreColorPalette">', '</div>', // Fix missing Div, Commented to find easily if it's wrong
-        '<div class="note-holder-custom" id="foreColorPalette" data-event="foreColor"/>', '</div>'].join('') : ''),
-        callback: $dropdown => {
-          $dropdown.find('.note-holder').each((idx, item) => {
-            const $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
-            $holder.append(this.ui.palette({
-              colors: this.options.colors,
-              colorsName: this.options.colorsName,
-              eventName: $holder.data('event'),
-              container: this.options.container,
-              tooltip: this.options.tooltip
-            }).render());
-          });
-          /* TODO: do we have to record recent custom colors within cookies? */
+            if (eventName === 'openPalette') {
+              const $picker = $parent.find('#' + value);
+              const $palette = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]);
 
-          var customColors = [['#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF', '#FFFFFF']];
-          $dropdown.find('.note-holder-custom').each((idx, item) => {
-            const $holder = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
-            $holder.append(this.ui.palette({
-              colors: customColors,
-              colorsName: customColors,
-              eventName: $holder.data('event'),
-              container: this.options.container,
-              tooltip: this.options.tooltip
-            }).render());
-          });
-          $dropdown.find('input[type=color]').each((idx, item) => {
-            external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).change(function () {
-              const $chip = $dropdown.find('#' + external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this).data('event')).find('.note-color-btn').first();
-              const color = this.value.toUpperCase();
-              $chip.css('background-color', color).attr('aria-label', color).attr('data-value', color).attr('data-original-title', color);
-              $chip.click();
-            });
-          });
-        },
-        click: event => {
-          event.stopPropagation();
-          const $parent = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('.' + className).find('.show');
-          const $button = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target);
-          const eventName = $button.data('event');
-          let value = $button.attr('data-value');
+              // Shift palette chips
+              const $chip = $palette.find('.note-color-btn').last().detach();
 
-          if (eventName === 'openPalette') {
-            const $picker = $parent.find('#' + value);
-            const $palette = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()($parent.find('#' + $picker.data('event')).find('.note-color-row')[0]); // Shift palette chips
+              // Set chip attributes
+              const color = $picker.val();
+              $chip.css('background-color', color)
+                .attr('aria-label', color)
+                .attr('data-value', color)
+                .attr('data-original-title', color);
+              $palette.prepend($chip);
+              $picker.click();
+            } else if (lists.contains(['backColor', 'foreColor'], eventName)) {
+              const key = eventName === 'backColor' ? 'background-color' : 'color';
+              const $color = $button.closest('.note-color').find('.note-recent-color');
+              const $currentButton = $button.closest('.note-color').find('.note-current-color-button');
 
-            const $chip = $palette.find('.note-color-btn').last().detach(); // Set chip attributes
-
-            const color = $picker.val();
-            $chip.css('background-color', color).attr('aria-label', color).attr('data-value', color).attr('data-original-title', color);
-            $palette.prepend($chip);
-            $picker.click();
-          } else if (lists.contains(['backColor', 'foreColor'], eventName)) {
-            const key = eventName === 'backColor' ? 'background-color' : 'color';
-            const $color = $button.closest('.note-color').find('.note-recent-color');
-            const $currentButton = $button.closest('.note-color').find('.note-current-color-button');
-            $color.css(key, value);
-            $currentButton.attr('data-' + eventName, value);
-            this.context.invoke('editor.' + eventName, value);
-          }
-        }
-      })]
+              $color.css(key, value);
+              $currentButton.attr('data-' + eventName, value);
+              this.context.invoke('editor.' + eventName, value);
+            }
+          },
+        }),
+      ],
     }).render();
   }
 
   addToolbarButtons() {
     this.context.memo('button.style', () => {
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.magic), this.options),
-        tooltip: this.lang.style.style,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdown({
-        className: 'dropdown-style',
-        items: this.options.styleTags,
-        title: this.lang.style.style,
-        template: item => {
-          if (typeof item === 'string') {
-            item = {
-              tag: item,
-              title: this.lang.style.hasOwnProperty(item) ? this.lang.style[item] : item
-            };
-          }
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents(
+            this.ui.icon(this.options.icons.magic), this.options
+          ),
+          tooltip: this.lang.style.style,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdown({
+          className: 'dropdown-style',
+          items: this.options.styleTags,
+          title: this.lang.style.style,
+          template: (item) => {
+            if (typeof item === 'string') {
+              item = { tag: item, title: (this.lang.style.hasOwnProperty(item) ? this.lang.style[item] : item) };
+            }
 
-          const tag = item.tag;
-          const title = item.title;
-          const style = item.style ? ' style="' + item.style + '" ' : '';
-          const className = item.className ? ' class="' + item.className + '"' : '';
-          return '<' + tag + style + className + '>' + title + '</' + tag + '>';
-        },
-        click: this.context.createInvokeHandler('editor.formatBlock')
-      })]).render();
+            const tag = item.tag;
+            const title = item.title;
+            const style = item.style ? ' style="' + item.style + '" ' : '';
+            const className = item.className ? ' class="' + item.className + '"' : '';
+
+            return '<' + tag + style + className + '>' + title + '</' + tag + '>';
+          },
+          click: this.context.createInvokeHandler('editor.formatBlock'),
+        }),
+      ]).render();
     });
 
     for (let styleIdx = 0, styleLen = this.options.styleTags.length; styleIdx < styleLen; styleIdx++) {
       const item = this.options.styleTags[styleIdx];
+
       this.context.memo('button.style.' + item, () => {
         return this.button({
           className: 'note-btn-style-' + item,
           contents: '<div data-value="' + item + '">' + item.toUpperCase() + '</div>',
           tooltip: this.lang.style[item],
-          click: this.context.createInvokeHandler('editor.formatBlock')
+          click: this.context.createInvokeHandler('editor.formatBlock'),
         }).render();
       });
     }
@@ -6798,56 +6721,63 @@ class Buttons_Buttons {
         className: 'note-btn-bold',
         contents: this.ui.icon(this.options.icons.bold),
         tooltip: this.lang.font.bold + this.representShortcut('bold'),
-        click: this.context.createInvokeHandlerAndUpdateState('editor.bold')
+        click: this.context.createInvokeHandlerAndUpdateState('editor.bold'),
       }).render();
     });
+
     this.context.memo('button.italic', () => {
       return this.button({
         className: 'note-btn-italic',
         contents: this.ui.icon(this.options.icons.italic),
         tooltip: this.lang.font.italic + this.representShortcut('italic'),
-        click: this.context.createInvokeHandlerAndUpdateState('editor.italic')
+        click: this.context.createInvokeHandlerAndUpdateState('editor.italic'),
       }).render();
     });
+
     this.context.memo('button.underline', () => {
       return this.button({
         className: 'note-btn-underline',
         contents: this.ui.icon(this.options.icons.underline),
         tooltip: this.lang.font.underline + this.representShortcut('underline'),
-        click: this.context.createInvokeHandlerAndUpdateState('editor.underline')
+        click: this.context.createInvokeHandlerAndUpdateState('editor.underline'),
       }).render();
     });
+
     this.context.memo('button.clear', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.eraser),
         tooltip: this.lang.font.clear + this.representShortcut('removeFormat'),
-        click: this.context.createInvokeHandler('editor.removeFormat')
+        click: this.context.createInvokeHandler('editor.removeFormat'),
       }).render();
     });
+
     this.context.memo('button.strikethrough', () => {
       return this.button({
         className: 'note-btn-strikethrough',
         contents: this.ui.icon(this.options.icons.strikethrough),
         tooltip: this.lang.font.strikethrough + this.representShortcut('strikethrough'),
-        click: this.context.createInvokeHandlerAndUpdateState('editor.strikethrough')
+        click: this.context.createInvokeHandlerAndUpdateState('editor.strikethrough'),
       }).render();
     });
+
     this.context.memo('button.superscript', () => {
       return this.button({
         className: 'note-btn-superscript',
         contents: this.ui.icon(this.options.icons.superscript),
         tooltip: this.lang.font.superscript,
-        click: this.context.createInvokeHandlerAndUpdateState('editor.superscript')
+        click: this.context.createInvokeHandlerAndUpdateState('editor.superscript'),
       }).render();
     });
+
     this.context.memo('button.subscript', () => {
       return this.button({
         className: 'note-btn-subscript',
         contents: this.ui.icon(this.options.icons.subscript),
         tooltip: this.lang.font.subscript,
-        click: this.context.createInvokeHandlerAndUpdateState('editor.subscript')
+        click: this.context.createInvokeHandlerAndUpdateState('editor.subscript'),
       }).render();
     });
+
     this.context.memo('button.fontname', () => {
       const styleInfo = this.context.invoke('editor.currentStyle');
 
@@ -6855,7 +6785,6 @@ class Buttons_Buttons {
         // Add 'default' fonts into the fontnames array if not exist
         external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.each(styleInfo['font-family'].split(','), (idx, fontname) => {
           fontname = fontname.trim().replace(/['"]+/g, '');
-
           if (this.isFontDeservedToAdd(fontname)) {
             if (this.options.fontNames.indexOf(fontname) === -1) {
               this.options.fontNames.push(fontname);
@@ -6864,235 +6793,293 @@ class Buttons_Buttons {
         });
       }
 
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents('<span class="note-current-fontname"/>', this.options),
-        tooltip: this.lang.font.name,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdownCheck({
-        className: 'dropdown-fontname',
-        checkClassName: this.options.icons.menuCheck,
-        items: this.options.fontNames.filter(this.isFontInstalled.bind(this)),
-        title: this.lang.font.name,
-        template: item => {
-          return '<span style="font-family: ' + env.validFontName(item) + '">' + item + '</span>';
-        },
-        click: this.context.createInvokeHandlerAndUpdateState('editor.fontName')
-      })]).render();
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents(
+            '<span class="note-current-fontname"/>', this.options
+          ),
+          tooltip: this.lang.font.name,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdownCheck({
+          className: 'dropdown-fontname',
+          checkClassName: this.options.icons.menuCheck,
+          items: this.options.fontNames.filter(this.isFontInstalled.bind(this)),
+          title: this.lang.font.name,
+          template: (item) => {
+            return '<span style="font-family: ' + env.validFontName(item) + '">' + item + '</span>';
+          },
+          click: this.context.createInvokeHandlerAndUpdateState('editor.fontName'),
+        }),
+      ]).render();
     });
+
     this.context.memo('button.fontsize', () => {
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents('<span class="note-current-fontsize"/>', this.options),
-        tooltip: this.lang.font.size,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdownCheck({
-        className: 'dropdown-fontsize',
-        checkClassName: this.options.icons.menuCheck,
-        items: this.options.fontSizes,
-        title: this.lang.font.size,
-        click: this.context.createInvokeHandlerAndUpdateState('editor.fontSize')
-      })]).render();
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents('<span class="note-current-fontsize"/>', this.options),
+          tooltip: this.lang.font.size,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdownCheck({
+          className: 'dropdown-fontsize',
+          checkClassName: this.options.icons.menuCheck,
+          items: this.options.fontSizes,
+          title: this.lang.font.size,
+          click: this.context.createInvokeHandlerAndUpdateState('editor.fontSize'),
+        }),
+      ]).render();
     });
+
     this.context.memo('button.fontsizeunit', () => {
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents('<span class="note-current-fontsizeunit"/>', this.options),
-        tooltip: this.lang.font.sizeunit,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdownCheck({
-        className: 'dropdown-fontsizeunit',
-        checkClassName: this.options.icons.menuCheck,
-        items: this.options.fontSizeUnits,
-        title: this.lang.font.sizeunit,
-        click: this.context.createInvokeHandlerAndUpdateState('editor.fontSizeUnit')
-      })]).render();
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents('<span class="note-current-fontsizeunit"/>', this.options),
+          tooltip: this.lang.font.sizeunit,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdownCheck({
+          className: 'dropdown-fontsizeunit',
+          checkClassName: this.options.icons.menuCheck,
+          items: this.options.fontSizeUnits,
+          title: this.lang.font.sizeunit,
+          click: this.context.createInvokeHandlerAndUpdateState('editor.fontSizeUnit'),
+        }),
+      ]).render();
     });
+
     this.context.memo('button.color', () => {
       return this.colorPalette('note-color-all', this.lang.color.recent, true, true);
     });
+
     this.context.memo('button.forecolor', () => {
       return this.colorPalette('note-color-fore', this.lang.color.foreground, false, true);
     });
+
     this.context.memo('button.backcolor', () => {
       return this.colorPalette('note-color-back', this.lang.color.background, true, false);
     });
+
     this.context.memo('button.ul', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.unorderedlist),
         tooltip: this.lang.lists.unordered + this.representShortcut('insertUnorderedList'),
-        click: this.context.createInvokeHandler('editor.insertUnorderedList')
+        click: this.context.createInvokeHandler('editor.insertUnorderedList'),
       }).render();
     });
+
     this.context.memo('button.ol', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.orderedlist),
         tooltip: this.lang.lists.ordered + this.representShortcut('insertOrderedList'),
-        click: this.context.createInvokeHandler('editor.insertOrderedList')
+        click: this.context.createInvokeHandler('editor.insertOrderedList'),
       }).render();
     });
+
     const justifyLeft = this.button({
       contents: this.ui.icon(this.options.icons.alignLeft),
       tooltip: this.lang.paragraph.left + this.representShortcut('justifyLeft'),
-      click: this.context.createInvokeHandler('editor.justifyLeft')
+      click: this.context.createInvokeHandler('editor.justifyLeft'),
     });
+
     const justifyCenter = this.button({
       contents: this.ui.icon(this.options.icons.alignCenter),
       tooltip: this.lang.paragraph.center + this.representShortcut('justifyCenter'),
-      click: this.context.createInvokeHandler('editor.justifyCenter')
+      click: this.context.createInvokeHandler('editor.justifyCenter'),
     });
+
     const justifyRight = this.button({
       contents: this.ui.icon(this.options.icons.alignRight),
       tooltip: this.lang.paragraph.right + this.representShortcut('justifyRight'),
-      click: this.context.createInvokeHandler('editor.justifyRight')
+      click: this.context.createInvokeHandler('editor.justifyRight'),
     });
+
     const justifyFull = this.button({
       contents: this.ui.icon(this.options.icons.alignJustify),
       tooltip: this.lang.paragraph.justify + this.representShortcut('justifyFull'),
-      click: this.context.createInvokeHandler('editor.justifyFull')
+      click: this.context.createInvokeHandler('editor.justifyFull'),
     });
+
     const outdent = this.button({
       contents: this.ui.icon(this.options.icons.outdent),
       tooltip: this.lang.paragraph.outdent + this.representShortcut('outdent'),
-      click: this.context.createInvokeHandler('editor.outdent')
+      click: this.context.createInvokeHandler('editor.outdent'),
     });
+
     const indent = this.button({
       contents: this.ui.icon(this.options.icons.indent),
       tooltip: this.lang.paragraph.indent + this.representShortcut('indent'),
-      click: this.context.createInvokeHandler('editor.indent')
+      click: this.context.createInvokeHandler('editor.indent'),
     });
+
     this.context.memo('button.justifyLeft', func.invoke(justifyLeft, 'render'));
     this.context.memo('button.justifyCenter', func.invoke(justifyCenter, 'render'));
     this.context.memo('button.justifyRight', func.invoke(justifyRight, 'render'));
     this.context.memo('button.justifyFull', func.invoke(justifyFull, 'render'));
     this.context.memo('button.outdent', func.invoke(outdent, 'render'));
     this.context.memo('button.indent', func.invoke(indent, 'render'));
+
     this.context.memo('button.paragraph', () => {
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.alignLeft), this.options),
-        tooltip: this.lang.paragraph.paragraph,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdown([this.ui.buttonGroup({
-        className: 'note-align',
-        children: [justifyLeft, justifyCenter, justifyRight, justifyFull]
-      }), this.ui.buttonGroup({
-        className: 'note-list',
-        children: [outdent, indent]
-      })])]).render();
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.alignLeft), this.options),
+          tooltip: this.lang.paragraph.paragraph,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdown([
+          this.ui.buttonGroup({
+            className: 'note-align',
+            children: [justifyLeft, justifyCenter, justifyRight, justifyFull],
+          }),
+          this.ui.buttonGroup({
+            className: 'note-list',
+            children: [outdent, indent],
+          }),
+        ]),
+      ]).render();
     });
+
     this.context.memo('button.height', () => {
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.textHeight), this.options),
-        tooltip: this.lang.font.height,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdownCheck({
-        items: this.options.lineHeights,
-        checkClassName: this.options.icons.menuCheck,
-        className: 'dropdown-line-height',
-        title: this.lang.font.height,
-        click: this.context.createInvokeHandler('editor.lineHeight')
-      })]).render();
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.textHeight), this.options),
+          tooltip: this.lang.font.height,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdownCheck({
+          items: this.options.lineHeights,
+          checkClassName: this.options.icons.menuCheck,
+          className: 'dropdown-line-height',
+          title: this.lang.font.height,
+          click: this.context.createInvokeHandler('editor.lineHeight'),
+        }),
+      ]).render();
     });
+
     this.context.memo('button.table', () => {
-      return this.ui.buttonGroup([this.button({
-        className: 'dropdown-toggle',
-        contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.table), this.options),
-        tooltip: this.lang.table.table,
-        data: {
-          toggle: 'dropdown'
-        }
-      }), this.ui.dropdown({
-        title: this.lang.table.table,
-        className: 'note-table',
-        items: ['<div class="note-dimension-picker">', '<div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1"/>', '<div class="note-dimension-picker-highlighted"/>', '<div class="note-dimension-picker-unhighlighted"/>', '</div>', '<div class="note-dimension-display">1 x 1</div>'].join('')
-      })], {
-        callback: $node => {
+      return this.ui.buttonGroup([
+        this.button({
+          className: 'dropdown-toggle',
+          contents: this.ui.dropdownButtonContents(this.ui.icon(this.options.icons.table), this.options),
+          tooltip: this.lang.table.table,
+          data: {
+            toggle: 'dropdown',
+          },
+        }),
+        this.ui.dropdown({
+          title: this.lang.table.table,
+          className: 'note-table',
+          items: [
+            '<div class="note-dimension-picker">',
+              '<div class="note-dimension-picker-mousecatcher" data-event="insertTable" data-value="1x1"/>',
+              '<div class="note-dimension-picker-highlighted"/>',
+              '<div class="note-dimension-picker-unhighlighted"/>',
+            '</div>',
+            '<div class="note-dimension-display">1 x 1</div>',
+          ].join(''),
+        }),
+      ], {
+        callback: ($node) => {
           const $catcher = $node.find('.note-dimension-picker-mousecatcher');
           $catcher.css({
             width: this.options.insertTableMaxSize.col + 'em',
-            height: this.options.insertTableMaxSize.row + 'em'
-          }).mousedown(this.context.createInvokeHandler('editor.insertTable')).on('mousemove', this.tableMoveHandler.bind(this));
-        }
+            height: this.options.insertTableMaxSize.row + 'em',
+          }).mousedown(this.context.createInvokeHandler('editor.insertTable'))
+            .on('mousemove', this.tableMoveHandler.bind(this));
+        },
       }).render();
     });
+
     this.context.memo('button.link', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.link),
         tooltip: this.lang.link.link + this.representShortcut('linkDialog.show'),
-        click: this.context.createInvokeHandler('linkDialog.show')
+        click: this.context.createInvokeHandler('linkDialog.show'),
       }).render();
     });
+
     this.context.memo('button.picture', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.picture),
         tooltip: this.lang.image.image,
-        click: this.context.createInvokeHandler('imageDialog.show')
+        click: this.context.createInvokeHandler('imageDialog.show'),
       }).render();
     });
+
     this.context.memo('button.video', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.video),
         tooltip: this.lang.video.video,
-        click: this.context.createInvokeHandler('videoDialog.show')
+        click: this.context.createInvokeHandler('videoDialog.show'),
       }).render();
     });
+
     this.context.memo('button.hr', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.minus),
         tooltip: this.lang.hr.insert + this.representShortcut('insertHorizontalRule'),
-        click: this.context.createInvokeHandler('editor.insertHorizontalRule')
+        click: this.context.createInvokeHandler('editor.insertHorizontalRule'),
       }).render();
     });
+
     this.context.memo('button.fullscreen', () => {
       return this.button({
         className: 'btn-fullscreen',
         contents: this.ui.icon(this.options.icons.arrowsAlt),
         tooltip: this.lang.options.fullscreen,
-        click: this.context.createInvokeHandler('fullscreen.toggle')
+        click: this.context.createInvokeHandler('fullscreen.toggle'),
       }).render();
     });
+
     this.context.memo('button.codeview', () => {
       return this.button({
         className: 'btn-codeview',
         contents: this.ui.icon(this.options.icons.code),
         tooltip: this.lang.options.codeview,
-        click: this.context.createInvokeHandler('codeview.toggle')
+        click: this.context.createInvokeHandler('codeview.toggle'),
       }).render();
     });
+
     this.context.memo('button.redo', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.redo),
         tooltip: this.lang.history.redo + this.representShortcut('redo'),
-        click: this.context.createInvokeHandler('editor.redo')
+        click: this.context.createInvokeHandler('editor.redo'),
       }).render();
     });
+
     this.context.memo('button.undo', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.undo),
         tooltip: this.lang.history.undo + this.representShortcut('undo'),
-        click: this.context.createInvokeHandler('editor.undo')
+        click: this.context.createInvokeHandler('editor.undo'),
       }).render();
     });
+
     this.context.memo('button.help', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.question),
         tooltip: this.lang.options.help,
-        click: this.context.createInvokeHandler('helpDialog.show')
+        click: this.context.createInvokeHandler('helpDialog.show'),
       }).render();
     });
   }
+
   /**
    * image: [
    *   ['imageResize', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
@@ -7100,66 +7087,68 @@ class Buttons_Buttons {
    *   ['remove', ['removeMedia']],
    * ],
    */
-
-
   addImagePopoverButtons() {
     // Image Size Buttons
     this.context.memo('button.resizeFull', () => {
       return this.button({
         contents: '<span class="note-fontsize-10">100%</span>',
         tooltip: this.lang.image.resizeFull,
-        click: this.context.createInvokeHandler('editor.resize', '1')
+        click: this.context.createInvokeHandler('editor.resize', '1'),
       }).render();
     });
     this.context.memo('button.resizeHalf', () => {
       return this.button({
         contents: '<span class="note-fontsize-10">50%</span>',
         tooltip: this.lang.image.resizeHalf,
-        click: this.context.createInvokeHandler('editor.resize', '0.5')
+        click: this.context.createInvokeHandler('editor.resize', '0.5'),
       }).render();
     });
     this.context.memo('button.resizeQuarter', () => {
       return this.button({
         contents: '<span class="note-fontsize-10">25%</span>',
         tooltip: this.lang.image.resizeQuarter,
-        click: this.context.createInvokeHandler('editor.resize', '0.25')
+        click: this.context.createInvokeHandler('editor.resize', '0.25'),
       }).render();
     });
     this.context.memo('button.resizeNone', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.rollback),
         tooltip: this.lang.image.resizeNone,
-        click: this.context.createInvokeHandler('editor.resize', '0')
+        click: this.context.createInvokeHandler('editor.resize', '0'),
       }).render();
-    }); // Float Buttons
+    });
 
+    // Float Buttons
     this.context.memo('button.floatLeft', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.floatLeft),
         tooltip: this.lang.image.floatLeft,
-        click: this.context.createInvokeHandler('editor.floatMe', 'left')
+        click: this.context.createInvokeHandler('editor.floatMe', 'left'),
       }).render();
     });
+
     this.context.memo('button.floatRight', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.floatRight),
         tooltip: this.lang.image.floatRight,
-        click: this.context.createInvokeHandler('editor.floatMe', 'right')
+        click: this.context.createInvokeHandler('editor.floatMe', 'right'),
       }).render();
     });
+
     this.context.memo('button.floatNone', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.rollback),
         tooltip: this.lang.image.floatNone,
-        click: this.context.createInvokeHandler('editor.floatMe', 'none')
+        click: this.context.createInvokeHandler('editor.floatMe', 'none'),
       }).render();
-    }); // Remove Buttons
+    });
 
+    // Remove Buttons
     this.context.memo('button.removeMedia', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.trash),
         tooltip: this.lang.image.remove,
-        click: this.context.createInvokeHandler('editor.removeMedia')
+        click: this.context.createInvokeHandler('editor.removeMedia'),
       }).render();
     });
   }
@@ -7169,32 +7158,32 @@ class Buttons_Buttons {
       return this.button({
         contents: this.ui.icon(this.options.icons.link),
         tooltip: this.lang.link.edit,
-        click: this.context.createInvokeHandler('linkDialog.show')
+        click: this.context.createInvokeHandler('linkDialog.show'),
       }).render();
     });
+
     this.context.memo('button.unlink', () => {
       return this.button({
         contents: this.ui.icon(this.options.icons.unlink),
         tooltip: this.lang.link.unlink,
-        click: this.context.createInvokeHandler('editor.unlink')
+        click: this.context.createInvokeHandler('editor.unlink'),
       }).render();
     });
   }
+
   /**
    * table : [
    *  ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
    *  ['delete', ['deleteRow', 'deleteCol', 'deleteTable']]
    * ],
    */
-
-
   addTablePopoverButtons() {
     this.context.memo('button.addRowUp', () => {
       return this.button({
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.rowAbove),
         tooltip: this.lang.table.addRowAbove,
-        click: this.context.createInvokeHandler('editor.addRow', 'top')
+        click: this.context.createInvokeHandler('editor.addRow', 'top'),
       }).render();
     });
     this.context.memo('button.addRowDown', () => {
@@ -7202,7 +7191,7 @@ class Buttons_Buttons {
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.rowBelow),
         tooltip: this.lang.table.addRowBelow,
-        click: this.context.createInvokeHandler('editor.addRow', 'bottom')
+        click: this.context.createInvokeHandler('editor.addRow', 'bottom'),
       }).render();
     });
     this.context.memo('button.addColLeft', () => {
@@ -7210,7 +7199,7 @@ class Buttons_Buttons {
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.colBefore),
         tooltip: this.lang.table.addColLeft,
-        click: this.context.createInvokeHandler('editor.addCol', 'left')
+        click: this.context.createInvokeHandler('editor.addCol', 'left'),
       }).render();
     });
     this.context.memo('button.addColRight', () => {
@@ -7218,7 +7207,7 @@ class Buttons_Buttons {
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.colAfter),
         tooltip: this.lang.table.addColRight,
-        click: this.context.createInvokeHandler('editor.addCol', 'right')
+        click: this.context.createInvokeHandler('editor.addCol', 'right'),
       }).render();
     });
     this.context.memo('button.deleteRow', () => {
@@ -7226,7 +7215,7 @@ class Buttons_Buttons {
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.rowRemove),
         tooltip: this.lang.table.delRow,
-        click: this.context.createInvokeHandler('editor.deleteRow')
+        click: this.context.createInvokeHandler('editor.deleteRow'),
       }).render();
     });
     this.context.memo('button.deleteCol', () => {
@@ -7234,7 +7223,7 @@ class Buttons_Buttons {
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.colRemove),
         tooltip: this.lang.table.delCol,
-        click: this.context.createInvokeHandler('editor.deleteCol')
+        click: this.context.createInvokeHandler('editor.deleteCol'),
       }).render();
     });
     this.context.memo('button.deleteTable', () => {
@@ -7242,7 +7231,7 @@ class Buttons_Buttons {
         className: 'btn-md',
         contents: this.ui.icon(this.options.icons.trash),
         tooltip: this.lang.table.delTable,
-        click: this.context.createInvokeHandler('editor.deleteTable')
+        click: this.context.createInvokeHandler('editor.deleteTable'),
       }).render();
     });
   }
@@ -7251,29 +7240,28 @@ class Buttons_Buttons {
     for (let groupIdx = 0, groupLen = groups.length; groupIdx < groupLen; groupIdx++) {
       const group = groups[groupIdx];
       const groupName = Array.isArray(group) ? group[0] : group;
-      const buttons = Array.isArray(group) ? group.length === 1 ? [group[0]] : group[1] : [group];
+      const buttons = Array.isArray(group) ? ((group.length === 1) ? [group[0]] : group[1]) : [group];
+
       const $group = this.ui.buttonGroup({
-        className: 'note-' + groupName
+        className: 'note-' + groupName,
       }).render();
 
       for (let idx = 0, len = buttons.length; idx < len; idx++) {
         const btn = this.context.memo('button.' + buttons[idx]);
-
         if (btn) {
           $group.append(typeof btn === 'function' ? btn(this.context) : btn);
         }
       }
-
       $group.appendTo($container);
     }
   }
+
   /**
    * @param {jQuery} [$container]
    */
-
-
   updateCurrentStyle($container) {
     const $cont = $container || this.$toolbar;
+
     const styleInfo = this.context.invoke('editor.currentStyle');
     this.updateBtnStates($cont, {
       '.note-btn-bold': () => {
@@ -7293,18 +7281,21 @@ class Buttons_Buttons {
       },
       '.note-btn-strikethrough': () => {
         return styleInfo['font-strikethrough'] === 'strikethrough';
-      }
+      },
     });
 
     if (styleInfo['font-family']) {
-      const fontNames = styleInfo['font-family'].split(',').map(name => {
-        return name.replace(/[\'\"]/g, '').replace(/\s+$/, '').replace(/^\s+/, '');
+      const fontNames = styleInfo['font-family'].split(',').map((name) => {
+        return name.replace(/[\'\"]/g, '')
+          .replace(/\s+$/, '')
+          .replace(/^\s+/, '');
       });
       const fontName = lists.find(fontNames, this.isFontInstalled.bind(this));
-      $cont.find('.dropdown-fontname a').each((idx, item) => {
-        const $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item); // always compare string to avoid creating another func.
 
-        const isChecked = $item.data('value') + '' === fontName + '';
+      $cont.find('.dropdown-fontname a').each((idx, item) => {
+        const $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+        // always compare string to avoid creating another func.
+        const isChecked = ($item.data('value') + '') === (fontName + '');
         $item.toggleClass('checked', isChecked);
       });
       $cont.find('.note-current-fontname').text(fontName).css('font-family', fontName);
@@ -7313,16 +7304,17 @@ class Buttons_Buttons {
     if (styleInfo['font-size']) {
       const fontSize = styleInfo['font-size'];
       $cont.find('.dropdown-fontsize a').each((idx, item) => {
-        const $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item); // always compare with string to avoid creating another func.
-
-        const isChecked = $item.data('value') + '' === fontSize + '';
+        const $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
+        // always compare with string to avoid creating another func.
+        const isChecked = ($item.data('value') + '') === (fontSize + '');
         $item.toggleClass('checked', isChecked);
       });
       $cont.find('.note-current-fontsize').text(fontSize);
+
       const fontSizeUnit = styleInfo['font-size-unit'];
       $cont.find('.dropdown-fontsizeunit a').each((idx, item) => {
         const $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item);
-        const isChecked = $item.data('value') + '' === fontSizeUnit + '';
+        const isChecked = ($item.data('value') + '') === (fontSizeUnit + '');
         $item.toggleClass('checked', isChecked);
       });
       $cont.find('.note-current-fontsizeunit').text(fontSizeUnit);
@@ -7332,7 +7324,7 @@ class Buttons_Buttons {
       const lineHeight = styleInfo['line-height'];
       $cont.find('.dropdown-line-height li a').each((idx, item) => {
         // always compare with string to avoid creating another func.
-        const isChecked = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).data('value') + '' === lineHeight + '';
+        const isChecked = (external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(item).data('value') + '') === (lineHeight + '');
         this.className = isChecked ? 'checked' : '';
       });
     }
@@ -7347,59 +7339,55 @@ class Buttons_Buttons {
   tableMoveHandler(event) {
     const PX_PER_EM = 18;
     const $picker = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target.parentNode); // target is mousecatcher
-
     const $dimensionDisplay = $picker.next();
     const $catcher = $picker.find('.note-dimension-picker-mousecatcher');
     const $highlighted = $picker.find('.note-dimension-picker-highlighted');
     const $unhighlighted = $picker.find('.note-dimension-picker-unhighlighted');
-    let posOffset; // HTML5 with jQuery - e.offsetX is undefined in Firefox
 
+    let posOffset;
+    // HTML5 with jQuery - e.offsetX is undefined in Firefox
     if (event.offsetX === undefined) {
       const posCatcher = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(event.target).offset();
       posOffset = {
         x: event.pageX - posCatcher.left,
-        y: event.pageY - posCatcher.top
+        y: event.pageY - posCatcher.top,
       };
     } else {
       posOffset = {
         x: event.offsetX,
-        y: event.offsetY
+        y: event.offsetY,
       };
     }
 
     const dim = {
       c: Math.ceil(posOffset.x / PX_PER_EM) || 1,
-      r: Math.ceil(posOffset.y / PX_PER_EM) || 1
+      r: Math.ceil(posOffset.y / PX_PER_EM) || 1,
     };
-    $highlighted.css({
-      width: dim.c + 'em',
-      height: dim.r + 'em'
-    });
+
+    $highlighted.css({ width: dim.c + 'em', height: dim.r + 'em' });
     $catcher.data('value', dim.c + 'x' + dim.r);
 
     if (dim.c > 3 && dim.c < this.options.insertTableMaxSize.col) {
-      $unhighlighted.css({
-        width: dim.c + 1 + 'em'
-      });
+      $unhighlighted.css({ width: dim.c + 1 + 'em' });
     }
 
     if (dim.r > 3 && dim.r < this.options.insertTableMaxSize.row) {
-      $unhighlighted.css({
-        height: dim.r + 1 + 'em'
-      });
+      $unhighlighted.css({ height: dim.r + 1 + 'em' });
     }
 
     $dimensionDisplay.html(dim.c + ' x ' + dim.r);
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/Toolbar.js
 
 class Toolbar_Toolbar {
   constructor(context) {
     this.context = context;
+
     this.$window = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(window);
     this.$document = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document);
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$note = context.layoutInfo.note;
     this.$editor = context.layoutInfo.editor;
@@ -7407,6 +7395,7 @@ class Toolbar_Toolbar {
     this.$editable = context.layoutInfo.editable;
     this.$statusbar = context.layoutInfo.statusbar;
     this.options = context.options;
+
     this.isFollowing = false;
     this.followScroll = this.followScroll.bind(this);
   }
@@ -7429,11 +7418,12 @@ class Toolbar_Toolbar {
     }
 
     this.changeContainer(false);
+
     this.$note.on('summernote.keyup summernote.mouseup summernote.change', () => {
       this.context.invoke('buttons.updateCurrentStyle');
     });
-    this.context.invoke('buttons.updateCurrentStyle');
 
+    this.context.invoke('buttons.updateCurrentStyle');
     if (this.options.followingToolbar) {
       this.$window.on('scroll resize', this.followScroll);
     }
@@ -7455,10 +7445,10 @@ class Toolbar_Toolbar {
     const editorHeight = this.$editor.outerHeight();
     const editorWidth = this.$editor.width();
     const toolbarHeight = this.$toolbar.height();
-    const statusbarHeight = this.$statusbar.height(); // check if the web app is currently using another static bar
+    const statusbarHeight = this.$statusbar.height();
 
+    // check if the web app is currently using another static bar
     let otherBarHeight = 0;
-
     if (this.options.otherStaticBar) {
       otherBarHeight = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.otherStaticBar).outerHeight();
     }
@@ -7469,27 +7459,29 @@ class Toolbar_Toolbar {
     const activateOffset = editorOffsetTop - otherBarHeight;
     const deactivateOffsetBottom = editorOffsetBottom - otherBarHeight - toolbarHeight - statusbarHeight;
 
-    if (!this.isFollowing && currentOffset > activateOffset && currentOffset < deactivateOffsetBottom - toolbarHeight) {
+    if (!this.isFollowing &&
+      (currentOffset > activateOffset) && (currentOffset < deactivateOffsetBottom - toolbarHeight)) {
       this.isFollowing = true;
       this.$toolbar.css({
         position: 'fixed',
         top: otherBarHeight,
         width: editorWidth,
-        zIndex: 1000
+        zIndex: 1000,
       });
       this.$editable.css({
-        marginTop: this.$toolbar.height() + 5
+        marginTop: this.$toolbar.height() + 5,
       });
-    } else if (this.isFollowing && (currentOffset < activateOffset || currentOffset > deactivateOffsetBottom)) {
+    } else if (this.isFollowing &&
+      ((currentOffset < activateOffset) || (currentOffset > deactivateOffsetBottom))) {
       this.isFollowing = false;
       this.$toolbar.css({
         position: 'relative',
         top: 0,
         width: '100%',
-        zIndex: 'auto'
+        zIndex: 'auto',
       });
       this.$editable.css({
-        marginTop: ''
+        marginTop: '',
       });
     }
   }
@@ -7502,7 +7494,6 @@ class Toolbar_Toolbar {
         this.$toolbar.appendTo(this.options.toolbarContainer);
       }
     }
-
     if (this.options.followingToolbar) {
       this.followScroll();
     }
@@ -7510,12 +7501,12 @@ class Toolbar_Toolbar {
 
   updateFullscreen(isFullscreen) {
     this.ui.toggleBtnActive(this.$toolbar.find('.btn-fullscreen'), isFullscreen);
+
     this.changeContainer(isFullscreen);
   }
 
   updateCodeview(isCodeview) {
     this.ui.toggleBtnActive(this.$toolbar.find('.btn-codeview'), isCodeview);
-
     if (isCodeview) {
       this.deactivate();
     } else {
@@ -7525,26 +7516,23 @@ class Toolbar_Toolbar {
 
   activate(isIncludeCodeview) {
     let $btn = this.$toolbar.find('button');
-
     if (!isIncludeCodeview) {
       $btn = $btn.not('.btn-codeview').not('.btn-fullscreen');
     }
-
     this.ui.toggleBtn($btn, true);
   }
 
   deactivate(isIncludeCodeview) {
     let $btn = this.$toolbar.find('button');
-
     if (!isIncludeCodeview) {
       $btn = $btn.not('.btn-codeview').not('.btn-fullscreen');
     }
-
     this.ui.toggleBtn($btn, false);
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/LinkDialog.js
+
 
 
 
@@ -7552,33 +7540,50 @@ class Toolbar_Toolbar {
 class LinkDialog_LinkDialog {
   constructor(context) {
     this.context = context;
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
     this.$editor = context.layoutInfo.editor;
     this.options = context.options;
     this.lang = this.options.langInfo;
+
     context.memo('help.linkDialog.show', this.options.langInfo.help['linkDialog.show']);
   }
 
   initialize() {
     const $container = this.options.dialogsInBody ? this.$body : this.options.container;
-    const body = ['<div class="form-group note-form-group">', `<label for="note-dialog-link-txt-${this.options.id}" class="note-form-label">${this.lang.link.textToDisplay}</label>`, `<input id="note-dialog-link-txt-${this.options.id}" class="note-link-text form-control note-form-control note-input" type="text"/>`, '</div>', '<div class="form-group note-form-group">', `<label for="note-dialog-link-url-${this.options.id}" class="note-form-label">${this.lang.link.url}</label>`, `<input id="note-dialog-link-url-${this.options.id}" class="note-link-url form-control note-form-control note-input" type="text" value="http://"/>`, '</div>', !this.options.disableLinkTarget ? external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
-      className: 'sn-checkbox-open-in-new-window',
-      text: this.lang.link.openInNewWindow,
-      checked: true
-    }).render()).html() : '', external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
-      className: 'sn-checkbox-use-protocol',
-      text: this.lang.link.useProtocol,
-      checked: true
-    }).render()).html()].join('');
+    const body = [
+      '<div class="form-group note-form-group">',
+        `<label for="note-dialog-link-txt-${this.options.id}" class="note-form-label">${this.lang.link.textToDisplay}</label>`,
+        `<input id="note-dialog-link-txt-${this.options.id}" class="note-link-text form-control note-form-control note-input" type="text"/>`,
+      '</div>',
+      '<div class="form-group note-form-group">',
+        `<label for="note-dialog-link-url-${this.options.id}" class="note-form-label">${this.lang.link.url}</label>`,
+        `<input id="note-dialog-link-url-${this.options.id}" class="note-link-url form-control note-form-control note-input" type="text" value="http://"/>`,
+      '</div>',
+      !this.options.disableLinkTarget
+        ? external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
+          className: 'sn-checkbox-open-in-new-window',
+          text: this.lang.link.openInNewWindow,
+          checked: true,
+        }).render()).html()
+        : '',
+      external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div/>').append(this.ui.checkbox({
+        className: 'sn-checkbox-use-protocol',
+        text: this.lang.link.useProtocol,
+        checked: true,
+      }).render()).html(),
+    ].join('');
+
     const buttonClass = 'btn btn-primary note-btn note-btn-primary note-link-btn';
     const footer = `<input type="button" href="#" class="${buttonClass}" value="${this.lang.link.insert}" disabled>`;
+
     this.$dialog = this.ui.dialog({
       className: 'link-dialog',
       title: this.lang.link.insert,
       fade: this.options.dialogsFade,
       body: body,
-      footer: footer
+      footer: footer,
     }).render().appendTo($container);
   }
 
@@ -7588,39 +7593,41 @@ class LinkDialog_LinkDialog {
   }
 
   bindEnterKey($input, $btn) {
-    $input.on('keypress', event => {
+    $input.on('keypress', (event) => {
       if (event.keyCode === core_key.code.ENTER) {
         event.preventDefault();
         $btn.trigger('click');
       }
     });
   }
+
   /**
    * toggle update button
    */
-
-
   toggleLinkBtn($linkBtn, $linkText, $linkUrl) {
     this.ui.toggleBtn($linkBtn, $linkText.val() && $linkUrl.val());
   }
+
   /**
    * Show link dialog and set event handlers on dialog controls.
    *
    * @param {Object} linkInfo
    * @return {Promise}
    */
-
-
   showLinkDialog(linkInfo) {
-    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(deferred => {
+    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred((deferred) => {
       const $linkText = this.$dialog.find('.note-link-text');
       const $linkUrl = this.$dialog.find('.note-link-url');
       const $linkBtn = this.$dialog.find('.note-link-btn');
-      const $openInNewWindow = this.$dialog.find('.sn-checkbox-open-in-new-window input[type=checkbox]');
-      const $useProtocol = this.$dialog.find('.sn-checkbox-use-protocol input[type=checkbox]');
-      this.ui.onDialogShown(this.$dialog, () => {
-        this.context.triggerEvent('dialog.shown'); // If no url was given and given text is valid URL then copy that into URL Field
+      const $openInNewWindow = this.$dialog
+        .find('.sn-checkbox-open-in-new-window input[type=checkbox]');
+      const $useProtocol = this.$dialog
+        .find('.sn-checkbox-use-protocol input[type=checkbox]');
 
+      this.ui.onDialogShown(this.$dialog, () => {
+        this.context.triggerEvent('dialog.shown');
+
+        // If no url was given and given text is valid URL then copy that into URL Field
         if (!linkInfo.url && func.isValidUrl(linkInfo.text)) {
           linkInfo.url = linkInfo.text;
         }
@@ -7631,13 +7638,13 @@ class LinkDialog_LinkDialog {
           linkInfo.text = $linkText.val();
           this.toggleLinkBtn($linkBtn, $linkText, $linkUrl);
         }).val(linkInfo.text);
+
         $linkUrl.on('input paste propertychange', () => {
           // Display same text on `Text to display` as default
           // when linktext has no text
           if (!linkInfo.text) {
             $linkText.val($linkUrl.val());
           }
-
           this.toggleLinkBtn($linkBtn, $linkText, $linkUrl);
         }).val(linkInfo.url);
 
@@ -7648,22 +7655,31 @@ class LinkDialog_LinkDialog {
         this.toggleLinkBtn($linkBtn, $linkText, $linkUrl);
         this.bindEnterKey($linkUrl, $linkBtn);
         this.bindEnterKey($linkText, $linkBtn);
-        const isNewWindowChecked = linkInfo.isNewWindow !== undefined ? linkInfo.isNewWindow : this.context.options.linkTargetBlank;
+
+        const isNewWindowChecked = linkInfo.isNewWindow !== undefined
+          ? linkInfo.isNewWindow : this.context.options.linkTargetBlank;
+
         $openInNewWindow.prop('checked', isNewWindowChecked);
-        const useProtocolChecked = linkInfo.url ? false : this.context.options.useProtocol;
+
+        const useProtocolChecked = linkInfo.url
+          ? false : this.context.options.useProtocol;
+
         $useProtocol.prop('checked', useProtocolChecked);
-        $linkBtn.one('click', event => {
+
+        $linkBtn.one('click', (event) => {
           event.preventDefault();
+
           deferred.resolve({
             range: linkInfo.range,
             url: $linkUrl.val(),
             text: $linkText.val(),
             isNewWindow: $openInNewWindow.is(':checked'),
-            checkProtocol: $useProtocol.is(':checked')
+            checkProtocol: $useProtocol.is(':checked'),
           });
           this.ui.hideDialog(this.$dialog);
         });
       });
+
       this.ui.onDialogHidden(this.$dialog, () => {
         // detach events
         $linkText.off();
@@ -7674,33 +7690,36 @@ class LinkDialog_LinkDialog {
           deferred.reject();
         }
       });
+
       this.ui.showDialog(this.$dialog);
     }).promise();
   }
+
   /**
    * @param {Object} layoutInfo
    */
-
-
   show() {
     const linkInfo = this.context.invoke('editor.getLinkInfo');
+
     this.context.invoke('editor.saveRange');
-    this.showLinkDialog(linkInfo).then(linkInfo => {
+    this.showLinkDialog(linkInfo).then((linkInfo) => {
       this.context.invoke('editor.restoreRange');
       this.context.invoke('editor.createLink', linkInfo);
     }).fail(() => {
       this.context.invoke('editor.restoreRange');
     });
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/LinkPopover.js
+
 
 
 
 class LinkPopover_LinkPopover {
   constructor(context) {
     this.context = context;
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.options = context.options;
     this.events = {
@@ -7709,7 +7728,7 @@ class LinkPopover_LinkPopover {
       },
       'summernote.disable summernote.dialog.shown summernote.blur': () => {
         this.hide();
-      }
+      },
     };
   }
 
@@ -7720,16 +7739,16 @@ class LinkPopover_LinkPopover {
   initialize() {
     this.$popover = this.ui.popover({
       className: 'note-link-popover',
-      callback: $node => {
+      callback: ($node) => {
         const $content = $node.find('.popover-content,.note-popover-content');
         $content.prepend('<span><a target="_blank"></a>&nbsp;</span>');
-      }
+      },
     }).render().appendTo(this.options.container);
     const $content = this.$popover.find('.popover-content,.note-popover-content');
+
     this.context.invoke('buttons.build', $content, this.options.popover.link);
-    this.$popover.on('mousedown', e => {
-      e.preventDefault();
-    });
+
+    this.$popover.on('mousedown', (e) => { e.preventDefault(); });
   }
 
   destroy() {
@@ -7744,19 +7763,20 @@ class LinkPopover_LinkPopover {
     }
 
     const rng = this.context.invoke('editor.getLastRange');
-
     if (rng.isCollapsed() && rng.isOnAnchor()) {
       const anchor = dom.ancestor(rng.sc, dom.isAnchor);
       const href = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(anchor).attr('href');
       this.$popover.find('a').attr('href', href).html(href);
+
       const pos = dom.posFromPlaceholder(anchor);
       const containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
       pos.top -= containerOffset.top;
       pos.left -= containerOffset.left;
+
       this.$popover.css({
         display: 'block',
         left: pos.left,
-        top: pos.top
+        top: pos.top,
       });
     } else {
       this.hide();
@@ -7766,9 +7786,10 @@ class LinkPopover_LinkPopover {
   hide() {
     this.$popover.hide();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/ImageDialog.js
+
 
 
 
@@ -7784,22 +7805,34 @@ class ImageDialog_ImageDialog {
 
   initialize() {
     let imageLimitation = '';
-
     if (this.options.maximumImageFileSize) {
       const unit = Math.floor(Math.log(this.options.maximumImageFileSize) / Math.log(1024));
-      const readableSize = (this.options.maximumImageFileSize / Math.pow(1024, unit)).toFixed(2) * 1 + ' ' + ' KMGTP'[unit] + 'B';
+      const readableSize = (this.options.maximumImageFileSize / Math.pow(1024, unit)).toFixed(2) * 1 +
+                         ' ' + ' KMGTP'[unit] + 'B';
       imageLimitation = `<small>${this.lang.image.maximumFileSize + ' : ' + readableSize}</small>`;
     }
 
     const $container = this.options.dialogsInBody ? this.$body : this.options.container;
-    const body = ['<div class="form-group note-form-group note-group-select-from-files">', '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>', '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ', ' type="file" name="files" accept="image/*" multiple="multiple"/>', imageLimitation, '</div>', '<div class="form-group note-group-image-url">', '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>', '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>', '</div>'].join('');
+    const body = [
+      '<div class="form-group note-form-group note-group-select-from-files">',
+        '<label for="note-dialog-image-file-' + this.options.id + '" class="note-form-label">' + this.lang.image.selectFromFiles + '</label>',
+        '<input id="note-dialog-image-file-' + this.options.id + '" class="note-image-input form-control-file note-form-control note-input" ',
+        ' type="file" name="files" accept="image/*" multiple="multiple"/>',
+        imageLimitation,
+      '</div>',
+      '<div class="form-group note-group-image-url">',
+        '<label for="note-dialog-image-url-' + this.options.id + '" class="note-form-label">' + this.lang.image.url + '</label>',
+        '<input id="note-dialog-image-url-' + this.options.id + '" class="note-image-url form-control note-form-control note-input" type="text"/>',
+      '</div>',
+    ].join('');
     const buttonClass = 'btn btn-primary note-btn note-btn-primary note-image-btn';
     const footer = `<input type="button" href="#" class="${buttonClass}" value="${this.lang.image.insert}" disabled>`;
+
     this.$dialog = this.ui.dialog({
       title: this.lang.image.insert,
       fade: this.options.dialogsFade,
       body: body,
-      footer: footer
+      footer: footer,
     }).render().appendTo($container);
   }
 
@@ -7809,7 +7842,7 @@ class ImageDialog_ImageDialog {
   }
 
   bindEnterKey($input, $btn) {
-    $input.on('keypress', event => {
+    $input.on('keypress', (event) => {
       if (event.keyCode === core_key.code.ENTER) {
         event.preventDefault();
         $btn.trigger('click');
@@ -7819,46 +7852,46 @@ class ImageDialog_ImageDialog {
 
   show() {
     this.context.invoke('editor.saveRange');
-    this.showImageDialog().then(data => {
+    this.showImageDialog().then((data) => {
       // [workaround] hide dialog before restore range for IE range focus
       this.ui.hideDialog(this.$dialog);
       this.context.invoke('editor.restoreRange');
 
-      if (typeof data === 'string') {
-        // image url
+      if (typeof data === 'string') { // image url
         // If onImageLinkInsert set,
         if (this.options.callbacks.onImageLinkInsert) {
           this.context.triggerEvent('image.link.insert', data);
         } else {
           this.context.invoke('editor.insertImage', data);
         }
-      } else {
-        // array of files
+      } else { // array of files
         this.context.invoke('editor.insertImagesOrCallback', data);
       }
     }).fail(() => {
       this.context.invoke('editor.restoreRange');
     });
   }
+
   /**
    * show image dialog
    *
    * @param {jQuery} $dialog
    * @return {Promise}
    */
-
-
   showImageDialog() {
-    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(deferred => {
+    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred((deferred) => {
       const $imageInput = this.$dialog.find('.note-image-input');
       const $imageUrl = this.$dialog.find('.note-image-url');
       const $imageBtn = this.$dialog.find('.note-image-btn');
-      this.ui.onDialogShown(this.$dialog, () => {
-        this.context.triggerEvent('dialog.shown'); // Cloning imageInput to clear element.
 
-        $imageInput.replaceWith($imageInput.clone().on('change', event => {
+      this.ui.onDialogShown(this.$dialog, () => {
+        this.context.triggerEvent('dialog.shown');
+
+        // Cloning imageInput to clear element.
+        $imageInput.replaceWith($imageInput.clone().on('change', (event) => {
           deferred.resolve(event.target.files || event.target.value);
         }).val(''));
+
         $imageUrl.on('input paste propertychange', () => {
           this.ui.toggleBtn($imageBtn, $imageUrl.val());
         }).val('');
@@ -7867,12 +7900,14 @@ class ImageDialog_ImageDialog {
           $imageUrl.trigger('focus');
         }
 
-        $imageBtn.click(event => {
+        $imageBtn.click((event) => {
           event.preventDefault();
           deferred.resolve($imageUrl.val());
         });
+
         this.bindEnterKey($imageUrl, $imageBtn);
       });
+
       this.ui.onDialogHidden(this.$dialog, () => {
         $imageInput.off();
         $imageUrl.off();
@@ -7882,12 +7917,14 @@ class ImageDialog_ImageDialog {
           deferred.reject();
         }
       });
+
       this.ui.showDialog(this.$dialog);
     });
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/ImagePopover.js
+
 
 
 
@@ -7896,17 +7933,18 @@ class ImageDialog_ImageDialog {
  *  mouse events that show/hide popover will be handled by Handle.js.
  *  Handle.js will receive the events and invoke 'imagePopover.update'.
  */
-
 class ImagePopover_ImagePopover {
   constructor(context) {
     this.context = context;
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
+
     this.editable = context.layoutInfo.editable[0];
     this.options = context.options;
+
     this.events = {
       'summernote.disable summernote.blur': () => {
         this.hide();
-      }
+      },
     };
   }
 
@@ -7916,13 +7954,12 @@ class ImagePopover_ImagePopover {
 
   initialize() {
     this.$popover = this.ui.popover({
-      className: 'note-image-popover'
+      className: 'note-image-popover',
     }).render().appendTo(this.options.container);
     const $content = this.$popover.find('.popover-content,.note-popover-content');
     this.context.invoke('buttons.build', $content, this.options.popover.image);
-    this.$popover.on('mousedown', e => {
-      e.preventDefault();
-    });
+
+    this.$popover.on('mousedown', (e) => { e.preventDefault(); });
   }
 
   destroy() {
@@ -7934,20 +7971,19 @@ class ImagePopover_ImagePopover {
       const position = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(target).offset();
       const containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
       let pos = {};
-
       if (this.options.popatmouse) {
         pos.left = event.pageX - 20;
         pos.top = event.pageY;
       } else {
         pos = position;
       }
-
       pos.top -= containerOffset.top;
       pos.left -= containerOffset.left;
+
       this.$popover.css({
         display: 'block',
         left: pos.left,
-        top: pos.top
+        top: pos.top,
       });
     } else {
       this.hide();
@@ -7957,9 +7993,10 @@ class ImagePopover_ImagePopover {
   hide() {
     this.$popover.hide();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/TablePopover.js
+
 
 
 
@@ -7967,6 +8004,7 @@ class ImagePopover_ImagePopover {
 class TablePopover_TablePopover {
   constructor(context) {
     this.context = context;
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.options = context.options;
     this.events = {
@@ -7978,7 +8016,7 @@ class TablePopover_TablePopover {
       },
       'summernote.disable summernote.blur': () => {
         this.hide();
-      }
+      },
     };
   }
 
@@ -7988,18 +8026,18 @@ class TablePopover_TablePopover {
 
   initialize() {
     this.$popover = this.ui.popover({
-      className: 'note-table-popover'
+      className: 'note-table-popover',
     }).render().appendTo(this.options.container);
     const $content = this.$popover.find('.popover-content,.note-popover-content');
-    this.context.invoke('buttons.build', $content, this.options.popover.table); // [workaround] Disable Firefox's default table editor
 
+    this.context.invoke('buttons.build', $content, this.options.popover.table);
+
+    // [workaround] Disable Firefox's default table editor
     if (env.isFF) {
       document.execCommand('enableInlineTableEditing', false, false);
     }
 
-    this.$popover.on('mousedown', e => {
-      e.preventDefault();
-    });
+    this.$popover.on('mousedown', (e) => { e.preventDefault(); });
   }
 
   destroy() {
@@ -8018,10 +8056,11 @@ class TablePopover_TablePopover {
       const containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
       pos.top -= containerOffset.top;
       pos.left -= containerOffset.left;
+
       this.$popover.css({
         display: 'block',
         left: pos.left,
-        top: pos.top
+        top: pos.top,
       });
     } else {
       this.hide();
@@ -8033,15 +8072,17 @@ class TablePopover_TablePopover {
   hide() {
     this.$popover.hide();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/VideoDialog.js
+
 
 
 
 class VideoDialog_VideoDialog {
   constructor(context) {
     this.context = context;
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
     this.$editor = context.layoutInfo.editor;
@@ -8051,14 +8092,20 @@ class VideoDialog_VideoDialog {
 
   initialize() {
     const $container = this.options.dialogsInBody ? this.$body : this.options.container;
-    const body = ['<div class="form-group note-form-group row-fluid">', `<label for="note-dialog-video-url-${this.options.id}" class="note-form-label">${this.lang.video.url} <small class="text-muted">${this.lang.video.providers}</small></label>`, `<input id="note-dialog-video-url-${this.options.id}" class="note-video-url form-control note-form-control note-input" type="text"/>`, '</div>'].join('');
+    const body = [
+      '<div class="form-group note-form-group row-fluid">',
+        `<label for="note-dialog-video-url-${this.options.id}" class="note-form-label">${this.lang.video.url} <small class="text-muted">${this.lang.video.providers}</small></label>`,
+        `<input id="note-dialog-video-url-${this.options.id}" class="note-video-url form-control note-form-control note-input" type="text"/>`,
+      '</div>',
+    ].join('');
     const buttonClass = 'btn btn-primary note-btn note-btn-primary note-video-btn';
     const footer = `<input type="button" href="#" class="${buttonClass}" value="${this.lang.video.insert}" disabled>`;
+
     this.$dialog = this.ui.dialog({
       title: this.lang.video.insert,
       fade: this.options.dialogsFade,
       body: body,
-      footer: footer
+      footer: footer,
     }).render().appendTo($container);
   }
 
@@ -8068,7 +8115,7 @@ class VideoDialog_VideoDialog {
   }
 
   bindEnterKey($input, $btn) {
-    $input.on('keypress', event => {
+    $input.on('keypress', (event) => {
       if (event.keyCode === core_key.code.ENTER) {
         event.preventDefault();
         $btn.trigger('click');
@@ -8081,79 +8128,122 @@ class VideoDialog_VideoDialog {
     const ytRegExp = /\/\/(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w|-]{11})(?:(?:[\?&]t=)(\S+))?$/;
     const ytRegExpForStart = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?$/;
     const ytMatch = url.match(ytRegExp);
+
     const igRegExp = /(?:www\.|\/\/)instagram\.com\/p\/(.[a-zA-Z0-9_-]*)/;
     const igMatch = url.match(igRegExp);
+
     const vRegExp = /\/\/vine\.co\/v\/([a-zA-Z0-9]+)/;
     const vMatch = url.match(vRegExp);
+
     const vimRegExp = /\/\/(player\.)?vimeo\.com\/([a-z]*\/)*(\d+)[?]?.*/;
     const vimMatch = url.match(vimRegExp);
+
     const dmRegExp = /.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/;
     const dmMatch = url.match(dmRegExp);
+
     const youkuRegExp = /\/\/v\.youku\.com\/v_show\/id_(\w+)=*\.html/;
     const youkuMatch = url.match(youkuRegExp);
+
     const qqRegExp = /\/\/v\.qq\.com.*?vid=(.+)/;
     const qqMatch = url.match(qqRegExp);
+
     const qqRegExp2 = /\/\/v\.qq\.com\/x?\/?(page|cover).*?\/([^\/]+)\.html\??.*/;
     const qqMatch2 = url.match(qqRegExp2);
+
     const mp4RegExp = /^.+.(mp4|m4v)$/;
     const mp4Match = url.match(mp4RegExp);
+
     const oggRegExp = /^.+.(ogg|ogv)$/;
     const oggMatch = url.match(oggRegExp);
+
     const webmRegExp = /^.+.(webm)$/;
     const webmMatch = url.match(webmRegExp);
+
     const fbRegExp = /(?:www\.|\/\/)facebook\.com\/([^\/]+)\/videos\/([0-9]+)/;
     const fbMatch = url.match(fbRegExp);
-    let $video;
 
+    let $video;
     if (ytMatch && ytMatch[1].length === 11) {
       const youtubeId = ytMatch[1];
       var start = 0;
-
       if (typeof ytMatch[2] !== 'undefined') {
         const ytMatchForStart = ytMatch[2].match(ytRegExpForStart);
-
         if (ytMatchForStart) {
           for (var n = [3600, 60, 1], i = 0, r = n.length; i < r; i++) {
-            start += typeof ytMatchForStart[i + 1] !== 'undefined' ? n[i] * parseInt(ytMatchForStart[i + 1], 10) : 0;
+            start += (typeof ytMatchForStart[i + 1] !== 'undefined' ? n[i] * parseInt(ytMatchForStart[i + 1], 10) : 0);
           }
         }
       }
-
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.youtube.com/embed/' + youtubeId + (start > 0 ? '?start=' + start : '')).attr('width', '640').attr('height', '360');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>')
+        .attr('frameborder', 0)
+        .attr('src', '//www.youtube.com/embed/' + youtubeId + (start > 0 ? '?start=' + start : ''))
+        .attr('width', '640').attr('height', '360');
     } else if (igMatch && igMatch[0].length) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://instagram.com/p/' + igMatch[1] + '/embed/').attr('width', '612').attr('height', '710').attr('scrolling', 'no').attr('allowtransparency', 'true');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>')
+        .attr('frameborder', 0)
+        .attr('src', 'https://instagram.com/p/' + igMatch[1] + '/embed/')
+        .attr('width', '612').attr('height', '710')
+        .attr('scrolling', 'no')
+        .attr('allowtransparency', 'true');
     } else if (vMatch && vMatch[0].length) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', vMatch[0] + '/embed/simple').attr('width', '600').attr('height', '600').attr('class', 'vine-embed');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>')
+        .attr('frameborder', 0)
+        .attr('src', vMatch[0] + '/embed/simple')
+        .attr('width', '600').attr('height', '600')
+        .attr('class', 'vine-embed');
     } else if (vimMatch && vimMatch[3].length) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('frameborder', 0).attr('src', '//player.vimeo.com/video/' + vimMatch[3]).attr('width', '640').attr('height', '360');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>')
+        .attr('frameborder', 0)
+        .attr('src', '//player.vimeo.com/video/' + vimMatch[3])
+        .attr('width', '640').attr('height', '360');
     } else if (dmMatch && dmMatch[2].length) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', '//www.dailymotion.com/embed/video/' + dmMatch[2]).attr('width', '640').attr('height', '360');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>')
+        .attr('frameborder', 0)
+        .attr('src', '//www.dailymotion.com/embed/video/' + dmMatch[2])
+        .attr('width', '640').attr('height', '360');
     } else if (youkuMatch && youkuMatch[1].length) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('frameborder', 0).attr('height', '498').attr('width', '510').attr('src', '//player.youku.com/embed/' + youkuMatch[1]);
-    } else if (qqMatch && qqMatch[1].length || qqMatch2 && qqMatch2[2].length) {
-      const vid = qqMatch && qqMatch[1].length ? qqMatch[1] : qqMatch2[2];
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>').attr('frameborder', 0).attr('height', '310').attr('width', '500').attr('src', 'https://v.qq.com/iframe/player.html?vid=' + vid + '&amp;auto=0');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>')
+        .attr('frameborder', 0)
+        .attr('height', '498')
+        .attr('width', '510')
+        .attr('src', '//player.youku.com/embed/' + youkuMatch[1]);
+    } else if ((qqMatch && qqMatch[1].length) || (qqMatch2 && qqMatch2[2].length)) {
+      const vid = ((qqMatch && qqMatch[1].length) ? qqMatch[1] : qqMatch2[2]);
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe webkitallowfullscreen mozallowfullscreen allowfullscreen>')
+        .attr('frameborder', 0)
+        .attr('height', '310')
+        .attr('width', '500')
+        .attr('src', 'https://v.qq.com/iframe/player.html?vid=' + vid + '&amp;auto=0');
     } else if (mp4Match || oggMatch || webmMatch) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<video controls>').attr('src', url).attr('width', '640').attr('height', '360');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<video controls>')
+        .attr('src', url)
+        .attr('width', '640').attr('height', '360');
     } else if (fbMatch && fbMatch[0].length) {
-      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>').attr('frameborder', 0).attr('src', 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(fbMatch[0]) + '&show_text=0&width=560').attr('width', '560').attr('height', '301').attr('scrolling', 'no').attr('allowtransparency', 'true');
+      $video = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<iframe>')
+        .attr('frameborder', 0)
+        .attr('src', 'https://www.facebook.com/plugins/video.php?href=' + encodeURIComponent(fbMatch[0]) + '&show_text=0&width=560')
+        .attr('width', '560').attr('height', '301')
+        .attr('scrolling', 'no')
+        .attr('allowtransparency', 'true');
     } else {
       // this is not a known video link. Now what, Cat? Now what?
       return false;
     }
 
     $video.addClass('note-video-clip');
+
     return $video[0];
   }
 
   show() {
     const text = this.context.invoke('editor.getSelectedText');
     this.context.invoke('editor.saveRange');
-    this.showVideoDialog(text).then(url => {
+    this.showVideoDialog(text).then((url) => {
       // [workaround] hide dialog before restore range for IE range focus
       this.ui.hideDialog(this.$dialog);
-      this.context.invoke('editor.restoreRange'); // build node
+      this.context.invoke('editor.restoreRange');
 
+      // build node
       const $node = this.createVideoNode(url);
 
       if ($node) {
@@ -8164,20 +8254,21 @@ class VideoDialog_VideoDialog {
       this.context.invoke('editor.restoreRange');
     });
   }
+
   /**
-   * show image dialog
+   * show video dialog
    *
    * @param {jQuery} $dialog
    * @return {Promise}
    */
-
-
-  showVideoDialog(text) {
-    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(deferred => {
+  showVideoDialog(/* text */) {
+    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred((deferred) => {
       const $videoUrl = this.$dialog.find('.note-video-url');
       const $videoBtn = this.$dialog.find('.note-video-btn');
+
       this.ui.onDialogShown(this.$dialog, () => {
         this.context.triggerEvent('dialog.shown');
+
         $videoUrl.on('input paste propertychange', () => {
           this.ui.toggleBtn($videoBtn, $videoUrl.val());
         });
@@ -8186,12 +8277,14 @@ class VideoDialog_VideoDialog {
           $videoUrl.trigger('focus');
         }
 
-        $videoBtn.click(event => {
+        $videoBtn.click((event) => {
           event.preventDefault();
           deferred.resolve($videoUrl.val());
         });
+
         this.bindEnterKey($videoUrl, $videoBtn);
       });
+
       this.ui.onDialogHidden(this.$dialog, () => {
         $videoUrl.off();
         $videoBtn.off();
@@ -8200,17 +8293,20 @@ class VideoDialog_VideoDialog {
           deferred.reject();
         }
       });
+
       this.ui.showDialog(this.$dialog);
     });
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/HelpDialog.js
+
 
 
 class HelpDialog_HelpDialog {
   constructor(context) {
     this.context = context;
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$body = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(document.body);
     this.$editor = context.layoutInfo.editor;
@@ -8220,18 +8316,25 @@ class HelpDialog_HelpDialog {
 
   initialize() {
     const $container = this.options.dialogsInBody ? this.$body : this.options.container;
-    const body = ['<p class="text-center">', '<a href="http://summernote.org/" target="_blank">Summernote 0.8.15</a> · ', '<a href="https://github.com/summernote/summernote" target="_blank">Project</a> · ', '<a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a>', '</p>'].join('');
+    const body = [
+      '<p class="text-center">',
+        '<a href="http://summernote.org/" target="_blank">Summernote @@VERSION@@</a> · ',
+        '<a href="https://github.com/summernote/summernote" target="_blank">Project</a> · ',
+        '<a href="https://github.com/summernote/summernote/issues" target="_blank">Issues</a>',
+      '</p>',
+    ].join('');
+
     this.$dialog = this.ui.dialog({
       title: this.lang.options.help,
       fade: this.options.dialogsFade,
       body: this.createShortcutList(),
       footer: body,
-      callback: $node => {
+      callback: ($node) => {
         $node.find('.modal-body,.note-modal-body').css({
           'max-height': 300,
-          'overflow': 'scroll'
+          'overflow': 'scroll',
         });
-      }
+      },
     }).render().appendTo($container);
   }
 
@@ -8242,25 +8345,24 @@ class HelpDialog_HelpDialog {
 
   createShortcutList() {
     const keyMap = this.options.keyMap[env.isMac ? 'mac' : 'pc'];
-    return Object.keys(keyMap).map(key => {
+    return Object.keys(keyMap).map((key) => {
       const command = keyMap[key];
       const $row = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div><div class="help-list-item"/></div>');
       $row.append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<label><kbd>' + key + '</kdb></label>').css({
         'width': 180,
-        'margin-right': 10
+        'margin-right': 10,
       })).append(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<span/>').html(this.context.memo('help.' + command) || command));
       return $row.html();
     }).join('');
   }
+
   /**
    * show help dialog
    *
    * @return {Promise}
    */
-
-
   showHelpDialog() {
-    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred(deferred => {
+    return external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.Deferred((deferred) => {
       this.ui.onDialogShown(this.$dialog, () => {
         this.context.triggerEvent('dialog.shown');
         deferred.resolve();
@@ -8275,33 +8377,56 @@ class HelpDialog_HelpDialog {
       this.context.invoke('editor.restoreRange');
     });
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/AirPopover.js
 
 
 
-const AIR_MODE_POPOVER_X_OFFSET = 20;
+
+const AIRMODE_POPOVER_X_OFFSET = -5;
+const AIRMODE_POPOVER_Y_OFFSET = 5;
+
 class AirPopover_AirPopover {
   constructor(context) {
     this.context = context;
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.options = context.options;
+
     this.hidable = true;
+    this.onContextmenu = false;
+    this.pageX = null;
+    this.pageY = null;
+
     this.events = {
-      'summernote.keyup summernote.mouseup summernote.scroll': () => {
+      'summernote.contextmenu': (e) => {
         if (this.options.editing) {
+          e.preventDefault();
+          e.stopPropagation();
+          this.onContextmenu = true;
+          this.update(true);
+        }
+      },
+      'summernote.mousedown': (we, e) => {
+        this.pageX = e.pageX;
+        this.pageY = e.pageY;
+      },
+      'summernote.keyup summernote.mouseup summernote.scroll': (we, e) => {
+        if (this.options.editing && !this.onContextmenu) {
+          this.pageX = e.pageX;
+          this.pageY = e.pageY;
           this.update();
         }
+        this.onContextmenu = false;
       },
       'summernote.disable summernote.change summernote.dialog.shown summernote.blur': () => {
         this.hide();
       },
-      'summernote.focusout': (we, e) => {
+      'summernote.focusout': () => {
         if (!this.$popover.is(':active,:focus')) {
           this.hide();
         }
-      }
+      },
     };
   }
 
@@ -8311,39 +8436,41 @@ class AirPopover_AirPopover {
 
   initialize() {
     this.$popover = this.ui.popover({
-      className: 'note-air-popover'
+      className: 'note-air-popover',
     }).render().appendTo(this.options.container);
     const $content = this.$popover.find('.popover-content');
-    this.context.invoke('buttons.build', $content, this.options.popover.air); // disable hiding this popover preemptively by 'summernote.blur' event.
 
-    this.$popover.on('mousedown', () => {
-      this.hidable = false;
-    }); // (re-)enable hiding after 'summernote.blur' has been handled (aka. ignored).
+    this.context.invoke('buttons.build', $content, this.options.popover.air);
 
-    this.$popover.on('mouseup', () => {
-      this.hidable = true;
-    });
+    // disable hiding this popover preemptively by 'summernote.blur' event.
+    this.$popover.on('mousedown', () => { this.hidable = false; });
+    // (re-)enable hiding after 'summernote.blur' has been handled (aka. ignored).
+    this.$popover.on('mouseup', () => { this.hidable = true; });
   }
 
   destroy() {
     this.$popover.remove();
   }
 
-  update() {
+  update(forcelyOpen) {
     const styleInfo = this.context.invoke('editor.currentStyle');
+    if (styleInfo.range && (!styleInfo.range.isCollapsed() || forcelyOpen)) {
+      let rect = {
+        left: this.pageX,
+        top: this.pageY,
+      };
 
-    if (styleInfo.range && !styleInfo.range.isCollapsed()) {
-      const rect = lists.last(styleInfo.range.getClientRects());
+      const bnd = func.rect2bnd(rect);
+      const containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
+      bnd.top -= containerOffset.top;
+      bnd.left -= containerOffset.left;
 
-      if (rect) {
-        const bnd = func.rect2bnd(rect);
-        this.$popover.css({
-          display: 'block',
-          left: Math.max(bnd.left + bnd.width / 2, 0) - AIR_MODE_POPOVER_X_OFFSET,
-          top: bnd.top + bnd.height
-        });
-        this.context.invoke('buttons.updateCurrentStyle', this.$popover);
-      }
+      this.$popover.css({
+        display: 'block',
+        left: Math.max(bnd.left, 0) + AIRMODE_POPOVER_X_OFFSET,
+        top: bnd.top + AIRMODE_POPOVER_Y_OFFSET,
+      });
+      this.context.invoke('buttons.updateCurrentStyle', this.$popover);
     } else {
       this.hide();
     }
@@ -8354,8 +8481,8 @@ class AirPopover_AirPopover {
       this.$popover.hide();
     }
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/module/HintPopover.js
 
 
@@ -8363,16 +8490,20 @@ class AirPopover_AirPopover {
 
 
 
+
 const POPOVER_DIST = 5;
+
 class HintPopover_HintPopover {
   constructor(context) {
     this.context = context;
+
     this.ui = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.ui;
     this.$editable = context.layoutInfo.editable;
     this.options = context.options;
     this.hint = this.options.hint || [];
     this.direction = this.options.hintDirection || 'bottom';
     this.hints = Array.isArray(this.hint) ? this.hint : [this.hint];
+
     this.events = {
       'summernote.keyup': (we, e) => {
         if (!e.isDefaultPrevented()) {
@@ -8384,7 +8515,7 @@ class HintPopover_HintPopover {
       },
       'summernote.disable summernote.dialog.shown summernote.blur': () => {
         this.hide();
-      }
+      },
     };
   }
 
@@ -8398,18 +8529,18 @@ class HintPopover_HintPopover {
     this.$popover = this.ui.popover({
       className: 'note-hint-popover',
       hideArrow: true,
-      direction: ''
+      direction: '',
     }).render().appendTo(this.options.container);
+
     this.$popover.hide();
     this.$content = this.$popover.find('.popover-content,.note-popover-content');
-    this.$content.on('click', '.note-hint-item', e => {
+    this.$content.on('click', '.note-hint-item', (e) => {
       this.$content.find('.active').removeClass('active');
       external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget).addClass('active');
       this.replace();
     });
-    this.$popover.on('mousedown', e => {
-      e.preventDefault();
-    });
+
+    this.$popover.on('mousedown', (e) => { e.preventDefault(); });
   }
 
   destroy() {
@@ -8419,7 +8550,8 @@ class HintPopover_HintPopover {
   selectItem($item) {
     this.$content.find('.active').removeClass('active');
     $item.addClass('active');
-    this.$content[0].scrollTop = $item[0].offsetTop - this.$content.innerHeight() / 2;
+
+    this.$content[0].scrollTop = $item[0].offsetTop - (this.$content.innerHeight() / 2);
   }
 
   moveDown() {
@@ -8460,18 +8592,17 @@ class HintPopover_HintPopover {
     const $item = this.$content.find('.note-hint-item.active');
 
     if ($item.length) {
-      var node = this.nodeFromItem($item); // If matchingWord length = 0 -> capture OK / open hint / but as mention capture "" (\w*)
-
+      var node = this.nodeFromItem($item);
+      // If matchingWord length = 0 -> capture OK / open hint / but as mention capture "" (\w*)
       if (this.matchingWord !== null && this.matchingWord.length === 0) {
-        this.lastWordRange.so = this.lastWordRange.eo; // Else si > 0 and normal case -> adjust range "before" for correct position of insertion
+        this.lastWordRange.so = this.lastWordRange.eo;
+      // Else si > 0 and normal case -> adjust range "before" for correct position of insertion
       } else if (this.matchingWord !== null && this.matchingWord.length > 0 && !this.lastWordRange.isCollapsed()) {
         let rangeCompute = this.lastWordRange.eo - this.lastWordRange.so - this.matchingWord.length;
-
         if (rangeCompute > 0) {
           this.lastWordRange.so += rangeCompute;
         }
       }
-
       this.lastWordRange.insertNode(node);
 
       if (this.options.hintSelect === 'next') {
@@ -8492,22 +8623,20 @@ class HintPopover_HintPopover {
     const hint = this.hints[$item.data('index')];
     const item = $item.data('item');
     let node = hint.content ? hint.content(item) : item;
-
     if (typeof node === 'string') {
       node = dom.createText(node);
     }
-
     return node;
   }
 
   createItemTemplates(hintIdx, items) {
     const hint = this.hints[hintIdx];
-    return items.map((item, idx) => {
+    return items.map((item /*, idx */) => {
       const $item = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-hint-item"/>');
       $item.append(hint.template ? hint.template(item) : item + '');
       $item.data({
         'index': hintIdx,
-        'item': item
+        'item': item,
       });
       return $item;
     });
@@ -8532,7 +8661,6 @@ class HintPopover_HintPopover {
 
   searchKeyword(index, keyword, callback) {
     const hint = this.hints[index];
-
     if (hint && hint.match.test(keyword) && hint.search) {
       const matches = hint.match.exec(keyword);
       this.matchingWord = matches[0];
@@ -8544,14 +8672,14 @@ class HintPopover_HintPopover {
 
   createGroup(idx, keyword) {
     const $group = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()('<div class="note-hint-group note-hint-group-' + idx + '"/>');
-    this.searchKeyword(idx, keyword, items => {
+    this.searchKeyword(idx, keyword, (items) => {
       items = items || [];
-
       if (items.length) {
         $group.html(this.createItemTemplates(idx, items));
         this.show();
       }
     });
+
     return $group;
   }
 
@@ -8559,11 +8687,11 @@ class HintPopover_HintPopover {
     if (!lists.contains([core_key.code.ENTER, core_key.code.UP, core_key.code.DOWN], e.keyCode)) {
       let range = this.context.invoke('editor.getLastRange');
       let wordRange, keyword;
-
       if (this.options.hintMode === 'words') {
         wordRange = range.getWordsRange(range);
         keyword = wordRange.toString();
-        this.hints.forEach(hint => {
+
+        this.hints.forEach((hint) => {
           if (hint.match.test(keyword)) {
             wordRange = range.getWordsMatchRange(hint.match);
             return false;
@@ -8583,31 +8711,33 @@ class HintPopover_HintPopover {
 
       if (this.hints.length && keyword) {
         this.$content.empty();
+
         const bnd = func.rect2bnd(lists.last(wordRange.getClientRects()));
         const containerOffset = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(this.options.container).offset();
-
         if (bnd) {
           bnd.top -= containerOffset.top;
           bnd.left -= containerOffset.left;
+
           this.$popover.hide();
           this.lastWordRange = wordRange;
           this.hints.forEach((hint, idx) => {
             if (hint.match.test(keyword)) {
               this.createGroup(idx, keyword).appendTo(this.$content);
             }
-          }); // select first .note-hint-item
+          });
+          // select first .note-hint-item
+          this.$content.find('.note-hint-item:first').addClass('active');
 
-          this.$content.find('.note-hint-item:first').addClass('active'); // set position for popover after group is created
-
+          // set position for popover after group is created
           if (this.direction === 'top') {
             this.$popover.css({
               left: bnd.left,
-              top: bnd.top - this.$popover.outerHeight() - POPOVER_DIST
+              top: bnd.top - this.$popover.outerHeight() - POPOVER_DIST,
             });
           } else {
             this.$popover.css({
               left: bnd.left,
-              top: bnd.top + bnd.height + POPOVER_DIST
+              top: bnd.top + bnd.height + POPOVER_DIST,
             });
           }
         }
@@ -8624,8 +8754,8 @@ class HintPopover_HintPopover {
   hide() {
     this.$popover.hide();
   }
-
 }
+
 // CONCATENATED MODULE: ./src/js/base/settings.js
 
 
@@ -8655,12 +8785,15 @@ class HintPopover_HintPopover {
 
 
 
+
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote, {
-  version: '0.8.15',
+  version: '@@VERSION@@',
   plugins: {},
+
   dom: dom,
   range: core_range,
   lists: lists,
+
   options: {
     langInfo: external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote.lang['en-US'],
     editing: true,
@@ -8688,30 +8821,64 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       'tablePopover': TablePopover_TablePopover,
       'videoDialog': VideoDialog_VideoDialog,
       'helpDialog': HelpDialog_HelpDialog,
-      'airPopover': AirPopover_AirPopover
+      'airPopover': AirPopover_AirPopover,
     },
+
     buttons: {},
+
     lang: 'en-US',
+
     followingToolbar: false,
     toolbarPosition: 'top',
     otherStaticBar: '',
+
     // toolbar
-    toolbar: [['style', ['style']], ['font', ['bold', 'underline', 'clear']], ['fontname', ['fontname']], ['color', ['color']], ['para', ['ul', 'ol', 'paragraph']], ['table', ['table']], ['insert', ['link', 'picture', 'video']], ['view', ['fullscreen', 'codeview', 'help']]],
+    toolbar: [
+      ['style', ['style']],
+      ['font', ['bold', 'underline', 'clear']],
+      ['fontname', ['fontname']],
+      ['color', ['color']],
+      ['para', ['ul', 'ol', 'paragraph']],
+      ['table', ['table']],
+      ['insert', ['link', 'picture', 'video']],
+      ['view', ['fullscreen', 'codeview', 'help']],
+    ],
+
     // popover
     popatmouse: true,
     popover: {
-      image: [['resize', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']], ['float', ['floatLeft', 'floatRight', 'floatNone']], ['remove', ['removeMedia']]],
-      link: [['link', ['linkDialogShow', 'unlink']]],
-      table: [['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']], ['delete', ['deleteRow', 'deleteCol', 'deleteTable']]],
-      air: [['color', ['color']], ['font', ['bold', 'underline', 'clear']], ['para', ['ul', 'paragraph']], ['table', ['table']], ['insert', ['link', 'picture']], ['view', ['fullscreen', 'codeview']]]
+      image: [
+        ['resize', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],
+        ['float', ['floatLeft', 'floatRight', 'floatNone']],
+        ['remove', ['removeMedia']],
+      ],
+      link: [
+        ['link', ['linkDialogShow', 'unlink']],
+      ],
+      table: [
+        ['add', ['addRowDown', 'addRowUp', 'addColLeft', 'addColRight']],
+        ['delete', ['deleteRow', 'deleteCol', 'deleteTable']],
+      ],
+      air: [
+        ['color', ['color']],
+        ['font', ['bold', 'underline', 'clear']],
+        ['para', ['ul', 'paragraph']],
+        ['table', ['table']],
+        ['insert', ['link', 'picture']],
+        ['view', ['fullscreen', 'codeview']],
+      ],
     },
+
     // air mode: inline editor
     airMode: false,
+    overrideContextMenu: false, // TBD
+
     width: null,
     height: null,
     linkTargetBlank: true,
     useProtocol: true,
     defaultProtocol: 'http://',
+
     focus: false,
     tabDisabled: false,
     tabSize: 4,
@@ -8727,33 +8894,72 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
     placeholder: null,
     inheritPlaceholder: false,
     // TODO: need to be documented
+    recordEveryKeystroke: false,
+    historyLimit: 200,
+
+    // TODO: need to be documented
     hintMode: 'word',
     hintSelect: 'after',
     hintDirection: 'bottom',
+
     styleTags: ['p', 'blockquote', 'pre', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
-    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande', 'Tahoma', 'Times New Roman', 'Verdana'],
+
+    fontNames: [
+      'Arial', 'Arial Black', 'Comic Sans MS', 'Courier New',
+      'Helvetica Neue', 'Helvetica', 'Impact', 'Lucida Grande',
+      'Tahoma', 'Times New Roman', 'Verdana',
+    ],
     fontNamesIgnoreCheck: [],
     addDefaultFonts: true,
+
     fontSizes: ['8', '9', '10', '11', '12', '14', '18', '24', '36'],
+
     fontSizeUnits: ['px', 'pt'],
+
     // pallete colors(n x n)
-    colors: [['#000000', '#424242', '#636363', '#9C9C94', '#CEC6CE', '#EFEFEF', '#F7F7F7', '#FFFFFF'], ['#FF0000', '#FF9C00', '#FFFF00', '#00FF00', '#00FFFF', '#0000FF', '#9C00FF', '#FF00FF'], ['#F7C6CE', '#FFE7CE', '#FFEFC6', '#D6EFD6', '#CEDEE7', '#CEE7F7', '#D6D6E7', '#E7D6DE'], ['#E79C9C', '#FFC69C', '#FFE79C', '#B5D6A5', '#A5C6CE', '#9CC6EF', '#B5A5D6', '#D6A5BD'], ['#E76363', '#F7AD6B', '#FFD663', '#94BD7B', '#73A5AD', '#6BADDE', '#8C7BC6', '#C67BA5'], ['#CE0000', '#E79439', '#EFC631', '#6BA54A', '#4A7B8C', '#3984C6', '#634AA5', '#A54A7B'], ['#9C0000', '#B56308', '#BD9400', '#397B21', '#104A5A', '#085294', '#311873', '#731842'], ['#630000', '#7B3900', '#846300', '#295218', '#083139', '#003163', '#21104A', '#4A1031']],
+    colors: [
+      ['#000000', '#424242', '#636363', '#9C9C94', '#CEC6CE', '#EFEFEF', '#F7F7F7', '#FFFFFF'],
+      ['#FF0000', '#FF9C00', '#FFFF00', '#00FF00', '#00FFFF', '#0000FF', '#9C00FF', '#FF00FF'],
+      ['#F7C6CE', '#FFE7CE', '#FFEFC6', '#D6EFD6', '#CEDEE7', '#CEE7F7', '#D6D6E7', '#E7D6DE'],
+      ['#E79C9C', '#FFC69C', '#FFE79C', '#B5D6A5', '#A5C6CE', '#9CC6EF', '#B5A5D6', '#D6A5BD'],
+      ['#E76363', '#F7AD6B', '#FFD663', '#94BD7B', '#73A5AD', '#6BADDE', '#8C7BC6', '#C67BA5'],
+      ['#CE0000', '#E79439', '#EFC631', '#6BA54A', '#4A7B8C', '#3984C6', '#634AA5', '#A54A7B'],
+      ['#9C0000', '#B56308', '#BD9400', '#397B21', '#104A5A', '#085294', '#311873', '#731842'],
+      ['#630000', '#7B3900', '#846300', '#295218', '#083139', '#003163', '#21104A', '#4A1031'],
+    ],
+
     // http://chir.ag/projects/name-that-color/
-    colorsName: [['Black', 'Tundora', 'Dove Gray', 'Star Dust', 'Pale Slate', 'Gallery', 'Alabaster', 'White'], ['Red', 'Orange Peel', 'Yellow', 'Green', 'Cyan', 'Blue', 'Electric Violet', 'Magenta'], ['Azalea', 'Karry', 'Egg White', 'Zanah', 'Botticelli', 'Tropical Blue', 'Mischka', 'Twilight'], ['Tonys Pink', 'Peach Orange', 'Cream Brulee', 'Sprout', 'Casper', 'Perano', 'Cold Purple', 'Careys Pink'], ['Mandy', 'Rajah', 'Dandelion', 'Olivine', 'Gulf Stream', 'Viking', 'Blue Marguerite', 'Puce'], ['Guardsman Red', 'Fire Bush', 'Golden Dream', 'Chelsea Cucumber', 'Smalt Blue', 'Boston Blue', 'Butterfly Bush', 'Cadillac'], ['Sangria', 'Mai Tai', 'Buddha Gold', 'Forest Green', 'Eden', 'Venice Blue', 'Meteorite', 'Claret'], ['Rosewood', 'Cinnamon', 'Olive', 'Parsley', 'Tiber', 'Midnight Blue', 'Valentino', 'Loulou']],
+    colorsName: [
+      ['Black', 'Tundora', 'Dove Gray', 'Star Dust', 'Pale Slate', 'Gallery', 'Alabaster', 'White'],
+      ['Red', 'Orange Peel', 'Yellow', 'Green', 'Cyan', 'Blue', 'Electric Violet', 'Magenta'],
+      ['Azalea', 'Karry', 'Egg White', 'Zanah', 'Botticelli', 'Tropical Blue', 'Mischka', 'Twilight'],
+      ['Tonys Pink', 'Peach Orange', 'Cream Brulee', 'Sprout', 'Casper', 'Perano', 'Cold Purple', 'Careys Pink'],
+      ['Mandy', 'Rajah', 'Dandelion', 'Olivine', 'Gulf Stream', 'Viking', 'Blue Marguerite', 'Puce'],
+      ['Guardsman Red', 'Fire Bush', 'Golden Dream', 'Chelsea Cucumber', 'Smalt Blue', 'Boston Blue', 'Butterfly Bush', 'Cadillac'],
+      ['Sangria', 'Mai Tai', 'Buddha Gold', 'Forest Green', 'Eden', 'Venice Blue', 'Meteorite', 'Claret'],
+      ['Rosewood', 'Cinnamon', 'Olive', 'Parsley', 'Tiber', 'Midnight Blue', 'Valentino', 'Loulou'],
+    ],
+
     colorButton: {
       foreColor: '#000000',
-      backColor: '#FFFF00'
+      backColor: '#FFFF00',
     },
+
     lineHeights: ['1.0', '1.2', '1.4', '1.5', '1.6', '1.8', '2.0', '3.0'],
+
     tableClassName: 'table table-bordered',
+
     insertTableMaxSize: {
       col: 10,
-      row: 10
+      row: 10,
     },
+
     // By default, dialogs are attached in container.
     dialogsInBody: false,
     dialogsFade: false,
+
     maximumImageFileSize: null,
+
     callbacks: {
       onBeforeCommand: null,
       onBlur: null,
@@ -8772,18 +8978,31 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       onMousedown: null,
       onMouseup: null,
       onPaste: null,
-      onScroll: null
+      onScroll: null,
     },
+
     codemirror: {
       mode: 'text/html',
       htmlMode: true,
-      lineNumbers: true
+      lineNumbers: true,
     },
+
     codeviewFilter: false,
     codeviewFilterRegex: /<\/*(?:applet|b(?:ase|gsound|link)|embed|frame(?:set)?|ilayer|l(?:ayer|ink)|meta|object|s(?:cript|tyle)|t(?:itle|extarea)|xml)[^>]*?>/gi,
     codeviewIframeFilter: true,
     codeviewIframeWhitelistSrc: [],
-    codeviewIframeWhitelistSrcBase: ['www.youtube.com', 'www.youtube-nocookie.com', 'www.facebook.com', 'vine.co', 'instagram.com', 'player.vimeo.com', 'www.dailymotion.com', 'player.youku.com', 'v.qq.com'],
+    codeviewIframeWhitelistSrcBase: [
+      'www.youtube.com',
+      'www.youtube-nocookie.com',
+      'www.facebook.com',
+      'vine.co',
+      'instagram.com',
+      'player.vimeo.com',
+      'www.dailymotion.com',
+      'player.youku.com',
+      'v.qq.com',
+    ],
+
     keyMap: {
       pc: {
         'ENTER': 'insertParagraph',
@@ -8812,8 +9031,9 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
         'CTRL+NUM5': 'formatH5',
         'CTRL+NUM6': 'formatH6',
         'CTRL+ENTER': 'insertHorizontalRule',
-        'CTRL+K': 'linkDialog.show'
+        'CTRL+K': 'linkDialog.show',
       },
+
       mac: {
         'ENTER': 'insertParagraph',
         'CMD+Z': 'undo',
@@ -8841,8 +9061,8 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
         'CMD+NUM5': 'formatH5',
         'CMD+NUM6': 'formatH6',
         'CMD+ENTER': 'insertHorizontalRule',
-        'CMD+K': 'linkDialog.show'
-      }
+        'CMD+K': 'linkDialog.show',
+      },
     },
     icons: {
       'align': 'note-icon-align',
@@ -8891,10 +9111,11 @@ external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summe
       'underline': 'note-icon-underline',
       'undo': 'note-icon-undo',
       'unorderedlist': 'note-icon-unorderedlist',
-      'video': 'note-icon-video'
-    }
-  }
+      'video': 'note-icon-video',
+    },
+  },
 });
+
 
 /***/ }),
 
@@ -8921,71 +9142,111 @@ var renderer = __webpack_require__(1);
 // CONCATENATED MODULE: ./src/js/bs3/ui.js
 
 
+
 const editor = renderer["a" /* default */].create('<div class="note-editor note-frame panel panel-default"/>');
 const toolbar = renderer["a" /* default */].create('<div class="note-toolbar panel-heading" role="toolbar"></div></div>');
 const editingArea = renderer["a" /* default */].create('<div class="note-editing-area"/>');
 const codable = renderer["a" /* default */].create('<textarea class="note-codable" aria-multiline="true"/>');
 const editable = renderer["a" /* default */].create('<div class="note-editable" contentEditable="true" role="textbox" aria-multiline="true"/>');
-const statusbar = renderer["a" /* default */].create(['<output class="note-status-output" role="status" aria-live="polite"/>', '<div class="note-statusbar" role="status">', '<div class="note-resizebar" aria-label="Resize">', '<div class="note-icon-bar"/>', '<div class="note-icon-bar"/>', '<div class="note-icon-bar"/>', '</div>', '</div>'].join(''));
+const statusbar = renderer["a" /* default */].create([
+  '<output class="note-status-output" role="status" aria-live="polite"/>',
+  '<div class="note-statusbar" role="status">',
+    '<div class="note-resizebar" aria-label="Resize">',
+      '<div class="note-icon-bar"/>',
+      '<div class="note-icon-bar"/>',
+      '<div class="note-icon-bar"/>',
+    '</div>',
+  '</div>',
+].join(''));
+
 const airEditor = renderer["a" /* default */].create('<div class="note-editor note-airframe"/>');
-const airEditable = renderer["a" /* default */].create(['<div class="note-editable" contentEditable="true" role="textbox" aria-multiline="true"/>', '<output class="note-status-output" role="status" aria-live="polite"/>'].join(''));
+const airEditable = renderer["a" /* default */].create([
+  '<div class="note-editable" contentEditable="true" role="textbox" aria-multiline="true"/>',
+  '<output class="note-status-output" role="status" aria-live="polite"/>',
+].join(''));
+
 const buttonGroup = renderer["a" /* default */].create('<div class="note-btn-group btn-group">');
-const dropdown = renderer["a" /* default */].create('<ul class="note-dropdown-menu dropdown-menu">', function ($node, options) {
-  const markup = Array.isArray(options.items) ? options.items.map(function (item) {
-    const value = typeof item === 'string' ? item : item.value || '';
+
+const dropdown = renderer["a" /* default */].create('<ul class="note-dropdown-menu dropdown-menu">', function($node, options) {
+  const markup = Array.isArray(options.items) ? options.items.map(function(item) {
+    const value = (typeof item === 'string') ? item : (item.value || '');
     const content = options.template ? options.template(item) : item;
-    const option = typeof item === 'object' ? item.option : undefined;
+    const option = (typeof item === 'object') ? item.option : undefined;
+
     const dataValue = 'data-value="' + value + '"';
-    const dataOption = option !== undefined ? ' data-option="' + option + '"' : '';
+    const dataOption = (option !== undefined) ? ' data-option="' + option + '"' : '';
     return '<li aria-label="' + value + '"><a href="#" ' + (dataValue + dataOption) + '>' + content + '</a></li>';
   }).join('') : options.items;
-  $node.html(markup).attr({
-    'aria-label': options.title
-  });
+
+  $node.html(markup).attr({ 'aria-label': options.title });
 });
 
-const dropdownButtonContents = function (contents, options) {
+const dropdownButtonContents = function(contents, options) {
   return contents + ' ' + icon(options.icons.caret, 'span');
 };
 
-const dropdownCheck = renderer["a" /* default */].create('<ul class="note-dropdown-menu dropdown-menu note-check">', function ($node, options) {
-  const markup = Array.isArray(options.items) ? options.items.map(function (item) {
-    const value = typeof item === 'string' ? item : item.value || '';
+const dropdownCheck = renderer["a" /* default */].create('<ul class="note-dropdown-menu dropdown-menu note-check">', function($node, options) {
+  const markup = Array.isArray(options.items) ? options.items.map(function(item) {
+    const value = (typeof item === 'string') ? item : (item.value || '');
     const content = options.template ? options.template(item) : item;
     return '<li aria-label="' + item + '"><a href="#" data-value="' + value + '">' + icon(options.checkClassName) + ' ' + content + '</a></li>';
   }).join('') : options.items;
-  $node.html(markup).attr({
-    'aria-label': options.title
-  });
+  $node.html(markup).attr({ 'aria-label': options.title });
 });
-const dialog = renderer["a" /* default */].create('<div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog"/>', function ($node, options) {
+
+const dialog = renderer["a" /* default */].create('<div class="modal note-modal" aria-hidden="false" tabindex="-1" role="dialog"/>', function($node, options) {
   if (options.fade) {
     $node.addClass('fade');
   }
-
   $node.attr({
-    'aria-label': options.title
+    'aria-label': options.title,
   });
-  $node.html(['<div class="modal-dialog">', '<div class="modal-content">', options.title ? '<div class="modal-header">' + '<button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</button>' + '<h4 class="modal-title">' + options.title + '</h4>' + '</div>' : '', '<div class="modal-body">' + options.body + '</div>', options.footer ? '<div class="modal-footer">' + options.footer + '</div>' : '', '</div>', '</div>'].join(''));
+  $node.html([
+    '<div class="modal-dialog">',
+      '<div class="modal-content">',
+        (options.title ? '<div class="modal-header">' +
+          '<button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true">&times;</button>' +
+          '<h4 class="modal-title">' + options.title + '</h4>' +
+        '</div>' : ''),
+        '<div class="modal-body">' + options.body + '</div>',
+        (options.footer ? '<div class="modal-footer">' + options.footer + '</div>' : ''),
+      '</div>',
+    '</div>',
+  ].join(''));
 });
-const popover = renderer["a" /* default */].create(['<div class="note-popover popover in">', '<div class="arrow"/>', '<div class="popover-content note-children-container"/>', '</div>'].join(''), function ($node, options) {
+
+const popover = renderer["a" /* default */].create([
+  '<div class="note-popover popover in">',
+    '<div class="arrow"/>',
+    '<div class="popover-content note-children-container"/>',
+  '</div>',
+].join(''), function($node, options) {
   const direction = typeof options.direction !== 'undefined' ? options.direction : 'bottom';
+
   $node.addClass(direction);
 
   if (options.hideArrow) {
     $node.find('.arrow').hide();
   }
 });
-const ui_checkbox = renderer["a" /* default */].create('<div class="checkbox"></div>', function ($node, options) {
-  $node.html(['<label' + (options.id ? ' for="note-' + options.id + '"' : '') + '>', '<input type="checkbox"' + (options.id ? ' id="note-' + options.id + '"' : ''), options.checked ? ' checked' : '', ' aria-checked="' + (options.checked ? 'true' : 'false') + '"/>', options.text ? options.text : '', '</label>'].join(''));
+
+const ui_checkbox = renderer["a" /* default */].create('<div class="checkbox"></div>', function($node, options) {
+  $node.html([
+    '<label' + (options.id ? ' for="note-' + options.id + '"' : '') + '>',
+      '<input type="checkbox"' + (options.id ? ' id="note-' + options.id + '"' : ''),
+        (options.checked ? ' checked' : ''),
+        ' aria-checked="' + (options.checked ? 'true' : 'false') + '"/>',
+      (options.text ? options.text : ''),
+    '</label>',
+  ].join(''));
 });
 
-const icon = function (iconClassName, tagName) {
+const icon = function(iconClassName, tagName) {
   tagName = tagName || 'i';
   return '<' + tagName + ' class="' + iconClassName + '"/>';
 };
 
-const ui = function (editorOptions) {
+const ui = function(editorOptions) {
   return {
     editor: editor,
     toolbar: toolbar,
@@ -9004,74 +9265,111 @@ const ui = function (editorOptions) {
     checkbox: ui_checkbox,
     icon: icon,
     options: editorOptions,
-    palette: function ($node, options) {
-      return renderer["a" /* default */].create('<div class="note-color-palette"/>', function ($node, options) {
-        const contents = [];
 
+    palette: function($node, options) {
+      return renderer["a" /* default */].create('<div class="note-color-palette"/>', function($node, options) {
+        const contents = [];
         for (let row = 0, rowSize = options.colors.length; row < rowSize; row++) {
           const eventName = options.eventName;
           const colors = options.colors[row];
           const colorsName = options.colorsName[row];
           const buttons = [];
-
           for (let col = 0, colSize = colors.length; col < colSize; col++) {
             const color = colors[col];
             const colorName = colorsName[col];
-            buttons.push(['<button type="button" class="note-color-btn"', 'style="background-color:', color, '" ', 'data-event="', eventName, '" ', 'data-value="', color, '" ', 'title="', colorName, '" ', 'aria-label="', colorName, '" ', 'data-toggle="button" tabindex="-1"></button>'].join(''));
+            buttons.push([
+              '<button type="button" class="note-color-btn"',
+              'style="background-color:', color, '" ',
+              'data-event="', eventName, '" ',
+              'data-value="', color, '" ',
+              'title="', colorName, '" ',
+              'aria-label="', colorName, '" ',
+              'data-toggle="button" tabindex="-1"></button>',
+            ].join(''));
           }
-
           contents.push('<div class="note-color-row">' + buttons.join('') + '</div>');
         }
-
         $node.html(contents.join(''));
 
         if (options.tooltip) {
           $node.find('.note-color-btn').tooltip({
             container: options.container || editorOptions.container,
             trigger: 'hover',
-            placement: 'bottom'
+            placement: 'bottom',
           });
         }
       })($node, options);
     },
-    button: function ($node, options) {
-      return renderer["a" /* default */].create('<button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1">', function ($node, options) {
+
+    button: function($node, options) {
+      return renderer["a" /* default */].create('<button type="button" class="note-btn btn btn-default btn-sm" tabindex="-1">', function($node, options) {
         if (options && options.tooltip) {
           $node.attr({
             title: options.tooltip,
-            'aria-label': options.tooltip
+            'aria-label': options.tooltip,
           }).tooltip({
             container: options.container || editorOptions.container,
             trigger: 'hover',
-            placement: 'bottom'
-          }).on('click', e => {
+            placement: 'bottom',
+          }).on('click', (e) => {
             external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default()(e.currentTarget).tooltip('hide');
           });
         }
       })($node, options);
     },
-    toggleBtn: function ($btn, isEnable) {
+
+    toggleBtn: function($btn, isEnable) {
       $btn.toggleClass('disabled', !isEnable);
       $btn.attr('disabled', !isEnable);
     },
-    toggleBtnActive: function ($btn, isActive) {
+
+    toggleBtnActive: function($btn, isActive) {
       $btn.toggleClass('active', isActive);
     },
-    onDialogShown: function ($dialog, handler) {
+
+    onDialogShown: function($dialog, handler) {
       $dialog.one('shown.bs.modal', handler);
     },
-    onDialogHidden: function ($dialog, handler) {
+
+    onDialogHidden: function($dialog, handler) {
       $dialog.one('hidden.bs.modal', handler);
     },
-    showDialog: function ($dialog) {
+
+    showDialog: function($dialog) {
       $dialog.modal('show');
     },
-    hideDialog: function ($dialog) {
+
+    hideDialog: function($dialog) {
       $dialog.modal('hide');
     },
-    createLayout: function ($note) {
-      const $editor = (editorOptions.airMode ? airEditor([editingArea([codable(), airEditable()])]) : editorOptions.toolbarPosition === 'bottom' ? editor([editingArea([codable(), editable()]), toolbar(), statusbar()]) : editor([toolbar(), editingArea([codable(), editable()]), statusbar()])).render();
+
+    createLayout: function($note) {
+      const $editor = (editorOptions.airMode ? airEditor([
+        editingArea([
+          codable(),
+          airEditable(),
+        ]),
+      ]) : (editorOptions.toolbarPosition === 'bottom'
+        ? editor([
+          editingArea([
+            codable(),
+            editable(),
+          ]),
+          toolbar(),
+          statusbar(),
+        ])
+        : editor([
+          toolbar(),
+          editingArea([
+            codable(),
+            editable(),
+          ]),
+          statusbar(),
+        ])
+      )).render();
+
       $editor.insertAfter($note);
+
       return {
         note: $note,
         editor: $editor,
@@ -9079,18 +9377,20 @@ const ui = function (editorOptions) {
         editingArea: $editor.find('.note-editing-area'),
         editable: $editor.find('.note-editable'),
         codable: $editor.find('.note-codable'),
-        statusbar: $editor.find('.note-statusbar')
+        statusbar: $editor.find('.note-statusbar'),
       };
     },
-    removeLayout: function ($note, layoutInfo) {
+
+    removeLayout: function($note, layoutInfo) {
       $note.html(layoutInfo.editable.html());
       layoutInfo.editor.remove();
       $note.show();
-    }
+    },
   };
 };
 
 /* harmony default export */ var bs3_ui = (ui);
+
 // EXTERNAL MODULE: ./src/js/base/settings.js + 37 modules
 var settings = __webpack_require__(3);
 
@@ -9102,10 +9402,13 @@ var summernote_bs3 = __webpack_require__(4);
 
 
 
+
+
 external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote = external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.extend(external_root_jQuery_commonjs2_jquery_commonjs_jquery_amd_jquery_default.a.summernote, {
   ui_template: bs3_ui,
-  interface: 'bs3'
+  interface: 'bs3',
 });
+
 
 /***/ })
 

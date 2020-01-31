@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 10:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'cs-CZ': {
       font: {
@@ -121,7 +121,7 @@ return /******/ (function(modules) { // webpackBootstrap
         clear: 'Odstranit styl písma',
         height: 'Výška řádku',
         strikethrough: 'Přeškrtnuté',
-        size: 'Velikost písma'
+        size: 'Velikost písma',
       },
       image: {
         image: 'Obrázek',
@@ -141,14 +141,14 @@ return /******/ (function(modules) { // webpackBootstrap
         selectFromFiles: 'Vybrat soubor',
         url: 'URL obrázku',
         remove: 'Remove Image',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Odkaz videa',
         insert: 'Vložit video',
         url: 'URL videa?',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion nebo Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion nebo Youku)',
       },
       link: {
         link: 'Odkaz',
@@ -157,7 +157,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Upravit',
         textToDisplay: 'Zobrazovaný text',
         url: 'Na jaké URL má tento odkaz vést?',
-        openInNewWindow: 'Otevřít v novém okně'
+        openInNewWindow: 'Otevřít v novém okně',
       },
       table: {
         table: 'Tabulka',
@@ -167,10 +167,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Vložit vodorovnou čáru'
+        insert: 'Vložit vodorovnou čáru',
       },
       style: {
         style: 'Styl',
@@ -182,16 +182,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Nadpis 3',
         h4: 'Nadpis 4',
         h5: 'Nadpis 5',
-        h6: 'Nadpis 6'
+        h6: 'Nadpis 6',
       },
       lists: {
         unordered: 'Odrážkový seznam',
-        ordered: 'Číselný seznam'
+        ordered: 'Číselný seznam',
       },
       options: {
         help: 'Nápověda',
         fullscreen: 'Celá obrazovka',
-        codeview: 'HTML kód'
+        codeview: 'HTML kód',
       },
       paragraph: {
         paragraph: 'Odstavec',
@@ -200,7 +200,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Zarovnat doleva',
         center: 'Zarovnat na střed',
         right: 'Zarovnat doprava',
-        justify: 'Zarovnat oboustranně'
+        justify: 'Zarovnat oboustranně',
       },
       color: {
         recent: 'Aktuální barva',
@@ -211,7 +211,7 @@ return /******/ (function(modules) { // webpackBootstrap
         setTransparent: 'Nastavit průhlednost',
         reset: 'Obnovit',
         resetToDefault: 'Obnovit výchozí',
-        cpSelect: 'Vybrat'
+        cpSelect: 'Vybrat',
       },
       shortcut: {
         shortcuts: 'Klávesové zkratky',
@@ -219,7 +219,7 @@ return /******/ (function(modules) { // webpackBootstrap
         textFormatting: 'Formátování textu',
         action: 'Akce',
         paragraphFormatting: 'Formátování odstavce',
-        documentStyle: 'Styl dokumentu'
+        documentStyle: 'Styl dokumentu',
       },
       help: {
         'insertParagraph': 'Insert Paragraph',
@@ -248,19 +248,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Krok vzad',
-        redo: 'Krok vpřed'
+        redo: 'Krok vpřed',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

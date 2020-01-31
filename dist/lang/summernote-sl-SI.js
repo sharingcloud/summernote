@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 38:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'sl-SI': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Prečrtano',
         subscript: 'Podpisano',
         superscript: 'Nadpisano',
-        size: 'Velikost pisave'
+        size: 'Velikost pisave',
       },
       image: {
         image: 'Slika',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'URL naslov slike',
         remove: 'Odstrani sliko',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Video povezava',
         insert: 'Vstavi video',
         url: 'Povezava do videa',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ali Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion ali Youku)',
       },
       link: {
         link: 'Povezava',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Uredi',
         textToDisplay: 'Prikazano besedilo',
         url: 'Povezava',
-        openInNewWindow: 'Odpri v novem oknu'
+        openInNewWindow: 'Odpri v novem oknu',
       },
       table: {
         table: 'Tabela',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Vstavi horizontalno črto'
+        insert: 'Vstavi horizontalno črto',
       },
       style: {
         style: 'Slogi',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Naslov 3',
         h4: 'Naslov 4',
         h5: 'Naslov 5',
-        h6: 'Naslov 6'
+        h6: 'Naslov 6',
       },
       lists: {
         unordered: 'Označen seznam',
-        ordered: 'Oštevilčen seznam'
+        ordered: 'Oštevilčen seznam',
       },
       options: {
         help: 'Pomoč',
         fullscreen: 'Celozaslonski način',
-        codeview: 'Pregled HTML kode'
+        codeview: 'Pregled HTML kode',
       },
       paragraph: {
         paragraph: 'Slogi odstavka',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Leva poravnava',
         center: 'Desna poravnava',
         right: 'Sredinska poravnava',
-        justify: 'Obojestranska poravnava'
+        justify: 'Obojestranska poravnava',
       },
       color: {
         recent: 'Uporabi zadnjo barvo',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Brez barve',
         setTransparent: 'Brez barve',
         reset: 'Ponastavi',
-        resetToDefault: 'Ponastavi na privzeto'
+        resetToDefault: 'Ponastavi na privzeto',
       },
       shortcut: {
         shortcuts: 'Bljižnice',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Dejanja',
         paragraphFormatting: 'Oblikovanje odstavka',
         documentStyle: 'Oblikovanje naslova',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Insert Paragraph',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Razveljavi',
-        redo: 'Uveljavi'
+        redo: 'Uveljavi',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

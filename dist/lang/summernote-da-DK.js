@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 11:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'da-DK': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Gennemstreget',
         subscript: 'Sænket skrift',
         superscript: 'Hævet skrift',
-        size: 'Skriftstørrelse'
+        size: 'Skriftstørrelse',
       },
       image: {
         image: 'Billede',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Filen er større end maks tilladte fil størrelse!',
         url: 'Billede URL',
         remove: 'Fjern billede',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Video Link',
         insert: 'Indsæt Video',
         url: 'Video URL?',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion eller Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion eller Youku)',
       },
       link: {
         link: 'Link',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Rediger',
         textToDisplay: 'Visningstekst',
         url: 'Hvor skal linket pege hen?',
-        openInNewWindow: 'Åbn i nyt vindue'
+        openInNewWindow: 'Åbn i nyt vindue',
       },
       table: {
         table: 'Tabel',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Tilføj højre kolonne',
         delRow: 'Slet række',
         delCol: 'Slet kolonne',
-        delTable: 'Slet tabel'
+        delTable: 'Slet tabel',
       },
       hr: {
-        insert: 'Indsæt horisontal linje'
+        insert: 'Indsæt horisontal linje',
       },
       style: {
         style: 'Stil',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Overskrift 3',
         h4: 'Overskrift 4',
         h5: 'Overskrift 5',
-        h6: 'Overskrift 6'
+        h6: 'Overskrift 6',
       },
       lists: {
         unordered: 'Punktopstillet liste',
-        ordered: 'Nummereret liste'
+        ordered: 'Nummereret liste',
       },
       options: {
         help: 'Hjælp',
         fullscreen: 'Fuld skærm',
-        codeview: 'HTML-Visning'
+        codeview: 'HTML-Visning',
       },
       paragraph: {
         paragraph: 'Afsnit',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Venstrestillet',
         center: 'Centreret',
         right: 'Højrestillet',
-        justify: 'Blokjuster'
+        justify: 'Blokjuster',
       },
       color: {
         recent: 'Nyligt valgt farve',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Transparent',
         setTransparent: 'Sæt transparent',
         reset: 'Nulstil',
-        resetToDefault: 'Gendan standardindstillinger'
+        resetToDefault: 'Gendan standardindstillinger',
       },
       shortcut: {
         shortcuts: 'Genveje',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Handling',
         paragraphFormatting: 'Afsnitsformatering',
         documentStyle: 'Dokumentstil',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Indsæt paragraf',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Vis Link Dialog'
+        'linkDialog.show': 'Vis Link Dialog',
       },
       history: {
         undo: 'Fortryd',
-        redo: 'Annuller fortryd'
+        redo: 'Annuller fortryd',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Vælg special karakterer'
-      }
-    }
+        select: 'Vælg special karakterer',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

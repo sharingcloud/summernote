@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 47:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'vi-VN': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Gạch ngang',
         subscript: 'Subscript',
         superscript: 'Superscript',
-        size: 'Cỡ chữ'
+        size: 'Cỡ chữ',
       },
       image: {
         image: 'Hình ảnh',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'URL',
         remove: 'Xóa',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Link đến Video',
         insert: 'Chèn Video',
         url: 'URL',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion và Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion và Youku)',
       },
       link: {
         link: 'Link',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Sửa',
         textToDisplay: 'Văn bản hiển thị',
         url: 'URL',
-        openInNewWindow: 'Mở ở Cửa sổ mới'
+        openInNewWindow: 'Mở ở Cửa sổ mới',
       },
       table: {
         table: 'Bảng',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Chèn'
+        insert: 'Chèn',
       },
       style: {
         style: 'Kiểu chữ',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'H3',
         h4: 'H4',
         h5: 'H5',
-        h6: 'H6'
+        h6: 'H6',
       },
       lists: {
         unordered: 'Liệt kê danh sách',
-        ordered: 'Liệt kê theo thứ tự'
+        ordered: 'Liệt kê theo thứ tự',
       },
       options: {
         help: 'Trợ giúp',
         fullscreen: 'Toàn Màn hình',
-        codeview: 'Xem Code'
+        codeview: 'Xem Code',
       },
       paragraph: {
         paragraph: 'Canh lề',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Canh trái',
         center: 'Canh giữa',
         right: 'Canh phải',
-        justify: 'Canh đều'
+        justify: 'Canh đều',
       },
       color: {
         recent: 'Màu chữ',
@@ -215,7 +215,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'trong suốt',
         setTransparent: 'Nền trong suốt',
         reset: 'Thiết lập lại',
-        resetToDefault: 'Trở lại ban đầu'
+        resetToDefault: 'Trở lại ban đầu',
       },
       shortcut: {
         shortcuts: 'Phím tắt',
@@ -224,7 +224,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Hành động',
         paragraphFormatting: 'Định dạng',
         documentStyle: 'Kiểu văn bản',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Insert Paragraph',
@@ -253,19 +253,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Lùi lại',
-        redo: 'Làm lại'
+        redo: 'Làm lại',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

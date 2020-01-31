@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 12:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'de-DE': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Durchgestrichen',
         subscript: 'Tiefgestellt',
         superscript: 'Hochgestellt',
-        size: 'Schriftgröße'
+        size: 'Schriftgröße',
       },
       image: {
         image: 'Bild',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximale Dateigröße überschritten',
         url: 'Bild URL',
         remove: 'Bild entfernen',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Videolink',
         insert: 'Video einfügen',
         url: 'Video URL',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion oder Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion oder Youku)',
       },
       link: {
         link: 'Link',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Bearbeiten',
         textToDisplay: 'Anzeigetext',
         url: 'Link URL',
-        openInNewWindow: 'In neuem Fenster öffnen'
+        openInNewWindow: 'In neuem Fenster öffnen',
       },
       table: {
         table: 'Tabelle',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: '+ Spalte rechts',
         delRow: 'Reihe löschen',
         delCol: 'Spalte löschen',
-        delTable: 'Tabelle löschen'
+        delTable: 'Tabelle löschen',
       },
       hr: {
-        insert: 'Horizontale Linie einfügen'
+        insert: 'Horizontale Linie einfügen',
       },
       style: {
         style: 'Stil',
@@ -188,16 +188,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Überschrift 3',
         h4: 'Überschrift 4',
         h5: 'Überschrift 5',
-        h6: 'Überschrift 6'
+        h6: 'Überschrift 6',
       },
       lists: {
         unordered: 'Unnummerierte Liste',
-        ordered: 'Nummerierte Liste'
+        ordered: 'Nummerierte Liste',
       },
       options: {
         help: 'Hilfe',
         fullscreen: 'Vollbild',
-        codeview: 'Quellcode anzeigen'
+        codeview: 'Quellcode anzeigen',
       },
       paragraph: {
         paragraph: 'Absatz',
@@ -206,7 +206,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Links ausrichten',
         center: 'Zentriert ausrichten',
         right: 'Rechts ausrichten',
-        justify: 'Blocksatz'
+        justify: 'Blocksatz',
       },
       color: {
         recent: 'Letzte Farbe',
@@ -216,7 +216,7 @@ return /******/ (function(modules) { // webpackBootstrap
         transparent: 'Transparenz',
         setTransparent: 'Transparenz setzen',
         reset: 'Zurücksetzen',
-        resetToDefault: 'Auf Standard zurücksetzen'
+        resetToDefault: 'Auf Standard zurücksetzen',
       },
       shortcut: {
         shortcuts: 'Tastenkürzel',
@@ -225,7 +225,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Aktion',
         paragraphFormatting: 'Absatzformatierung',
         documentStyle: 'Dokumentenstil',
-        extraKeys: 'Weitere Tasten'
+        extraKeys: 'Weitere Tasten',
       },
       help: {
         'insertParagraph': 'Absatz einfügen',
@@ -254,19 +254,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Formatiert aktuellen Block als H5',
         'formatH6': 'Formatiert aktuellen Block als H6',
         'insertHorizontalRule': 'Fügt eine horizontale Linie ein',
-        'linkDialog.show': 'Zeigt Linkdialog'
+        'linkDialog.show': 'Zeigt Linkdialog',
       },
       history: {
         undo: 'Rückgängig',
-        redo: 'Wiederholen'
+        redo: 'Wiederholen',
       },
       specialChar: {
         specialChar: 'Sonderzeichen',
-        select: 'Zeichen auswählen'
-      }
-    }
+        select: 'Zeichen auswählen',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 

@@ -7,7 +7,7 @@
  * Copyright 2013- Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license.
  * 
- * Date: 2020-01-04T11:44Z
+ * Date: 2020-01-31T10:56Z
  * 
  */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ 8:
 /***/ (function(module, exports) {
 
-(function ($) {
+(function($) {
   $.extend($.summernote.lang, {
     'bg-BG': {
       font: {
@@ -124,7 +124,7 @@ return /******/ (function(modules) { // webpackBootstrap
         strikethrough: 'Задраскано',
         subscript: 'Долен индекс',
         superscript: 'Горен индекс',
-        size: 'Размер на шрифта'
+        size: 'Размер на шрифта',
       },
       image: {
         image: 'Изображение',
@@ -146,14 +146,14 @@ return /******/ (function(modules) { // webpackBootstrap
         maximumFileSizeError: 'Maximum file size exceeded.',
         url: 'URL адрес на изображение',
         remove: 'Премахни изображение',
-        original: 'Original'
+        original: 'Original',
       },
       video: {
         video: 'Video',
         videoLink: 'Video Link',
         insert: 'Insert Video',
         url: 'Video URL?',
-        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)'
+        providers: '(YouTube, Vimeo, Vine, Instagram, DailyMotion or Youku)',
       },
       link: {
         link: 'Връзка',
@@ -162,7 +162,7 @@ return /******/ (function(modules) { // webpackBootstrap
         edit: 'Промени',
         textToDisplay: 'Текст за показване',
         url: 'URL адрес',
-        openInNewWindow: 'Отвори в нов прозорец'
+        openInNewWindow: 'Отвори в нов прозорец',
       },
       table: {
         table: 'Таблица',
@@ -172,10 +172,10 @@ return /******/ (function(modules) { // webpackBootstrap
         addColRight: 'Add column right',
         delRow: 'Delete row',
         delCol: 'Delete column',
-        delTable: 'Delete table'
+        delTable: 'Delete table',
       },
       hr: {
-        insert: 'Добави хоризонтална линия'
+        insert: 'Добави хоризонтална линия',
       },
       style: {
         style: 'Стил',
@@ -187,16 +187,16 @@ return /******/ (function(modules) { // webpackBootstrap
         h3: 'Заглавие 3',
         h4: 'Заглавие 4',
         h5: 'Заглавие 5',
-        h6: 'Заглавие 6'
+        h6: 'Заглавие 6',
       },
       lists: {
         unordered: 'Символен списък',
-        ordered: 'Цифров списък'
+        ordered: 'Цифров списък',
       },
       options: {
         help: 'Помощ',
         fullscreen: 'На цял екран',
-        codeview: 'Преглед на код'
+        codeview: 'Преглед на код',
       },
       paragraph: {
         paragraph: 'Параграф',
@@ -205,7 +205,7 @@ return /******/ (function(modules) { // webpackBootstrap
         left: 'Подравняване в ляво',
         center: 'Център',
         right: 'Подравняване в дясно',
-        justify: 'Разтягане по ширина'
+        justify: 'Разтягане по ширина',
       },
       color: {
         recent: 'Последния избран цвят',
@@ -216,7 +216,7 @@ return /******/ (function(modules) { // webpackBootstrap
         setTransparent: 'Направете прозрачен',
         reset: 'Възстанови',
         resetToDefault: 'Възстанови оригиналните',
-        cpSelect: 'Изберете'
+        cpSelect: 'Изберете',
       },
       shortcut: {
         shortcuts: 'Клавишни комбинации',
@@ -225,7 +225,7 @@ return /******/ (function(modules) { // webpackBootstrap
         action: 'Действие',
         paragraphFormatting: 'Форматиране на параграф',
         documentStyle: 'Стил на документа',
-        extraKeys: 'Extra keys'
+        extraKeys: 'Extra keys',
       },
       help: {
         'insertParagraph': 'Insert Paragraph',
@@ -254,19 +254,20 @@ return /******/ (function(modules) { // webpackBootstrap
         'formatH5': 'Change current block\'s format as H5',
         'formatH6': 'Change current block\'s format as H6',
         'insertHorizontalRule': 'Insert horizontal rule',
-        'linkDialog.show': 'Show Link Dialog'
+        'linkDialog.show': 'Show Link Dialog',
       },
       history: {
         undo: 'Назад',
-        redo: 'Напред'
+        redo: 'Напред',
       },
       specialChar: {
         specialChar: 'SPECIAL CHARACTERS',
-        select: 'Select Special characters'
-      }
-    }
+        select: 'Select Special characters',
+      },
+    },
   });
 })(jQuery);
+
 
 /***/ })
 
